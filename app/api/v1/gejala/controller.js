@@ -10,6 +10,7 @@ module.exports = {
       const { page = 1, limit = 10 } = req.query;
       const data = await Gejala.find()
         .select("_id kode deskripsi foto")
+        .sort({ kode: "asc" })
         .limit(limit)
         .skip(limit * (page - 1));
 
@@ -21,6 +22,21 @@ module.exports = {
         current_page: parseInt(page),
         total_page: Math.ceil(count / limit),
         total_data: count,
+        data,
+      });
+    } catch (error) {
+      next(error);
+    }
+  },
+  getForSelect: async (req, res, next) => {
+    try {
+      const data = await Gejala.find()
+        .select("_id kode deskripsi foto")
+        .sort({ kode: "asc" });
+
+      res.status(StatusCodes.OK).json({
+        statusCode: StatusCodes.OK,
+        message: "Berhasil mendapatkan data gejala",
         data,
       });
     } catch (error) {

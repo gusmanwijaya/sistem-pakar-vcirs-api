@@ -26,6 +26,19 @@ module.exports = {
       next(error);
     }
   },
+  getForSelect: async (req, res, next) => {
+    try {
+      const data = await Solusi.find().select("_id deskripsi ");
+
+      res.status(StatusCodes.OK).json({
+        statusCode: StatusCodes.OK,
+        message: "Berhasil mendapatkan data gejala",
+        data,
+      });
+    } catch (error) {
+      next(error);
+    }
+  },
   getOne: async (req, res, next) => {
     try {
       const { id: solusiId } = req.params;
