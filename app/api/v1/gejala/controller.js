@@ -9,7 +9,7 @@ module.exports = {
     try {
       const { page = 1, limit = 10 } = req.query;
       const data = await Gejala.find()
-        .select("_id kode deskripsi foto")
+        .select("_id kode deskripsi foto credit numOfNode")
         .sort({ kode: "asc" })
         .limit(limit)
         .skip(limit * (page - 1));
@@ -31,7 +31,7 @@ module.exports = {
   getForSelect: async (req, res, next) => {
     try {
       const data = await Gejala.find()
-        .select("_id kode deskripsi foto")
+        .select("_id kode deskripsi foto credit numOfNode")
         .sort({ kode: "asc" });
 
       res.status(StatusCodes.OK).json({
@@ -48,7 +48,7 @@ module.exports = {
       const { id: gejalaId } = req.params;
 
       const data = await Gejala.findOne({ _id: gejalaId }).select(
-        "_id kode deskripsi foto"
+        "_id kode deskripsi foto credit numOfNode"
       );
 
       if (!data)
@@ -67,7 +67,7 @@ module.exports = {
   },
   create: async (req, res, next) => {
     try {
-      const { kode, deskripsi } = req.body;
+      const { kode, deskripsi, credit, numOfNode } = req.body;
 
       const checkKode = await Gejala.findOne({ kode }).select("kode");
       if (checkKode)
@@ -84,12 +84,14 @@ module.exports = {
       let data;
 
       if (!req.file) {
-        data = new Gejala({ kode, deskripsi });
+        data = new Gejala({ kode, deskripsi, credit, numOfNode });
       } else {
         data = new Gejala({
           kode,
           deskripsi,
           foto: req.file.filename,
+          credit,
+          numOfNode,
         });
       }
 
@@ -107,7 +109,7 @@ module.exports = {
   update: async (req, res, next) => {
     try {
       const { id: gejalaId } = req.params;
-      const { kode, deskripsi } = req.body;
+      const { kode, deskripsi, credit, numOfNode } = req.body;
 
       const checkKode = await Gejala.findOne({
         _id: {
@@ -139,6 +141,8 @@ module.exports = {
       if (!req.file) {
         data.kode = kode;
         data.deskripsi = deskripsi;
+        data.credit = credit;
+        data.numOfNode = numOfNode;
       } else {
         const currentImage = `${config.rootPath}/public/uploads/gejala/${data.foto}`;
 
@@ -149,6 +153,8 @@ module.exports = {
         data.kode = kode;
         data.deskripsi = deskripsi;
         data.foto = req.file.filename;
+        data.credit = credit;
+        data.numOfNode = numOfNode;
       }
 
       await data.save();

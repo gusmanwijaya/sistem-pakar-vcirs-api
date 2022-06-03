@@ -13,6 +13,14 @@ const gejalaSchema = mongoose.Schema(
     foto: {
       type: String,
     },
+    credit: {
+      type: Number,
+      default: 1,
+    },
+    numOfNode: {
+      type: Number,
+      required: [true, "Num of node tidak boleh kosong!"],
+    },
   },
   { timestamps: true }
 );
