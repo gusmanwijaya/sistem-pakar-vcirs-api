@@ -1,0 +1,81 @@
+[{
+  "_id": {
+    "$oid": "629a2b11e6b200528b085f47"
+  },
+  "pertanyaan": "Apakah buah kopi muda berguguran?",
+  "createdAt": {
+    "$date": {
+      "$numberLong": "1654270737022"
+    }
+  },
+  "updatedAt": {
+    "$date": {
+      "$numberLong": "1654270737022"
+    }
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "629a2b22e6b200528b085f4a"
+  },
+  "pertanyaan": "Apakah pada kopi tua terdapat cacat berupa lubang lubang?",
+  "createdAt": {
+    "$date": {
+      "$numberLong": "1654270754781"
+    }
+  },
+  "updatedAt": {
+    "$date": {
+      "$numberLong": "1654270754781"
+    }
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "629a2b34e6b200528b085f4d"
+  },
+  "pertanyaan": "Apakah buah kopi masak sebelum saatnya dan mengerut?",
+  "createdAt": {
+    "$date": {
+      "$numberLong": "1654270772910"
+    }
+  },
+  "updatedAt": {
+    "$date": {
+      "$numberLong": "1654270772910"
+    }
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "629a2b4ce6b200528b085f50"
+  },
+  "pertanyaan": "Apakah buah kopi tidak berkembang?",
+  "createdAt": {
+    "$date": {
+      "$numberLong": "1654270796014"
+    }
+  },
+  "updatedAt": {
+    "$date": {
+      "$numberLong": "1654270796014"
+    }
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "629a2b5fe6b200528b085f53"
+  },
+  "pertanyaan": "Apakah warna kopi berubah menjadi kuning kemerahan?",
+  "createdAt": {
+    "$date": {
+      "$numberLong": "1654270815746"
+    }
+  },
+  "updatedAt": {
+    "$date": {
+      "$numberLong": "1654270815746"
+    }
+  },
+  "__v": 0
+}]

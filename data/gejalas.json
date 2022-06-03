@@ -1,0 +1,96 @@
+[{
+  "_id": {
+    "$oid": "629a2c54e6b200528b085f5f"
+  },
+  "kode": "G1",
+  "deskripsi": "Buah berguguran pada buah kopi muda",
+  "credit": 1,
+  "numOfNode": 4,
+  "createdAt": {
+    "$date": {
+      "$numberLong": "1654271060809"
+    }
+  },
+  "updatedAt": {
+    "$date": {
+      "$numberLong": "1654271060809"
+    }
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "629a2c86e6b200528b085f63"
+  },
+  "kode": "G2",
+  "deskripsi": "Pada kopi tua terdapat cacat berupa berlubang-lubang",
+  "credit": 1,
+  "numOfNode": 1,
+  "createdAt": {
+    "$date": {
+      "$numberLong": "1654271110852"
+    }
+  },
+  "updatedAt": {
+    "$date": {
+      "$numberLong": "1654271110852"
+    }
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "629a2cb0e6b200528b085f67"
+  },
+  "kode": "G3",
+  "deskripsi": "Keadaan masak sebelum saatnya dan mengerut pada buah kopi",
+  "credit": 1,
+  "numOfNode": 2,
+  "createdAt": {
+    "$date": {
+      "$numberLong": "1654271152045"
+    }
+  },
+  "updatedAt": {
+    "$date": {
+      "$numberLong": "1654271152045"
+    }
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "629a2cc1e6b200528b085f6b"
+  },
+  "kode": "G4",
+  "deskripsi": "Buah kopi tidak berkembang",
+  "credit": 1,
+  "numOfNode": 1,
+  "createdAt": {
+    "$date": {
+      "$numberLong": "1654271170002"
+    }
+  },
+  "updatedAt": {
+    "$date": {
+      "$numberLong": "1654271170002"
+    }
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "629a2cfce6b200528b085f6f"
+  },
+  "kode": "G5",
+  "deskripsi": "Lamanya berubah menjadi kuning kemerahan",
+  "credit": 1,
+  "numOfNode": 1,
+  "createdAt": {
+    "$date": {
+      "$numberLong": "1654271228736"
+    }
+  },
+  "updatedAt": {
+    "$date": {
+      "$numberLong": "1654271228736"
+    }
+  },
+  "__v": 0
+}]

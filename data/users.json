@@ -1,0 +1,39 @@
+[{
+  "_id": {
+    "$oid": "6276039a29d35200238f485f"
+  },
+  "name": "Admin",
+  "username": "admin",
+  "password": "$2a$10$a5pZ0qkf2Gu9Hjx.gU7alukS47qLFR8RPOcxmq5hrxpTsSbmez4J.",
+  "role": "admin",
+  "createdAt": {
+    "$date": {
+      "$numberLong": "1651901338642"
+    }
+  },
+  "updatedAt": {
+    "$date": {
+      "$numberLong": "1651901338642"
+    }
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "627603bf29d35200238f4864"
+  },
+  "name": "Etia Rosalina",
+  "username": "etia",
+  "password": "$2a$10$eGPZBRAbdlVFs31BGjsZUeAEFeZPqbiHzPOPi8bFamP5PkEr4CTBK",
+  "role": "pengguna",
+  "createdAt": {
+    "$date": {
+      "$numberLong": "1651901375583"
+    }
+  },
+  "updatedAt": {
+    "$date": {
+      "$numberLong": "1651901375583"
+    }
+  },
+  "__v": 0
+}]

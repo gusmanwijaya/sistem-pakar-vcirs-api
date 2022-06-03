@@ -8,7 +8,7 @@ const {
 } = require("../../../middleware/auth");
 
 router.use(authenticationUsers);
-router.use(authorizeRoles("admin"));
+router.use(authorizeRoles("admin", "pengguna"));
 
 router.post("/create", create);
 

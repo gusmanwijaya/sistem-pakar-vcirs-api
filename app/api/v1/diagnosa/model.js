@@ -2,17 +2,16 @@ const mongoose = require("mongoose");
 
 const diagnosaSchema = mongoose.Schema(
   {
-    nilai: {
+    cfCombine: {
       type: Number,
       default: 0,
     },
-    hasilHamaPenyakit: {
+    percentage: {
+      type: String,
+    },
+    hamaPenyakit: {
       type: mongoose.Schema.Types.ObjectId,
       ref: "HamaPenyakit",
-    },
-    persentase: {
-      type: Number,
-      default: 0,
     },
   },
   { timestamps: true }

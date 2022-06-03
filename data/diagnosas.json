@@ -1,0 +1,21 @@
+[{
+  "_id": {
+    "$oid": "629a4a4b8d1be53aaf46900a"
+  },
+  "cfCombine": 55.71423844761598,
+  "percentage": "55.71%",
+  "hamaPenyakit": {
+    "$oid": "629a2e28e6b200528b085f80"
+  },
+  "createdAt": {
+    "$date": {
+      "$numberLong": "1654278731223"
+    }
+  },
+  "updatedAt": {
+    "$date": {
+      "$numberLong": "1654278731223"
+    }
+  },
+  "__v": 0
+}]

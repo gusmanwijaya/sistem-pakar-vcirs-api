@@ -3,33 +3,34 @@ const CustomError = require("../../../../app/error");
 const Diagnosa = require("./model");
 const Gejala = require("../gejala/model");
 const BasisPengetahuan = require("../basis-pengetahuan/model");
+const HamaPenyakit = require("../hama-penyakit/model");
 
 module.exports = {
   create: async (req, res, next) => {
     try {
-      const variable = await Gejala.find().select("_id kode deskripsi");
-      const totalVariable = variable.length;
+      const { urutanAnswer, nilaiAnswer } = req.body;
 
-      let variableOrder = [];
-      for (let index = 0; index < variable.length; index++) {
-        variableOrder.push(index + 1);
-      }
+      const variable = await Gejala.find().select(
+        "_id kode deskripsi foto credit numOfNode"
+      );
+      const totalVariable = variable.length;
+      const variableOrder = JSON.parse(urutanAnswer);
 
       let credit = [];
-      for (let index = 0; index < variable.length; index++) {
-        credit.push(1);
-      }
+      variable.forEach((element) => {
+        credit.push(element?.credit);
+      });
 
       let numOfNode = [];
-      for (let index = 0; index < variable.length; index++) {
-        numOfNode.push(1);
-      }
+      variable.forEach((element) => {
+        numOfNode.push(element?.numOfNode);
+      });
 
       let VUR = [];
       for (let index = 0; index < variable.length; index++) {
         VUR.push(
-          credit[index] *
-            ((numOfNode[index] * variableOrder[index]) / totalVariable)
+          (credit[index] * numOfNode[index] * variableOrder[index]) /
+            totalVariable
         );
       }
 
@@ -41,120 +42,89 @@ module.exports = {
 
       const NUR = sumVUR / totalVariable;
 
-      const RUR = NUR / totalVariable;
+      const RUR = NUR / credit[credit.length - 1];
 
-      const basisPengetahuan = await BasisPengetahuan.find()
-        .select("_id hamaPenyakit gejala cfPakar")
-        .populate({
-          path: "hamaPenyakit",
-          select: "_id kode nama gejala solusi foto",
-          model: "HamaPenyakit",
-          populate: [
-            {
-              path: "gejala",
-              select: "_id kode deskripsi foto",
-              model: "Gejala",
-            },
-            {
-              path: "solusi",
-              select: "_id deskripsi",
-              model: "Solusi",
-            },
-          ],
-        })
+      let _idVariable = [];
+      variable.forEach((element) => {
+        _idVariable.push(element?._id);
+      });
+
+      const cfPakarInBasisPengetahuan = await BasisPengetahuan.find({
+        gejala: { $in: _idVariable },
+      }).select("cfPakar");
+
+      let cfPakar = [];
+      cfPakarInBasisPengetahuan.forEach((element) => {
+        cfPakar.push(element.cfPakar);
+      });
+
+      const cfUser = JSON.parse(nilaiAnswer);
+
+      let CFR = [];
+      for (let index = 0; index < variable.length; index++) {
+        CFR.push(cfPakar[index] * cfUser[index] * RUR);
+      }
+
+      let countCfCombine = [];
+      for (let index = 0; index < CFR.length; index++) {
+        if (index === 0) {
+          countCfCombine.push((CFR[index] + CFR[index + 1]) * (1 - CFR[index]));
+        } else {
+          countCfCombine.push(
+            (countCfCombine[countCfCombine.length - 1] + CFR[index + 1]) *
+              (1 - CFR[index])
+          );
+        }
+      }
+
+      let cfCombine;
+      let percentage;
+      if (countCfCombine.length > 0) {
+        countCfCombine.pop();
+        cfCombine = countCfCombine[countCfCombine.length - 1] * 100;
+        percentage = `${cfCombine.toFixed(2)}%`;
+      }
+
+      const hamaPenyakit = await HamaPenyakit.findOne({
+        gejala: { $in: _idVariable },
+      })
+        .select("_id kode nama foto gejala solusi")
         .populate({
           path: "gejala",
-          select: "_id kode deskripsi foto",
+          select: "_id kode deskripsi foto credit numOfNode",
           model: "Gejala",
+        })
+        .populate({
+          path: "solusi",
+          select: "_id deskripsi",
+          model: "Solusi",
         });
+      await Diagnosa.create({
+        cfCombine,
+        percentage,
+        hamaPenyakit: hamaPenyakit._id,
+      });
 
-      // START: Hitung CF
-      let arrayBasisPengetahuan = [];
-      for (let index = 0; index < basisPengetahuan.length; index++) {
-        arrayBasisPengetahuan.push({
-          kodeHamaPenyakit: basisPengetahuan[index]?.hamaPenyakit?.kode,
-          hamaPenyakit: basisPengetahuan[index]?.hamaPenyakit?.nama,
-          kodeGejala: basisPengetahuan[index]?.gejala?.kode,
-          gejala: basisPengetahuan[index]?.gejala?.deskripsi,
-          cfPakar: basisPengetahuan[index]?.cfPakar,
-        });
-      }
-
-      let arrayForFilterDuplicate = [];
-      for (let index = 0; index < arrayBasisPengetahuan.length; index++) {
-        arrayForFilterDuplicate.push({
-          kodeGejala: arrayBasisPengetahuan[index]?.kodeGejala,
-          gejala: arrayBasisPengetahuan[index]?.gejala,
-          cfPakar: arrayBasisPengetahuan[index]?.cfPakar,
-        });
-      }
-
-      const jsonObject = arrayForFilterDuplicate.map(JSON.stringify);
-      const uniqueSet = new Set(jsonObject);
-      const arrayCfPakar = Array.from(uniqueSet).map(JSON.parse);
-
-      const { answer } = req.body;
-      const arrayAnswer = JSON.parse(answer);
-
-      if (arrayAnswer.length > 0) {
-        let arrayCFR = [];
-        for (let index = 0; index < variable.length; index++) {
-          const CF =
-            arrayCfPakar[index]?.cfPakar * parseFloat(arrayAnswer[index]);
-          arrayCFR.push({
-            iteration: `CFR${index + 1}`,
-            value: CF * RUR,
-          });
-        }
-        // END: Hitung CF
-
-        // START: Hitung CF Kombinasi
-        let arrayValueCfCombine = [];
-        for (let index = 0; index < arrayCFR.length; index++) {
-          if (index === 0) {
-            arrayValueCfCombine.push(
-              arrayCFR[index]?.value +
-                arrayCFR[index + 1]?.value * (1 - arrayCFR[index]?.value)
-            );
-          } else {
-            if (index === arrayCFR.length - 1) {
-              arrayValueCfCombine.push(
-                arrayValueCfCombine[index - 1] +
-                  arrayCFR[index]?.value * (1 - arrayValueCfCombine[index - 1])
-              );
-            } else {
-              arrayValueCfCombine.push(
-                arrayValueCfCombine[index - 1] +
-                  arrayCFR[index + 1]?.value *
-                    (1 - arrayValueCfCombine[index - 1])
-              );
-            }
-          }
-        }
-
-        const cfCombine =
-          (arrayValueCfCombine[arrayValueCfCombine.length - 1] * 100) / 100;
-        // END: Hitung CF Kombinasi
-
-        res.status(StatusCodes.OK).json({
-          statusCode: StatusCodes.OK,
-          message: "Berhasil mendapatkan data diagnosa",
-          data: {
-            variable,
-            variableOrder,
-            credit,
-            numOfNode,
-            totalVariable,
-            VUR,
-            NUR,
-            RUR,
-            arrayBasisPengetahuan,
-            arrayCfPakar,
-            arrayCFR,
-            cfCombine: `${cfCombine.toFixed(3)}%`,
-          },
-        });
-      }
+      res.status(StatusCodes.OK).json({
+        statusCode: StatusCodes.OK,
+        message: "Berhasil mendiagnosa",
+        data: {
+          variable,
+          totalVariable,
+          variableOrder,
+          credit,
+          numOfNode,
+          VUR,
+          NUR,
+          RUR,
+          cfPakar,
+          cfUser,
+          CFR,
+          cfCombine,
+          percentage,
+          hamaPenyakit,
+        },
+      });
     } catch (error) {
       next(error);
     }

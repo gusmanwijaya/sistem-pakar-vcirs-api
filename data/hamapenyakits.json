@@ -1,0 +1,49 @@
+[{
+  "_id": {
+    "$oid": "629a2e28e6b200528b085f80"
+  },
+  "kode": "H1",
+  "nama": "Penggerek Buah Kopi",
+  "gejala": [
+    {
+      "$oid": "629a2c54e6b200528b085f5f"
+    },
+    {
+      "$oid": "629a2c86e6b200528b085f63"
+    },
+    {
+      "$oid": "629a2cb0e6b200528b085f67"
+    },
+    {
+      "$oid": "629a2cc1e6b200528b085f6b"
+    },
+    {
+      "$oid": "629a2cfce6b200528b085f6f"
+    }
+  ],
+  "solusi": [
+    {
+      "$oid": "6295ccca86d61383ff125129"
+    },
+    {
+      "$oid": "6295ccd786d61383ff12512c"
+    },
+    {
+      "$oid": "6295cce486d61383ff12512f"
+    },
+    {
+      "$oid": "6295ccf386d61383ff125132"
+    }
+  ],
+  "createdAt": {
+    "$date": {
+      "$numberLong": "1654271528971"
+    }
+  },
+  "updatedAt": {
+    "$date": {
+      "$numberLong": "1654271528971"
+    }
+  },
+  "__v": 0
+}]
