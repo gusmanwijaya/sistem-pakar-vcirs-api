@@ -50,6 +50,31 @@ module.exports = {
       next(error);
     }
   },
+  getForSelect: async (req, res, next) => {
+    try {
+      const data = await HamaPenyakit.find()
+        .select("_id kode nama foto gejala solusi")
+        .sort({ kode: "asc" })
+        .populate({
+          path: "gejala",
+          select: "_id kode deskripsi foto credit numOfNode",
+          model: "Gejala",
+        })
+        .populate({
+          path: "solusi",
+          select: "_id deskripsi",
+          model: "Solusi",
+        });
+
+      res.status(StatusCodes.OK).json({
+        statusCode: StatusCodes.OK,
+        message: "Berhasil mendapatkan data hama/penyakit",
+        data,
+      });
+    } catch (error) {
+      next(error);
+    }
+  },
   getOne: async (req, res, next) => {
     try {
       const { id: hamaPenyakitId } = req.params;

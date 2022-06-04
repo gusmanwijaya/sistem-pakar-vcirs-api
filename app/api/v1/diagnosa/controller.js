@@ -42,7 +42,7 @@ module.exports = {
 
       const NUR = sumVUR / totalVariable;
 
-      const RUR = NUR / credit[credit.length - 1];
+      const RUR = NUR / 1;
 
       let _idVariable = [];
       variable.forEach((element) => {
@@ -85,7 +85,7 @@ module.exports = {
         percentage = `${cfCombine.toFixed(2)}%`;
       }
 
-      const hamaPenyakit = await HamaPenyakit.findOne({
+      const hamaPenyakit = await HamaPenyakit.find({
         gejala: { $in: _idVariable },
       })
         .select("_id kode nama foto gejala solusi")
