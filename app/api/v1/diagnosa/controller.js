@@ -8,11 +8,11 @@ const HamaPenyakit = require("../hama-penyakit/model");
 module.exports = {
   create: async (req, res, next) => {
     try {
-      const { urutanAnswer, nilaiAnswer } = req.body;
+      const { urutanAnswer, idGejala, nilaiAnswer } = req.body;
 
-      const variable = await Gejala.find().select(
-        "_id kode deskripsi foto credit numOfNode"
-      );
+      const variable = await Gejala.find({
+        _id: { $in: JSON.parse(idGejala) },
+      }).select("_id kode deskripsi foto credit numOfNode");
       const totalVariable = variable.length;
       const variableOrder = JSON.parse(urutanAnswer);
 
@@ -44,13 +44,8 @@ module.exports = {
 
       const RUR = NUR / 1;
 
-      let _idVariable = [];
-      variable.forEach((element) => {
-        _idVariable.push(element?._id);
-      });
-
       const cfPakarInBasisPengetahuan = await BasisPengetahuan.find({
-        gejala: { $in: _idVariable },
+        gejala: { $in: JSON.parse(idGejala) },
       }).select("cfPakar");
 
       let cfPakar = [];
@@ -86,7 +81,7 @@ module.exports = {
       }
 
       const hamaPenyakit = await HamaPenyakit.find({
-        gejala: { $in: _idVariable },
+        gejala: { $in: JSON.parse(idGejala) },
       })
         .select("_id kode nama foto gejala solusi")
         .populate({
@@ -99,11 +94,54 @@ module.exports = {
           select: "_id deskripsi",
           model: "Solusi",
         });
-      await Diagnosa.create({
-        cfCombine,
-        percentage,
-        hamaPenyakit: hamaPenyakit._id,
-      });
+
+      let _temp = [];
+      let _truth = [];
+      let countGejalaInHamaPenyakit = [];
+      let highestValue;
+      let indexHamaPenyakit;
+      if (hamaPenyakit.length > 1) {
+        const parseIdGejala = JSON.parse(idGejala);
+        for (let index = 0; index < hamaPenyakit.length; index++) {
+          _temp.push(hamaPenyakit[index].gejala);
+        }
+
+        for (let index = 0; index < _temp.length; index++) {
+          for (let index2 = 0; index2 < _temp[index].length; index2++) {
+            if (_temp[index][index2]._id.toString() === parseIdGejala[index2]) {
+              _truth.push({
+                index,
+                result: true,
+              });
+            }
+          }
+
+          const result = _truth.filter((value) => {
+            return value.index === index;
+          });
+          countGejalaInHamaPenyakit.push(result.length);
+
+          if (countGejalaInHamaPenyakit.length > 0) {
+            highestValue = Math.max.apply(null, countGejalaInHamaPenyakit);
+
+            indexHamaPenyakit = countGejalaInHamaPenyakit.indexOf(highestValue);
+          }
+        }
+
+        await Diagnosa.create({
+          cfCombine,
+          percentage,
+          hamaPenyakit: hamaPenyakit[indexHamaPenyakit]._id,
+        });
+      } else {
+        hamaPenyakit.forEach(async (value) => {
+          await Diagnosa.create({
+            cfCombine,
+            percentage,
+            hamaPenyakit: value._id,
+          });
+        });
+      }
 
       res.status(StatusCodes.OK).json({
         statusCode: StatusCodes.OK,
@@ -122,7 +160,7 @@ module.exports = {
           CFR,
           cfCombine,
           percentage,
-          hamaPenyakit,
+          hamaPenyakit: hamaPenyakit[indexHamaPenyakit],
         },
       });
     } catch (error) {
