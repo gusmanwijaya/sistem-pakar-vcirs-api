@@ -108,4 +108,92 @@
     }
   },
   "__v": 0
+},{
+  "_id": {
+    "$oid": "629bbfc5d48ad51be411a9e1"
+  },
+  "hamaPenyakit": {
+    "$oid": "629bbf9fd48ad51be411a9cf"
+  },
+  "gejala": {
+    "$oid": "629a2c54e6b200528b085f5f"
+  },
+  "cfPakar": 0.5,
+  "createdAt": {
+    "$date": {
+      "$numberLong": "1654374341178"
+    }
+  },
+  "updatedAt": {
+    "$date": {
+      "$numberLong": "1654374341178"
+    }
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "629c5a5ad11e6c01fc0afc44"
+  },
+  "hamaPenyakit": {
+    "$oid": "629bbf9fd48ad51be411a9cf"
+  },
+  "gejala": {
+    "$oid": "629c5956d11e6c01fc0afc22"
+  },
+  "cfPakar": 1,
+  "createdAt": {
+    "$date": {
+      "$numberLong": "1654413914547"
+    }
+  },
+  "updatedAt": {
+    "$date": {
+      "$numberLong": "1654413914547"
+    }
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "629c5a6ad11e6c01fc0afc46"
+  },
+  "hamaPenyakit": {
+    "$oid": "629bbf9fd48ad51be411a9cf"
+  },
+  "gejala": {
+    "$oid": "629c5980d11e6c01fc0afc26"
+  },
+  "cfPakar": 1,
+  "createdAt": {
+    "$date": {
+      "$numberLong": "1654413930462"
+    }
+  },
+  "updatedAt": {
+    "$date": {
+      "$numberLong": "1654413930462"
+    }
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "629c5a7cd11e6c01fc0afc48"
+  },
+  "hamaPenyakit": {
+    "$oid": "629bbf9fd48ad51be411a9cf"
+  },
+  "gejala": {
+    "$oid": "629c59bcd11e6c01fc0afc2e"
+  },
+  "cfPakar": 0.3,
+  "createdAt": {
+    "$date": {
+      "$numberLong": "1654413948801"
+    }
+  },
+  "updatedAt": {
+    "$date": {
+      "$numberLong": "1654413948801"
+    }
+  },
+  "__v": 0
 }]

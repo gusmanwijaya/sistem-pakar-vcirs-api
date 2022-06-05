@@ -46,4 +46,49 @@
     }
   },
   "__v": 0
+},{
+  "_id": {
+    "$oid": "629bbf9fd48ad51be411a9cf"
+  },
+  "kode": "H2",
+  "nama": "Penggerek Batang Kopi",
+  "gejala": [
+    {
+      "$oid": "629a2c54e6b200528b085f5f"
+    },
+    {
+      "$oid": "629c5956d11e6c01fc0afc22"
+    },
+    {
+      "$oid": "629c5980d11e6c01fc0afc26"
+    },
+    {
+      "$oid": "629c59bcd11e6c01fc0afc2e"
+    }
+  ],
+  "solusi": [
+    {
+      "$oid": "6295cd0786d61383ff125135"
+    },
+    {
+      "$oid": "6295cd1486d61383ff125138"
+    },
+    {
+      "$oid": "6295cd2786d61383ff12513b"
+    },
+    {
+      "$oid": "6295cd3486d61383ff12513e"
+    }
+  ],
+  "createdAt": {
+    "$date": {
+      "$numberLong": "1654374303571"
+    }
+  },
+  "updatedAt": {
+    "$date": {
+      "$numberLong": "1654414207871"
+    }
+  },
+  "__v": 2
 }]

@@ -10,10 +10,13 @@
   },
   "updatedAt": {
     "$date": {
-      "$numberLong": "1654270737022"
+      "$numberLong": "1654449564755"
     }
   },
-  "__v": 0
+  "__v": 0,
+  "gejala": {
+    "$oid": "629a2c54e6b200528b085f5f"
+  }
 },{
   "_id": {
     "$oid": "629a2b22e6b200528b085f4a"
@@ -26,10 +29,13 @@
   },
   "updatedAt": {
     "$date": {
-      "$numberLong": "1654270754781"
+      "$numberLong": "1654449569177"
     }
   },
-  "__v": 0
+  "__v": 0,
+  "gejala": {
+    "$oid": "629a2c86e6b200528b085f63"
+  }
 },{
   "_id": {
     "$oid": "629a2b34e6b200528b085f4d"
@@ -42,10 +48,13 @@
   },
   "updatedAt": {
     "$date": {
-      "$numberLong": "1654270772910"
+      "$numberLong": "1654449573884"
     }
   },
-  "__v": 0
+  "__v": 0,
+  "gejala": {
+    "$oid": "629a2cb0e6b200528b085f67"
+  }
 },{
   "_id": {
     "$oid": "629a2b4ce6b200528b085f50"
@@ -58,10 +67,13 @@
   },
   "updatedAt": {
     "$date": {
-      "$numberLong": "1654270796014"
+      "$numberLong": "1654449580211"
     }
   },
-  "__v": 0
+  "__v": 0,
+  "gejala": {
+    "$oid": "629a2cc1e6b200528b085f6b"
+  }
 },{
   "_id": {
     "$oid": "629a2b5fe6b200528b085f53"
@@ -74,8 +86,11 @@
   },
   "updatedAt": {
     "$date": {
-      "$numberLong": "1654270815746"
+      "$numberLong": "1654449555176"
     }
   },
-  "__v": 0
+  "__v": 0,
+  "gejala": {
+    "$oid": "629a2cfce6b200528b085f6f"
+  }
 }]

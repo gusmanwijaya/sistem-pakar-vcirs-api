@@ -8,7 +8,12 @@ module.exports = {
       const { page = 1, limit = 10 } = req.query;
 
       const data = await Pertanyaan.find()
-        .select("_id pertanyaan")
+        .select("_id pertanyaan gejala")
+        .populate({
+          path: "gejala",
+          select: "_id kode deskripsi foto credit numOfNode",
+          model: "Gejala",
+        })
         .limit(limit)
         .skip(limit * (page - 1));
 
@@ -30,9 +35,13 @@ module.exports = {
     try {
       const { id: pertanyaanId } = req.params;
 
-      const data = await Pertanyaan.findOne({ _id: pertanyaanId }).select(
-        "_id pertanyaan"
-      );
+      const data = await Pertanyaan.findOne({ _id: pertanyaanId })
+        .select("_id pertanyaan gejala")
+        .populate({
+          path: "gejala",
+          select: "_id kode deskripsi foto credit numOfNode",
+          model: "Gejala",
+        });
 
       if (!data)
         throw new CustomError.NotFound(
@@ -50,7 +59,7 @@ module.exports = {
   },
   create: async (req, res, next) => {
     try {
-      const { pertanyaan } = req.body;
+      const { pertanyaan, gejala } = req.body;
 
       const checkPertanyaan = await Pertanyaan.findOne({ pertanyaan }).select(
         "pertanyaan"
@@ -58,7 +67,7 @@ module.exports = {
       if (checkPertanyaan)
         throw new CustomError.BadRequest(`Pertanyaan sudah terdaftar`);
 
-      const data = new Pertanyaan({ pertanyaan });
+      const data = new Pertanyaan({ pertanyaan, gejala });
       await data.save();
 
       res.status(StatusCodes.CREATED).json({
@@ -73,7 +82,7 @@ module.exports = {
   update: async (req, res, next) => {
     try {
       const { id: pertanyaanId } = req.params;
-      const { pertanyaan } = req.body;
+      const { pertanyaan, gejala } = req.body;
 
       const checkPertanyaan = await Pertanyaan.findOne({
         _id: {
@@ -92,6 +101,7 @@ module.exports = {
         );
 
       data.pertanyaan = pertanyaan;
+      data.gejala = gejala;
       await data.save();
 
       res.status(StatusCodes.OK).json({

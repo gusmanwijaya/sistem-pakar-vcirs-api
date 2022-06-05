@@ -89,7 +89,64 @@
   },
   "updatedAt": {
     "$date": {
-      "$numberLong": "1654271228736"
+      "$numberLong": "1654366292133"
+    }
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "629c5956d11e6c01fc0afc22"
+  },
+  "kode": "G6",
+  "deskripsi": "Munculnya campuran kotoran dengan serpihan jaringan  di dalam batang yang rusak",
+  "credit": 1,
+  "numOfNode": 2,
+  "createdAt": {
+    "$date": {
+      "$numberLong": "1654413654050"
+    }
+  },
+  "updatedAt": {
+    "$date": {
+      "$numberLong": "1654413654050"
+    }
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "629c5980d11e6c01fc0afc26"
+  },
+  "kode": "G7",
+  "deskripsi": "Keadaan mati, layu dan kering di atas lubang kerekan",
+  "credit": 1,
+  "numOfNode": 1,
+  "createdAt": {
+    "$date": {
+      "$numberLong": "1654413696284"
+    }
+  },
+  "updatedAt": {
+    "$date": {
+      "$numberLong": "1654413696284"
+    }
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "629c59bcd11e6c01fc0afc2e"
+  },
+  "kode": "G8",
+  "deskripsi": "Keadaan layu mendadak pada ranting atau cabang yang terserang",
+  "credit": 1,
+  "numOfNode": 3,
+  "createdAt": {
+    "$date": {
+      "$numberLong": "1654413756513"
+    }
+  },
+  "updatedAt": {
+    "$date": {
+      "$numberLong": "1654413756513"
     }
   },
   "__v": 0

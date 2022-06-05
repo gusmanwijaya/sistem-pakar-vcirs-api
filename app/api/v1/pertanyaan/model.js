@@ -6,6 +6,10 @@ const pertanyaanSchema = mongoose.Schema(
       type: String,
       required: [true, "Pertanyaan tidak boleh kosong!"],
     },
+    gejala: {
+      type: mongoose.Schema.Types.ObjectId,
+      ref: "Gejala",
+    },
   },
   { timestamps: true }
 );
