@@ -143,8 +143,8 @@ module.exports = {
         });
       }
 
-      res.status(StatusCodes.OK).json({
-        statusCode: StatusCodes.OK,
+      res.status(StatusCodes.CREATED).json({
+        statusCode: StatusCodes.CREATED,
         message: "Berhasil mendiagnosa",
         data: {
           variable,
