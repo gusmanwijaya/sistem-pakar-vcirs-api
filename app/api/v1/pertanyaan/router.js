@@ -8,9 +8,11 @@ const {
 } = require("../../../middleware/auth");
 
 router.use(authenticationUsers);
+
+router.get("/get-all", authorizeRoles("admin", "pengguna"), getAll);
+
 router.use(authorizeRoles("admin"));
 
-router.get("/get-all", getAll);
 router.get("/get-one/:id", getOne);
 router.post("/create", create);
 router.put("/update/:id", update);
