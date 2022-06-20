@@ -4,6 +4,7 @@ const cookieParser = require("cookie-parser");
 const logger = require("morgan");
 const cors = require("cors");
 
+const dashboardRouter = require("./app/api/v1/dashboard/router");
 const authRouter = require("./app/api/v1/auth/router");
 const hamaPenyakitRouter = require("./app/api/v1/hama-penyakit/router");
 const gejalaRouter = require("./app/api/v1/gejala/router");
@@ -27,6 +28,7 @@ app.use(express.static(path.join(__dirname, "public")));
 
 const API_VERSION = "api/v1";
 
+app.use(`/${API_VERSION}/dashboard`, dashboardRouter);
 app.use(`/${API_VERSION}/auth`, authRouter);
 app.use(`/${API_VERSION}/hama-penyakit`, hamaPenyakitRouter);
 app.use(`/${API_VERSION}/gejala`, gejalaRouter);

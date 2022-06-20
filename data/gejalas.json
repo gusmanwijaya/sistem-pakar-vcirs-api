@@ -150,4 +150,61 @@
     }
   },
   "__v": 0
+},{
+  "_id": {
+    "$oid": "62a1938fc92a3d4ffb88232b"
+  },
+  "kode": "G9",
+  "deskripsi": "Melemahnya tanaman",
+  "credit": 1,
+  "numOfNode": 1,
+  "createdAt": {
+    "$date": {
+      "$numberLong": "1654756239511"
+    }
+  },
+  "updatedAt": {
+    "$date": {
+      "$numberLong": "1654756239511"
+    }
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "62a193fdc92a3d4ffb88234e"
+  },
+  "kode": "G10",
+  "deskripsi": "Keterhambatan pertumbuhan tanaman",
+  "credit": 1,
+  "numOfNode": 1,
+  "createdAt": {
+    "$date": {
+      "$numberLong": "1654756349707"
+    }
+  },
+  "updatedAt": {
+    "$date": {
+      "$numberLong": "1654756349707"
+    }
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "62a1942ec92a3d4ffb882357"
+  },
+  "kode": "G11",
+  "deskripsi": "Buah kopi dan daun tertutupi cendawan jelaga",
+  "credit": 1,
+  "numOfNode": 1,
+  "createdAt": {
+    "$date": {
+      "$numberLong": "1654756398104"
+    }
+  },
+  "updatedAt": {
+    "$date": {
+      "$numberLong": "1654756398104"
+    }
+  },
+  "__v": 0
 }]

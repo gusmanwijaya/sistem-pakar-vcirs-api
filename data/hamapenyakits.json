@@ -42,7 +42,7 @@
   },
   "updatedAt": {
     "$date": {
-      "$numberLong": "1654271528971"
+      "$numberLong": "1654527054593"
     }
   },
   "__v": 0
@@ -91,4 +91,46 @@
     }
   },
   "__v": 2
+},{
+  "_id": {
+    "$oid": "62a194f5c92a3d4ffb882383"
+  },
+  "kode": "H3",
+  "nama": "Kutu Hijau",
+  "gejala": [
+    {
+      "$oid": "62a1938fc92a3d4ffb88232b"
+    },
+    {
+      "$oid": "62a193fdc92a3d4ffb88234e"
+    },
+    {
+      "$oid": "62a1942ec92a3d4ffb882357"
+    }
+  ],
+  "solusi": [
+    {
+      "$oid": "6295cd7c86d61383ff12514d"
+    },
+    {
+      "$oid": "6295cd8886d61383ff125150"
+    },
+    {
+      "$oid": "6295cd9586d61383ff125153"
+    },
+    {
+      "$oid": "6295cda786d61383ff125157"
+    }
+  ],
+  "createdAt": {
+    "$date": {
+      "$numberLong": "1654756597052"
+    }
+  },
+  "updatedAt": {
+    "$date": {
+      "$numberLong": "1654756597052"
+    }
+  },
+  "__v": 0
 }]

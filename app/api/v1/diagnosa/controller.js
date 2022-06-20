@@ -8,7 +8,7 @@ const HamaPenyakit = require("../hama-penyakit/model");
 module.exports = {
   create: async (req, res, next) => {
     try {
-      const { urutanAnswer, idGejala, nilaiAnswer } = req.body;
+      const { user, tanggal, urutanAnswer, idGejala, nilaiAnswer } = req.body;
 
       const variable = await Gejala.find({
         _id: { $in: JSON.parse(idGejala) },
@@ -129,6 +129,8 @@ module.exports = {
         }
 
         await Diagnosa.create({
+          user,
+          tanggal,
           cfCombine,
           percentage,
           hamaPenyakit: hamaPenyakit[indexHamaPenyakit]._id,
@@ -136,6 +138,8 @@ module.exports = {
       } else {
         hamaPenyakit.forEach(async (value) => {
           await Diagnosa.create({
+            user,
+            tanggal,
             cfCombine,
             percentage,
             hamaPenyakit: value._id,
@@ -147,6 +151,8 @@ module.exports = {
         statusCode: StatusCodes.CREATED,
         message: "Berhasil mendiagnosa",
         data: {
+          user,
+          tanggal,
           variable,
           totalVariable,
           variableOrder,
@@ -162,6 +168,124 @@ module.exports = {
           percentage,
           hamaPenyakit: hamaPenyakit[indexHamaPenyakit],
         },
+      });
+    } catch (error) {
+      next(error);
+    }
+  },
+  getAll: async (req, res, next) => {
+    try {
+      const { user, page = 1, limit = 10 } = req.query;
+
+      let condition = {};
+
+      if (user) {
+        condition = {
+          user,
+        };
+      }
+
+      const data = await Diagnosa.find(condition)
+        .select("user tanggal cfCombine percentage hamaPenyakit")
+        .limit(limit)
+        .skip(limit * (page - 1))
+        .populate({
+          path: "user",
+          select: "_id name username role",
+          model: "User",
+        })
+        .populate({
+          path: "hamaPenyakit",
+          select: "_id kode nama foto gejala solusi",
+          model: "HamaPenyakit",
+          populate: [
+            {
+              path: "gejala",
+              select: "_id kode deskripsi foto credit numOfNode",
+              model: "Gejala",
+            },
+            {
+              path: "solusi",
+              select: "_id deskripsi",
+              model: "Solusi",
+            },
+          ],
+        });
+
+      const count = await Diagnosa.countDocuments();
+
+      res.status(StatusCodes.OK).json({
+        statusCode: StatusCodes.OK,
+        message: "Berhasil mendapatkan data hasil diagnosa",
+        current_page: parseInt(page),
+        total_page: Math.ceil(count / limit),
+        total_data: count,
+        data,
+      });
+    } catch (error) {
+      next(error);
+    }
+  },
+  getOne: async (req, res, next) => {
+    try {
+      const { id: diagnosaId } = req.params;
+
+      const data = await Diagnosa.findOne({ _id: diagnosaId })
+        .select("user tanggal cfCombine percentage hamaPenyakit")
+        .populate({
+          path: "user",
+          select: "_id name username role",
+          model: "User",
+        })
+        .populate({
+          path: "hamaPenyakit",
+          select: "_id kode nama foto gejala solusi",
+          model: "HamaPenyakit",
+          populate: [
+            {
+              path: "gejala",
+              select: "_id kode deskripsi foto credit numOfNode",
+              model: "Gejala",
+            },
+            {
+              path: "solusi",
+              select: "_id deskripsi",
+              model: "Solusi",
+            },
+          ],
+        });
+
+      if (!data)
+        throw new CustomError.NotFound(
+          `Diagnosa dengan id ${diagnosaId} tidak ditemukan`
+        );
+
+      res.status(StatusCodes.OK).json({
+        statusCode: StatusCodes.OK,
+        message: "Berhasil mendapatkan data diagnosa",
+        data,
+      });
+    } catch (error) {
+      next(error);
+    }
+  },
+  destroy: async (req, res, next) => {
+    try {
+      const { id: diagnosaId } = req.params;
+
+      let data = await Diagnosa.findOne({ _id: diagnosaId });
+
+      if (!data)
+        throw new CustomError.NotFound(
+          `Diagnosa dengan id ${diagnosaId} tidak ditemukan`
+        );
+
+      await data.remove();
+
+      res.status(StatusCodes.OK).json({
+        statusCode: StatusCodes.OK,
+        message: "Data diagnosa berhasil dihapus",
+        data,
       });
     } catch (error) {
       next(error);

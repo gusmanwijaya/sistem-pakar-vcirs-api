@@ -10,7 +10,6 @@ module.exports = {
       const { page = 1, limit = 10 } = req.query;
       const data = await Gejala.find()
         .select("_id kode deskripsi foto credit numOfNode")
-        .sort({ kode: "asc" })
         .limit(limit)
         .skip(limit * (page - 1));
 
@@ -30,9 +29,9 @@ module.exports = {
   },
   getForSelect: async (req, res, next) => {
     try {
-      const data = await Gejala.find()
-        .select("_id kode deskripsi foto credit numOfNode")
-        .sort({ kode: "asc" });
+      const data = await Gejala.find().select(
+        "_id kode deskripsi foto credit numOfNode"
+      );
 
       res.status(StatusCodes.OK).json({
         statusCode: StatusCodes.OK,
