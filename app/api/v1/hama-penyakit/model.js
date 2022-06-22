@@ -13,6 +13,9 @@ const hamaPenyakitSchema = mongoose.Schema(
     foto: {
       type: String,
     },
+    deskripsi: {
+      type: String,
+    },
     gejala: [
       {
         type: mongoose.Schema.Types.ObjectId,

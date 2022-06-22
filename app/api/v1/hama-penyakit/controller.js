@@ -21,8 +21,7 @@ module.exports = {
       }
 
       const data = await HamaPenyakit.find(condition)
-        .select("_id kode nama foto gejala solusi")
-        .sort({ kode: "asc" })
+        .select("_id kode nama foto deskripsi gejala solusi")
         .limit(limit)
         .skip(limit * (page - 1))
         .populate({
@@ -53,8 +52,7 @@ module.exports = {
   getForSelect: async (req, res, next) => {
     try {
       const data = await HamaPenyakit.find()
-        .select("_id kode nama foto gejala solusi")
-        .sort({ kode: "asc" })
+        .select("_id kode nama foto deskripsi gejala solusi")
         .populate({
           path: "gejala",
           select: "_id kode deskripsi foto credit numOfNode",
@@ -80,7 +78,7 @@ module.exports = {
       const { id: hamaPenyakitId } = req.params;
 
       const data = await HamaPenyakit.findOne({ _id: hamaPenyakitId })
-        .select("_id kode nama foto gejala solusi")
+        .select("_id kode nama foto deskripsi gejala solusi")
         .populate({
           path: "gejala",
           select: "_id kode deskripsi foto credit numOfNode",
@@ -108,7 +106,7 @@ module.exports = {
   },
   create: async (req, res, next) => {
     try {
-      const { kode, nama, gejala, solusi } = req.body;
+      const { kode, nama, deskripsi, gejala, solusi } = req.body;
 
       const checkKode = await HamaPenyakit.findOne({ kode }).select("kode");
       if (checkKode)
@@ -128,6 +126,7 @@ module.exports = {
         data = new HamaPenyakit({
           kode,
           nama,
+          deskripsi,
           gejala: JSON.parse(gejala),
           solusi: JSON.parse(solusi),
         });
@@ -136,6 +135,7 @@ module.exports = {
           kode,
           nama,
           foto: req.file.filename,
+          deskripsi,
           gejala: JSON.parse(gejala),
           solusi: JSON.parse(solusi),
         });
@@ -155,7 +155,7 @@ module.exports = {
   update: async (req, res, next) => {
     try {
       const { id: hamaPenyakitId } = req.params;
-      const { kode, nama, gejala, solusi } = req.body;
+      const { kode, nama, deskripsi, gejala, solusi } = req.body;
 
       const checkKode = await HamaPenyakit.findOne({
         _id: {
@@ -189,6 +189,7 @@ module.exports = {
       if (!req.file) {
         data.kode = kode;
         data.nama = nama;
+        data.deskripsi = deskripsi;
         data.gejala = JSON.parse(gejala);
         data.solusi = JSON.parse(solusi);
       } else {
@@ -201,6 +202,7 @@ module.exports = {
         data.kode = kode;
         data.nama = nama;
         data.foto = req.file.filename;
+        data.deskripsi = deskripsi;
         data.gejala = JSON.parse(gejala);
         data.solusi = JSON.parse(solusi);
       }
