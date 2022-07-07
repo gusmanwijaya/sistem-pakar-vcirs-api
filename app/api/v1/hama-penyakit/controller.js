@@ -26,7 +26,7 @@ module.exports = {
         .skip(limit * (page - 1))
         .populate({
           path: "gejala",
-          select: "_id kode deskripsi foto credit numOfNode",
+          select: "_id kode deskripsi foto pertanyaan",
           model: "Gejala",
         })
         .populate({
@@ -55,7 +55,7 @@ module.exports = {
         .select("_id kode nama foto deskripsi gejala solusi")
         .populate({
           path: "gejala",
-          select: "_id kode deskripsi foto credit numOfNode",
+          select: "_id kode deskripsi foto pertanyaan",
           model: "Gejala",
         })
         .populate({
@@ -81,7 +81,7 @@ module.exports = {
         .select("_id kode nama foto deskripsi gejala solusi")
         .populate({
           path: "gejala",
-          select: "_id kode deskripsi foto credit numOfNode",
+          select: "_id kode deskripsi foto pertanyaan",
           model: "Gejala",
         })
         .populate({

@@ -8,7 +8,7 @@ module.exports = {
       const { page = 1, limit = 10 } = req.query;
 
       const data = await BasisPengetahuan.find()
-        .select("_id hamaPenyakit gejala cfPakar")
+        .select("_id hamaPenyakit gejala cfPakar urutan")
         .limit(limit)
         .skip(limit * (page - 1))
         .populate({
@@ -18,7 +18,7 @@ module.exports = {
           populate: [
             {
               path: "gejala",
-              select: "_id kode deskripsi foto",
+              select: "_id kode deskripsi foto pertanyaan",
               model: "Gejala",
             },
             {
@@ -30,7 +30,7 @@ module.exports = {
         })
         .populate({
           path: "gejala",
-          select: "_id kode deskripsi foto",
+          select: "_id kode deskripsi foto pertanyaan",
           model: "Gejala",
         });
 
@@ -53,7 +53,7 @@ module.exports = {
       const { id: basisPengetahuanId } = req.params;
 
       const data = await BasisPengetahuan.findOne({ _id: basisPengetahuanId })
-        .select("_id hamaPenyakit gejala cfPakar")
+        .select("_id hamaPenyakit gejala cfPakar urutan")
         .populate({
           path: "hamaPenyakit",
           select: "_id kode nama gejala solusi foto",
@@ -61,7 +61,7 @@ module.exports = {
           populate: [
             {
               path: "gejala",
-              select: "_id kode deskripsi foto",
+              select: "_id kode deskripsi foto pertanyaan",
               model: "Gejala",
             },
             {
@@ -73,7 +73,7 @@ module.exports = {
         })
         .populate({
           path: "gejala",
-          select: "_id kode deskripsi foto",
+          select: "_id kode deskripsi foto pertanyaan",
           model: "Gejala",
         });
 
@@ -95,7 +95,27 @@ module.exports = {
     try {
       const { hamaPenyakit, gejala, cfPakar } = req.body;
 
-      const data = new BasisPengetahuan({ hamaPenyakit, gejala, cfPakar });
+      let data;
+
+      const checkUrutan = await BasisPengetahuan.find({ hamaPenyakit }).sort({
+        urutan: "asc",
+      });
+      if (checkUrutan[checkUrutan.length - 1].urutan > 0) {
+        data = new BasisPengetahuan({
+          hamaPenyakit,
+          gejala,
+          cfPakar,
+          urutan: checkUrutan[checkUrutan.length - 1].urutan + 1,
+        });
+      } else {
+        data = new BasisPengetahuan({
+          hamaPenyakit,
+          gejala,
+          cfPakar,
+          urutan: 1,
+        });
+      }
+
       await data.save();
 
       res.status(StatusCodes.CREATED).json({

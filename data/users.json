@@ -36,4 +36,23 @@
     }
   },
   "__v": 0
+},{
+  "_id": {
+    "$oid": "62aff6daa24491e8123141c4"
+  },
+  "name": "Gusman Wijaya",
+  "username": "gusmanwijaya",
+  "password": "$2a$10$bciJHLlljcFU3cZIGW2w3OlLLg7jouTIpUQ3FovZdOw8/QkE9AI7m",
+  "role": "pengguna",
+  "createdAt": {
+    "$date": {
+      "$numberLong": "1655699162488"
+    }
+  },
+  "updatedAt": {
+    "$date": {
+      "$numberLong": "1655699162488"
+    }
+  },
+  "__v": 0
 }]

@@ -42,10 +42,12 @@
   },
   "updatedAt": {
     "$date": {
-      "$numberLong": "1654527054593"
+      "$numberLong": "1655983884617"
     }
   },
-  "__v": 0
+  "__v": 0,
+  "deskripsi": "Telur berbentuk bulat, berwarna putih, berjumlah sekitar 31-50 butir diletakkan dalam lubang gerek, kemudian membentuk larva , larva berwarna putih, dan melengkung, fase larva selama 15 hari. Masa pupa dan pre pupa terjadi selama 7 hari, Imago berwarna hitam cokelat/hitam mengkilap, panjang 1,2 - 1,7 mm dan lebar 0,6 – 0,7 mm. Betina berumur ± 157 hari, sedangkan jantan 20-87 hari. Gejala hama penggerek buah kopi yaitu serangan pada buah kopi muda menyebabkan buah tidak berkembang, lama kelamaan berwarna kuning kemerahan kemudian buah kopi gugur. Sedangkan serangan pada buah kopi tua menyebabkan biji kopi rusak, biji kopi berlubang sehingga menurunkan mutu kopi. Pada bagian lobang terdapat kotoran bewarna hitam, keadaan masak sebelum saatnya dan mengerut pada buah kopi.",
+  "foto": "2022-06-22T09:22:13.134Z-Picture1.png"
 },{
   "_id": {
     "$oid": "629bbf9fd48ad51be411a9cf"
@@ -87,10 +89,12 @@
   },
   "updatedAt": {
     "$date": {
-      "$numberLong": "1654414207871"
+      "$numberLong": "1655983890980"
     }
   },
-  "__v": 2
+  "__v": 2,
+  "deskripsi": "Berbentuk bulat, kuning kemerahan. Diletakkan berkelompok (340-970) butir di celah kulit kayu Larva berwarna merah cerah. Panjang 3-5 cm. Umur larva 3-5 bulan.Pupa berada  pada lubang gerekan , Sayap depan ngengat berbintik hitam dengan dasar putih tembus pandang. Seekor betina dapat meletakkan telur 340-970 butir. Gejala awal daun kopi terlihat menguning pada batang yang terserang, adanya liang gerekan pada batang disertai dengan adanya kotoran yang berwarna merah kehitam-hitaman yang keluar dari liang gerekan (lubang aktif). Batang kopi patah pada bagian yang diserang, buah kopi tidak berkembang , layu dan mengering, pada permukaan lubang tang baru digerek terdapat campuran kotoran dengan serpihan jaringan kayu, keadaan layu mendadak pada batang yang terserang.",
+  "foto": "2022-06-22T09:23:30.117Z-Picture2.png"
 },{
   "_id": {
     "$oid": "62a194f5c92a3d4ffb882383"
@@ -129,8 +133,9 @@
   },
   "updatedAt": {
     "$date": {
-      "$numberLong": "1654756597052"
+      "$numberLong": "1655889859691"
     }
   },
-  "__v": 0
+  "__v": 0,
+  "deskripsi": "Telur berwarna kuning muda, panjang 0,3 mm, lebar 0,15 mm, diletakkan berkelompok dan dibungkus lilin, umur 3-4 hari. Panjang nimfa 0,55 mm diselimuti lapisan lilin. Instar pertama selama 6-10 hari, dan instar ke-2 umumnya 10-14 hari, setelah itu membentuk imago. Panjang tubuh imago 2-3,5 mm, lebar 1-2 mm. Hanya bagian punggung tertutup lapisan lilin. Warna tubuh kekuningan, berkembang biak secara partenogenesis (tanpa kawin). Gejala serangan pada kutu putih yaitu buah dan bunga kopi mengering dan gugur. Terdapat gumpalan putih seperti kapas pada buah kopi yang terserang, seringkali ditemukan semut yang hidup pada kutu tersebut, buah sering bewarna hitam seperti jelaga, terdapat embun madu di sekitar buah yang di serang, pada buah ditemui serangga putih berbentuk tempurung."
 }]

@@ -14,6 +14,9 @@ const basisPengetahuanSchema = mongoose.Schema(
       type: Number,
       default: 0,
     },
+    urutan: {
+      type: Number,
+    },
   },
   { timestamps: true }
 );

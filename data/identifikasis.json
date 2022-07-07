@@ -1,0 +1,298 @@
+[{
+  "_id": {
+    "$oid": "62c70621147e9cf0c7249037"
+  },
+  "user": {
+    "$oid": "62aff6daa24491e8123141c4"
+  },
+  "tanggal": "7-7-2022",
+  "hamaPenyakit": {
+    "$oid": "629bbf9fd48ad51be411a9cf"
+  },
+  "cfUser": [
+    0.8,
+    0.6,
+    0.4,
+    0.8
+  ],
+  "variable": [
+    {
+      "_id": {
+        "$oid": "629a2c54e6b200528b085f5f"
+      },
+      "kode": "G1",
+      "deskripsi": "Buah berguguran pada buah kopi muda",
+      "pertanyaan": "Apakah buah kopi muda berguguran?"
+    },
+    {
+      "_id": {
+        "$oid": "629c5956d11e6c01fc0afc22"
+      },
+      "kode": "G6",
+      "deskripsi": "Munculnya campuran kotoran dengan serpihan jaringan  di dalam batang yang rusak",
+      "pertanyaan": "Apakah muncul campuran kotoran dengan serpihan jaringan didalam batang yang rusak?"
+    },
+    {
+      "_id": {
+        "$oid": "629c5980d11e6c01fc0afc26"
+      },
+      "kode": "G7",
+      "deskripsi": "Keadaan mati, layu dan kering di atas lubang kerekan",
+      "pertanyaan": "Apakah keadaan mati,layu dan kering di atas lubang kerekan?"
+    },
+    {
+      "_id": {
+        "$oid": "629c59bcd11e6c01fc0afc2e"
+      },
+      "kode": "G8",
+      "deskripsi": "Keadaan layu mendadak pada ranting atau cabang yang terserang",
+      "pertanyaan": "Apakah pada ranting atau cabang yang terserang layu mendadak?"
+    }
+  ],
+  "totalVariable": 4,
+  "variableOrder": [
+    {
+      "gejala": "629a2c54e6b200528b085f5f",
+      "urutan": 1,
+      "_id": {
+        "$oid": "62c70621147e9cf0c7249038"
+      }
+    },
+    {
+      "gejala": "629c5956d11e6c01fc0afc22",
+      "urutan": 2,
+      "_id": {
+        "$oid": "62c70621147e9cf0c7249039"
+      }
+    },
+    {
+      "gejala": "629c5980d11e6c01fc0afc26",
+      "urutan": 3,
+      "_id": {
+        "$oid": "62c70621147e9cf0c724903a"
+      }
+    },
+    {
+      "gejala": "629c59bcd11e6c01fc0afc2e",
+      "urutan": 4,
+      "_id": {
+        "$oid": "62c70621147e9cf0c724903b"
+      }
+    }
+  ],
+  "numOfNode": [
+    {
+      "gejala": "629a2c54e6b200528b085f5f",
+      "numOfNode": 2,
+      "_id": {
+        "$oid": "62c70621147e9cf0c724903c"
+      }
+    },
+    {
+      "gejala": "629c5956d11e6c01fc0afc22",
+      "numOfNode": 1,
+      "_id": {
+        "$oid": "62c70621147e9cf0c724903d"
+      }
+    },
+    {
+      "gejala": "629c5980d11e6c01fc0afc26",
+      "numOfNode": 1,
+      "_id": {
+        "$oid": "62c70621147e9cf0c724903e"
+      }
+    },
+    {
+      "gejala": "629c59bcd11e6c01fc0afc2e",
+      "numOfNode": 1,
+      "_id": {
+        "$oid": "62c70621147e9cf0c724903f"
+      }
+    }
+  ],
+  "VUR": [
+    0.5,
+    0.5,
+    0.75,
+    1
+  ],
+  "NUR": 0.6875,
+  "RUR": 0.6875,
+  "cfPakar": [
+    {
+      "gejala": "629a2c54e6b200528b085f5f",
+      "cfPakar": 0.5,
+      "_id": {
+        "$oid": "62c70621147e9cf0c7249040"
+      }
+    },
+    {
+      "gejala": "629c5956d11e6c01fc0afc22",
+      "cfPakar": 1,
+      "_id": {
+        "$oid": "62c70621147e9cf0c7249041"
+      }
+    },
+    {
+      "gejala": "629c5980d11e6c01fc0afc26",
+      "cfPakar": 1,
+      "_id": {
+        "$oid": "62c70621147e9cf0c7249042"
+      }
+    },
+    {
+      "gejala": "629c59bcd11e6c01fc0afc2e",
+      "cfPakar": 0.3,
+      "_id": {
+        "$oid": "62c70621147e9cf0c7249043"
+      }
+    }
+  ],
+  "CFR": [
+    0.275,
+    0.4125,
+    0.275,
+    0.16499999999999998
+  ],
+  "_tempCfCombine": [
+    0.4984375,
+    0.45439453125,
+    0.44906103515624995,
+    0.5127409643554687
+  ],
+  "cfCombine": 51.274096435546866,
+  "percentage": "51.27%",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "62c722933e198df49801d246"
+  },
+  "user": {
+    "$oid": "627603bf29d35200238f4864"
+  },
+  "tanggal": "8-7-2022",
+  "hamaPenyakit": {
+    "$oid": "62a194f5c92a3d4ffb882383"
+  },
+  "cfUser": [
+    1,
+    1,
+    1
+  ],
+  "variable": [
+    {
+      "_id": {
+        "$oid": "62a1938fc92a3d4ffb88232b"
+      },
+      "kode": "G9",
+      "deskripsi": "Melemahnya tanaman",
+      "pertanyaan": "Apakah tanaman melemah?"
+    },
+    {
+      "_id": {
+        "$oid": "62a193fdc92a3d4ffb88234e"
+      },
+      "kode": "G10",
+      "deskripsi": "Keterhambatan pertumbuhan tanaman",
+      "pertanyaan": "Apakah pertumbuhan tanaman terhambat?"
+    },
+    {
+      "_id": {
+        "$oid": "62a1942ec92a3d4ffb882357"
+      },
+      "kode": "G11",
+      "deskripsi": "Buah kopi dan daun tertutupi cendawan jelaga",
+      "pertanyaan": "Apakah buah kopi dan daun tertutupi cendawan jelaga?"
+    }
+  ],
+  "totalVariable": 3,
+  "variableOrder": [
+    {
+      "gejala": "62a1938fc92a3d4ffb88232b",
+      "urutan": 1,
+      "_id": {
+        "$oid": "62c722933e198df49801d247"
+      }
+    },
+    {
+      "gejala": "62a193fdc92a3d4ffb88234e",
+      "urutan": 2,
+      "_id": {
+        "$oid": "62c722933e198df49801d248"
+      }
+    },
+    {
+      "gejala": "62a1942ec92a3d4ffb882357",
+      "urutan": 3,
+      "_id": {
+        "$oid": "62c722933e198df49801d249"
+      }
+    }
+  ],
+  "numOfNode": [
+    {
+      "gejala": "62a1938fc92a3d4ffb88232b",
+      "numOfNode": 1,
+      "_id": {
+        "$oid": "62c722933e198df49801d24a"
+      }
+    },
+    {
+      "gejala": "62a193fdc92a3d4ffb88234e",
+      "numOfNode": 1,
+      "_id": {
+        "$oid": "62c722933e198df49801d24b"
+      }
+    },
+    {
+      "gejala": "62a1942ec92a3d4ffb882357",
+      "numOfNode": 1,
+      "_id": {
+        "$oid": "62c722933e198df49801d24c"
+      }
+    }
+  ],
+  "VUR": [
+    0.3333333333333333,
+    0.6666666666666666,
+    1
+  ],
+  "NUR": 0.6666666666666666,
+  "RUR": 0.6666666666666666,
+  "cfPakar": [
+    {
+      "gejala": "62a1938fc92a3d4ffb88232b",
+      "cfPakar": 0.1,
+      "_id": {
+        "$oid": "62c722933e198df49801d24d"
+      }
+    },
+    {
+      "gejala": "62a193fdc92a3d4ffb88234e",
+      "cfPakar": 0.1,
+      "_id": {
+        "$oid": "62c722933e198df49801d24e"
+      }
+    },
+    {
+      "gejala": "62a1942ec92a3d4ffb882357",
+      "cfPakar": 0.5,
+      "_id": {
+        "$oid": "62c722933e198df49801d24f"
+      }
+    }
+  ],
+  "CFR": [
+    0.06666666666666667,
+    0.06666666666666667,
+    0.3333333333333333
+  ],
+  "_tempCfCombine": [
+    0.12444444444444444,
+    0.4272592592592592,
+    0.5070617283950617
+  ],
+  "cfCombine": 50.706172839506166,
+  "percentage": "50.71%",
+  "__v": 0
+}]

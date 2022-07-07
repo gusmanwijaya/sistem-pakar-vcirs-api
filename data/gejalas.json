@@ -4,8 +4,6 @@
   },
   "kode": "G1",
   "deskripsi": "Buah berguguran pada buah kopi muda",
-  "credit": 1,
-  "numOfNode": 4,
   "createdAt": {
     "$date": {
       "$numberLong": "1654271060809"
@@ -13,18 +11,17 @@
   },
   "updatedAt": {
     "$date": {
-      "$numberLong": "1654271060809"
+      "$numberLong": "1656998248478"
     }
   },
-  "__v": 0
+  "__v": 0,
+  "pertanyaan": "Apakah buah kopi muda berguguran?"
 },{
   "_id": {
     "$oid": "629a2c86e6b200528b085f63"
   },
   "kode": "G2",
   "deskripsi": "Pada kopi tua terdapat cacat berupa berlubang-lubang",
-  "credit": 1,
-  "numOfNode": 1,
   "createdAt": {
     "$date": {
       "$numberLong": "1654271110852"
@@ -32,18 +29,17 @@
   },
   "updatedAt": {
     "$date": {
-      "$numberLong": "1654271110852"
+      "$numberLong": "1656998308027"
     }
   },
-  "__v": 0
+  "__v": 0,
+  "pertanyaan": "Apakah pada kopi tua terdapat cacat berupa lubang lubang?"
 },{
   "_id": {
     "$oid": "629a2cb0e6b200528b085f67"
   },
   "kode": "G3",
   "deskripsi": "Keadaan masak sebelum saatnya dan mengerut pada buah kopi",
-  "credit": 1,
-  "numOfNode": 2,
   "createdAt": {
     "$date": {
       "$numberLong": "1654271152045"
@@ -51,18 +47,17 @@
   },
   "updatedAt": {
     "$date": {
-      "$numberLong": "1654271152045"
+      "$numberLong": "1656998354854"
     }
   },
-  "__v": 0
+  "__v": 0,
+  "pertanyaan": "Apakah buah kopi masak sebelum saatnya dan mengerut?"
 },{
   "_id": {
     "$oid": "629a2cc1e6b200528b085f6b"
   },
   "kode": "G4",
   "deskripsi": "Buah kopi tidak berkembang",
-  "credit": 1,
-  "numOfNode": 1,
   "createdAt": {
     "$date": {
       "$numberLong": "1654271170002"
@@ -70,18 +65,17 @@
   },
   "updatedAt": {
     "$date": {
-      "$numberLong": "1654271170002"
+      "$numberLong": "1656998390600"
     }
   },
-  "__v": 0
+  "__v": 0,
+  "pertanyaan": "Apakah buah kopi tidak berkembang?"
 },{
   "_id": {
     "$oid": "629a2cfce6b200528b085f6f"
   },
   "kode": "G5",
   "deskripsi": "Lamanya berubah menjadi kuning kemerahan",
-  "credit": 1,
-  "numOfNode": 1,
   "createdAt": {
     "$date": {
       "$numberLong": "1654271228736"
@@ -89,18 +83,17 @@
   },
   "updatedAt": {
     "$date": {
-      "$numberLong": "1654366292133"
+      "$numberLong": "1656998433423"
     }
   },
-  "__v": 0
+  "__v": 0,
+  "pertanyaan": "Apakah warna kopi berubah menjadi kuning kemerahan?"
 },{
   "_id": {
     "$oid": "629c5956d11e6c01fc0afc22"
   },
   "kode": "G6",
   "deskripsi": "Munculnya campuran kotoran dengan serpihan jaringan  di dalam batang yang rusak",
-  "credit": 1,
-  "numOfNode": 2,
   "createdAt": {
     "$date": {
       "$numberLong": "1654413654050"
@@ -108,18 +101,17 @@
   },
   "updatedAt": {
     "$date": {
-      "$numberLong": "1654413654050"
+      "$numberLong": "1656998476994"
     }
   },
-  "__v": 0
+  "__v": 0,
+  "pertanyaan": "Apakah muncul campuran kotoran dengan serpihan jaringan didalam batang yang rusak?"
 },{
   "_id": {
     "$oid": "629c5980d11e6c01fc0afc26"
   },
   "kode": "G7",
   "deskripsi": "Keadaan mati, layu dan kering di atas lubang kerekan",
-  "credit": 1,
-  "numOfNode": 1,
   "createdAt": {
     "$date": {
       "$numberLong": "1654413696284"
@@ -127,18 +119,17 @@
   },
   "updatedAt": {
     "$date": {
-      "$numberLong": "1654413696284"
+      "$numberLong": "1656998535087"
     }
   },
-  "__v": 0
+  "__v": 0,
+  "pertanyaan": "Apakah keadaan mati,layu dan kering di atas lubang kerekan?"
 },{
   "_id": {
     "$oid": "629c59bcd11e6c01fc0afc2e"
   },
   "kode": "G8",
   "deskripsi": "Keadaan layu mendadak pada ranting atau cabang yang terserang",
-  "credit": 1,
-  "numOfNode": 3,
   "createdAt": {
     "$date": {
       "$numberLong": "1654413756513"
@@ -146,18 +137,17 @@
   },
   "updatedAt": {
     "$date": {
-      "$numberLong": "1654413756513"
+      "$numberLong": "1656998597614"
     }
   },
-  "__v": 0
+  "__v": 0,
+  "pertanyaan": "Apakah pada ranting atau cabang yang terserang layu mendadak?"
 },{
   "_id": {
     "$oid": "62a1938fc92a3d4ffb88232b"
   },
   "kode": "G9",
   "deskripsi": "Melemahnya tanaman",
-  "credit": 1,
-  "numOfNode": 1,
   "createdAt": {
     "$date": {
       "$numberLong": "1654756239511"
@@ -165,18 +155,17 @@
   },
   "updatedAt": {
     "$date": {
-      "$numberLong": "1654756239511"
+      "$numberLong": "1656998642219"
     }
   },
-  "__v": 0
+  "__v": 0,
+  "pertanyaan": "Apakah tanaman melemah?"
 },{
   "_id": {
     "$oid": "62a193fdc92a3d4ffb88234e"
   },
   "kode": "G10",
   "deskripsi": "Keterhambatan pertumbuhan tanaman",
-  "credit": 1,
-  "numOfNode": 1,
   "createdAt": {
     "$date": {
       "$numberLong": "1654756349707"
@@ -184,18 +173,17 @@
   },
   "updatedAt": {
     "$date": {
-      "$numberLong": "1654756349707"
+      "$numberLong": "1656998682353"
     }
   },
-  "__v": 0
+  "__v": 0,
+  "pertanyaan": "Apakah pertumbuhan tanaman terhambat?"
 },{
   "_id": {
     "$oid": "62a1942ec92a3d4ffb882357"
   },
   "kode": "G11",
   "deskripsi": "Buah kopi dan daun tertutupi cendawan jelaga",
-  "credit": 1,
-  "numOfNode": 1,
   "createdAt": {
     "$date": {
       "$numberLong": "1654756398104"
@@ -206,5 +194,6 @@
       "$numberLong": "1654756398104"
     }
   },
-  "__v": 0
+  "__v": 0,
+  "pertanyaan": "Apakah buah kopi dan daun tertutupi cendawan jelaga?"
 }]
