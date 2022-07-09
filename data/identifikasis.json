@@ -1,19 +1,20 @@
 [{
   "_id": {
-    "$oid": "62c70621147e9cf0c7249037"
+    "$oid": "62c94e34a52a2691f871f6cb"
   },
   "user": {
     "$oid": "62aff6daa24491e8123141c4"
   },
-  "tanggal": "7-7-2022",
+  "tanggal": "9-7-2022",
   "hamaPenyakit": {
-    "$oid": "629bbf9fd48ad51be411a9cf"
+    "$oid": "629a2e28e6b200528b085f80"
   },
   "cfUser": [
     0.8,
     0.6,
     0.4,
-    0.8
+    0.8,
+    1
   ],
   "variable": [
     {
@@ -26,57 +27,72 @@
     },
     {
       "_id": {
-        "$oid": "629c5956d11e6c01fc0afc22"
+        "$oid": "629a2c86e6b200528b085f63"
       },
-      "kode": "G6",
-      "deskripsi": "Munculnya campuran kotoran dengan serpihan jaringan  di dalam batang yang rusak",
-      "pertanyaan": "Apakah muncul campuran kotoran dengan serpihan jaringan didalam batang yang rusak?"
+      "kode": "G2",
+      "deskripsi": "Pada kopi tua terdapat cacat berupa berlubang-lubang",
+      "pertanyaan": "Apakah pada kopi tua terdapat cacat berupa lubang lubang?"
     },
     {
       "_id": {
-        "$oid": "629c5980d11e6c01fc0afc26"
+        "$oid": "629a2cb0e6b200528b085f67"
       },
-      "kode": "G7",
-      "deskripsi": "Keadaan mati, layu dan kering di atas lubang kerekan",
-      "pertanyaan": "Apakah keadaan mati,layu dan kering di atas lubang kerekan?"
+      "kode": "G3",
+      "deskripsi": "Keadaan masak sebelum saatnya dan mengerut pada buah kopi",
+      "pertanyaan": "Apakah buah kopi masak sebelum saatnya dan mengerut?"
     },
     {
       "_id": {
-        "$oid": "629c59bcd11e6c01fc0afc2e"
+        "$oid": "629a2cc1e6b200528b085f6b"
       },
-      "kode": "G8",
-      "deskripsi": "Keadaan layu mendadak pada ranting atau cabang yang terserang",
-      "pertanyaan": "Apakah pada ranting atau cabang yang terserang layu mendadak?"
+      "kode": "G4",
+      "deskripsi": "Buah kopi tidak berkembang",
+      "pertanyaan": "Apakah buah kopi tidak berkembang?"
+    },
+    {
+      "_id": {
+        "$oid": "629a2cfce6b200528b085f6f"
+      },
+      "kode": "G5",
+      "deskripsi": "Lamanya berubah menjadi kuning kemerahan",
+      "pertanyaan": "Apakah warna kopi berubah menjadi kuning kemerahan?"
     }
   ],
-  "totalVariable": 4,
+  "totalVariable": 5,
   "variableOrder": [
     {
       "gejala": "629a2c54e6b200528b085f5f",
       "urutan": 1,
       "_id": {
-        "$oid": "62c70621147e9cf0c7249038"
+        "$oid": "62c94e34a52a2691f871f6cc"
       }
     },
     {
-      "gejala": "629c5956d11e6c01fc0afc22",
+      "gejala": "629a2c86e6b200528b085f63",
       "urutan": 2,
       "_id": {
-        "$oid": "62c70621147e9cf0c7249039"
+        "$oid": "62c94e34a52a2691f871f6cd"
       }
     },
     {
-      "gejala": "629c5980d11e6c01fc0afc26",
+      "gejala": "629a2cb0e6b200528b085f67",
       "urutan": 3,
       "_id": {
-        "$oid": "62c70621147e9cf0c724903a"
+        "$oid": "62c94e34a52a2691f871f6ce"
       }
     },
     {
-      "gejala": "629c59bcd11e6c01fc0afc2e",
+      "gejala": "629a2cc1e6b200528b085f6b",
       "urutan": 4,
       "_id": {
-        "$oid": "62c70621147e9cf0c724903b"
+        "$oid": "62c94e34a52a2691f871f6cf"
+      }
+    },
+    {
+      "gejala": "629a2cfce6b200528b085f6f",
+      "urutan": 5,
+      "_id": {
+        "$oid": "62c94e34a52a2691f871f6d0"
       }
     }
   ],
@@ -85,92 +101,109 @@
       "gejala": "629a2c54e6b200528b085f5f",
       "numOfNode": 2,
       "_id": {
-        "$oid": "62c70621147e9cf0c724903c"
+        "$oid": "62c94e34a52a2691f871f6d1"
       }
     },
     {
-      "gejala": "629c5956d11e6c01fc0afc22",
+      "gejala": "629a2c86e6b200528b085f63",
       "numOfNode": 1,
       "_id": {
-        "$oid": "62c70621147e9cf0c724903d"
+        "$oid": "62c94e34a52a2691f871f6d2"
       }
     },
     {
-      "gejala": "629c5980d11e6c01fc0afc26",
+      "gejala": "629a2cb0e6b200528b085f67",
       "numOfNode": 1,
       "_id": {
-        "$oid": "62c70621147e9cf0c724903e"
+        "$oid": "62c94e34a52a2691f871f6d3"
       }
     },
     {
-      "gejala": "629c59bcd11e6c01fc0afc2e",
+      "gejala": "629a2cc1e6b200528b085f6b",
       "numOfNode": 1,
       "_id": {
-        "$oid": "62c70621147e9cf0c724903f"
+        "$oid": "62c94e34a52a2691f871f6d4"
+      }
+    },
+    {
+      "gejala": "629a2cfce6b200528b085f6f",
+      "numOfNode": 1,
+      "_id": {
+        "$oid": "62c94e34a52a2691f871f6d5"
       }
     }
   ],
   "VUR": [
-    0.5,
-    0.5,
-    0.75,
+    0.4,
+    0.4,
+    0.6,
+    0.8,
     1
   ],
-  "NUR": 0.6875,
-  "RUR": 0.6875,
+  "sumVUR": 3.2,
+  "NUR": 0.64,
+  "RUR": 0.64,
   "cfPakar": [
     {
       "gejala": "629a2c54e6b200528b085f5f",
       "cfPakar": 0.5,
       "_id": {
-        "$oid": "62c70621147e9cf0c7249040"
+        "$oid": "62c94e34a52a2691f871f6d6"
       }
     },
     {
-      "gejala": "629c5956d11e6c01fc0afc22",
+      "gejala": "629a2c86e6b200528b085f63",
       "cfPakar": 1,
       "_id": {
-        "$oid": "62c70621147e9cf0c7249041"
+        "$oid": "62c94e34a52a2691f871f6d7"
       }
     },
     {
-      "gejala": "629c5980d11e6c01fc0afc26",
+      "gejala": "629a2cb0e6b200528b085f67",
+      "cfPakar": 0.5,
+      "_id": {
+        "$oid": "62c94e34a52a2691f871f6d8"
+      }
+    },
+    {
+      "gejala": "629a2cc1e6b200528b085f6b",
       "cfPakar": 1,
       "_id": {
-        "$oid": "62c70621147e9cf0c7249042"
+        "$oid": "62c94e34a52a2691f871f6d9"
       }
     },
     {
-      "gejala": "629c59bcd11e6c01fc0afc2e",
-      "cfPakar": 0.3,
+      "gejala": "629a2cfce6b200528b085f6f",
+      "cfPakar": 1,
       "_id": {
-        "$oid": "62c70621147e9cf0c7249043"
+        "$oid": "62c94e34a52a2691f871f6da"
       }
     }
   ],
   "CFR": [
-    0.275,
-    0.4125,
-    0.275,
-    0.16499999999999998
+    0.256,
+    0.384,
+    0.128,
+    0.512,
+    0.64
   ],
   "_tempCfCombine": [
-    0.4984375,
-    0.45439453125,
-    0.44906103515624995,
-    0.5127409643554687
+    0.47616,
+    0.37216,
+    0.77099,
+    0.68856
   ],
-  "cfCombine": 51.274096435546866,
-  "percentage": "51.27%",
+  "cfCombine": 68.8563,
+  "percentage": "68.86%",
   "__v": 0
 },{
   "_id": {
-    "$oid": "62c722933e198df49801d246"
+    "$oid": "62c94fdd753a9d359627bd21"
   },
   "user": {
     "$oid": "627603bf29d35200238f4864"
   },
-  "tanggal": "8-7-2022",
+  "tanggal": "9-7-2022",
   "hamaPenyakit": {
     "$oid": "62a194f5c92a3d4ffb882383"
   },
@@ -211,21 +244,21 @@
       "gejala": "62a1938fc92a3d4ffb88232b",
       "urutan": 1,
       "_id": {
-        "$oid": "62c722933e198df49801d247"
+        "$oid": "62c94fdd753a9d359627bd22"
       }
     },
     {
       "gejala": "62a193fdc92a3d4ffb88234e",
       "urutan": 2,
       "_id": {
-        "$oid": "62c722933e198df49801d248"
+        "$oid": "62c94fdd753a9d359627bd23"
       }
     },
     {
       "gejala": "62a1942ec92a3d4ffb882357",
       "urutan": 3,
       "_id": {
-        "$oid": "62c722933e198df49801d249"
+        "$oid": "62c94fdd753a9d359627bd24"
       }
     }
   ],
@@ -234,65 +267,65 @@
       "gejala": "62a1938fc92a3d4ffb88232b",
       "numOfNode": 1,
       "_id": {
-        "$oid": "62c722933e198df49801d24a"
+        "$oid": "62c94fdd753a9d359627bd25"
       }
     },
     {
       "gejala": "62a193fdc92a3d4ffb88234e",
       "numOfNode": 1,
       "_id": {
-        "$oid": "62c722933e198df49801d24b"
+        "$oid": "62c94fdd753a9d359627bd26"
       }
     },
     {
       "gejala": "62a1942ec92a3d4ffb882357",
       "numOfNode": 1,
       "_id": {
-        "$oid": "62c722933e198df49801d24c"
+        "$oid": "62c94fdd753a9d359627bd27"
       }
     }
   ],
   "VUR": [
-    0.3333333333333333,
-    0.6666666666666666,
+    0.33333,
+    0.66667,
     1
   ],
-  "NUR": 0.6666666666666666,
-  "RUR": 0.6666666666666666,
+  "sumVUR": 2,
+  "NUR": 0.66667,
+  "RUR": 0.66667,
   "cfPakar": [
     {
       "gejala": "62a1938fc92a3d4ffb88232b",
       "cfPakar": 0.1,
       "_id": {
-        "$oid": "62c722933e198df49801d24d"
+        "$oid": "62c94fdd753a9d359627bd28"
       }
     },
     {
       "gejala": "62a193fdc92a3d4ffb88234e",
       "cfPakar": 0.1,
       "_id": {
-        "$oid": "62c722933e198df49801d24e"
+        "$oid": "62c94fdd753a9d359627bd29"
       }
     },
     {
       "gejala": "62a1942ec92a3d4ffb882357",
       "cfPakar": 0.5,
       "_id": {
-        "$oid": "62c722933e198df49801d24f"
+        "$oid": "62c94fdd753a9d359627bd2a"
       }
     }
   ],
   "CFR": [
-    0.06666666666666667,
-    0.06666666666666667,
-    0.3333333333333333
+    0.06667,
+    0.06667,
+    0.33333
   ],
   "_tempCfCombine": [
-    0.12444444444444444,
-    0.4272592592592592,
-    0.5070617283950617
+    0.12444,
+    0.42726
   ],
-  "cfCombine": 50.706172839506166,
-  "percentage": "50.71%",
+  "cfCombine": 42.72593,
+  "percentage": "42.73%",
   "__v": 0
 }]

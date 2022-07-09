@@ -62,7 +62,7 @@ const identifikasiSchema = mongoose.Schema({
       type: Number,
     },
   ],
-  sumVur: {
+  sumVUR: {
     type: Number,
   },
   NUR: {

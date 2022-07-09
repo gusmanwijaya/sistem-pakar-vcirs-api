@@ -110,23 +110,38 @@ module.exports = {
         if (index === 0) {
           _tempCfCombine.push((CFR[index] + CFR[index + 1]) * (1 - CFR[index]));
         } else {
-          if (index === variable.length - 1) {
-            _tempCfCombine.push(
-              (_tempCfCombine[_tempCfCombine.length - 1] +
-                CFR[CFR.length - 1]) *
-                (1 - CFR[index])
-            );
-          } else {
-            _tempCfCombine.push(
-              (_tempCfCombine[_tempCfCombine.length - 1] + CFR[index + 1]) *
-                (1 - CFR[index])
-            );
-          }
+          _tempCfCombine.push(
+            (_tempCfCombine[_tempCfCombine.length - 1] + CFR[index + 1]) *
+              (1 - CFR[index])
+          );
         }
       }
 
+      _tempCfCombine.pop();
       cfCombine = _tempCfCombine[_tempCfCombine.length - 1] * 100;
-      percentage = `${cfCombine.toFixed(2)}%`;
+      percentage = cfCombine.toFixed(2) + "%";
+
+      let convertVUR = [];
+      let convertNUR = NUR.toFixed(5);
+      let convertRUR = RUR.toFixed(5);
+      let convertCFR = [];
+      let convertTempCfCombine = [];
+      let convertCfCombine = cfCombine.toFixed(5);
+
+      for (let index = 0; index < VUR.length; index++) {
+        const element = VUR[index];
+        convertVUR.push(element.toFixed(5));
+      }
+
+      for (let index = 0; index < CFR.length; index++) {
+        const element = CFR[index];
+        convertCFR.push(element.toFixed(5));
+      }
+
+      for (let index = 0; index < _tempCfCombine.length; index++) {
+        const element = _tempCfCombine[index];
+        convertTempCfCombine.push(element.toFixed(5));
+      }
 
       const data = await Identifikasi.create({
         user,
@@ -137,14 +152,14 @@ module.exports = {
         totalVariable,
         variableOrder,
         numOfNode,
-        VUR,
+        VUR: convertVUR,
         sumVUR,
-        NUR,
-        RUR,
+        NUR: convertNUR,
+        RUR: convertRUR,
         cfPakar,
-        CFR,
-        _tempCfCombine,
-        cfCombine,
+        CFR: convertCFR,
+        _tempCfCombine: convertTempCfCombine,
+        cfCombine: convertCfCombine,
         percentage,
       });
 
