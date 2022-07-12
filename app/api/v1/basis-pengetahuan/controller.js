@@ -100,7 +100,10 @@ module.exports = {
       const checkUrutan = await BasisPengetahuan.find({ hamaPenyakit }).sort({
         urutan: "asc",
       });
-      if (checkUrutan[checkUrutan.length - 1].urutan > 0) {
+      if (
+        checkUrutan.length > 0 &&
+        checkUrutan[checkUrutan.length - 1].urutan > 0
+      ) {
         data = new BasisPengetahuan({
           hamaPenyakit,
           gejala,
