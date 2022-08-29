@@ -1,0 +1,968 @@
+[{
+  "_id": {
+    "$oid": "630c61fbf1b8cbd9792c093a"
+  },
+  "user": {
+    "$oid": "62aff6daa24491e8123141c4"
+  },
+  "tanggal": "August 29 2022, 01:51:38 PM",
+  "gejalaYangDipilih": [
+    {
+      "_id": {
+        "$oid": "630a094ef0745eb36b1d3193"
+      },
+      "kode": "G1",
+      "deskripsi": "Buah berguguran pada buah kopi tua",
+      "cfPakar": 0.82
+    },
+    {
+      "_id": {
+        "$oid": "630a097bf0745eb36b1d319b"
+      },
+      "kode": "G2",
+      "deskripsi": "Pada buah kopi tua terdapat lubang",
+      "cfPakar": 0.9
+    },
+    {
+      "_id": {
+        "$oid": "630a0996f0745eb36b1d31a3"
+      },
+      "kode": "G3",
+      "deskripsi": "Pada ranting pohon",
+      "cfPakar": 0.63
+    },
+    {
+      "_id": {
+        "$oid": "630a09f0f0745eb36b1d31b7"
+      },
+      "kode": "G5",
+      "deskripsi": "Arah bunga ke atas",
+      "cfPakar": 0.64
+    },
+    {
+      "_id": {
+        "$oid": "630a0a56f0745eb36b1d31d7"
+      },
+      "kode": "G9",
+      "deskripsi": "Munculnya tanaman",
+      "cfPakar": 0.91
+    },
+    {
+      "_id": {
+        "$oid": "630a0a75f0745eb36b1d31df"
+      },
+      "kode": "G10",
+      "deskripsi": "Adanya puting",
+      "cfPakar": 0.83
+    }
+  ],
+  "basisPengetahuan": [
+    {
+      "_id": {
+        "$oid": "630a0e25d1bbfefce7864ca5"
+      },
+      "hamaPenyakit": {
+        "_id": {
+          "$oid": "62d0d91526fa6ad3a043d12d"
+        },
+        "kode": "H1",
+        "nama": "Penggerek Buah Kopi",
+        "deskripsi": "Telur berbentuk bulat, berwarna putih, berjumlah sekitar 31-50 butir diletakkan dalam lubang gerek, kemudian membentuk larva , larva berwarna putih, dan melengkung, fase larva selama 15 hari. Masa pupa dan pre pupa terjadi selama 7 hari, Imago berwarna hitam cokelat/hitam mengkilap, panjang 1,2 - 1,7 mm dan lebar 0,6 – 0,7 mm. Betina berumur ± 157 hari, sedangkan jantan 20-87 hari. Gejala hama penggerek buah kopi yaitu serangan pada buah kopi muda menyebabkan buah tidak berkembang, lama kelamaan berwarna kuning kemerahan kemudian buah kopi gugur. Sedangkan serangan pada buah kopi tua menyebabkan biji kopi rusak, biji kopi berlubang sehingga menurunkan mutu kopi. Pada bagian lobang terdapat kotoran bewarna hitam, keadaan masak sebelum saatnya dan mengerut pada buah kopi ",
+        "solusi": [
+          {
+            "_id": {
+              "$oid": "62d0d68026fa6ad3a043d06a"
+            },
+            "deskripsi": "Saat 15 – 30 hari menjelang panen besar dilakukan pemetikan semua buah masak yang terserang bubuk. Hal ini dikenal sebagai pengendalian kultur teknis dengan memutus daur hidup."
+          },
+          {
+            "_id": {
+              "$oid": "62d0d68f26fa6ad3a043d06f"
+            },
+            "deskripsi": "Memungut buah yang jatuh dan selanjutnya merendam dalam air panas, dikenal dengan lelesan."
+          },
+          {
+            "_id": {
+              "$oid": "62d0d69b26fa6ad3a043d074"
+            },
+            "deskripsi": "Menghabiskan seluruh buah kopi pada akhir panen, selanjutnya hasil lelesan, racutan dan petik buah direndam air panas selama 5 menit."
+          },
+          {
+            "_id": {
+              "$oid": "62d0d6a726fa6ad3a043d079"
+            },
+            "deskripsi": "Menggunakan solusi secara biologi dengan jamur pathogen (Beauveria bassiana) serta parasitoid Cephalonomia stephanoderis. Untuk B.bassiana diberikan dosis 2, 5 kg biakan padat untuk tiap hektar dengan waktu 3x permusim panen."
+          }
+        ]
+      },
+      "gejala": [
+        {
+          "_id": {
+            "$oid": "630a094ef0745eb36b1d3193"
+          },
+          "kode": "G1",
+          "deskripsi": "Buah berguguran pada buah kopi tua",
+          "cfPakar": 0.82
+        },
+        {
+          "_id": {
+            "$oid": "630a097bf0745eb36b1d319b"
+          },
+          "kode": "G2",
+          "deskripsi": "Pada buah kopi tua terdapat lubang",
+          "cfPakar": 0.9
+        },
+        {
+          "_id": {
+            "$oid": "630a0a56f0745eb36b1d31d7"
+          },
+          "kode": "G9",
+          "deskripsi": "Munculnya tanaman",
+          "cfPakar": 0.91
+        },
+        {
+          "_id": {
+            "$oid": "630a0a75f0745eb36b1d31df"
+          },
+          "kode": "G10",
+          "deskripsi": "Adanya puting",
+          "cfPakar": 0.83
+        }
+      ]
+    },
+    {
+      "_id": {
+        "$oid": "630a0feed1bbfefce7864d0b"
+      },
+      "hamaPenyakit": {
+        "_id": {
+          "$oid": "62d0d98826fa6ad3a043d137"
+        },
+        "kode": "H2",
+        "nama": "Penggerek Batang Kopi",
+        "deskripsi": "Berbentuk bulat, kuning kemerahan. Diletakkan berkelompok (340-970) butir di celah kulit kayu Larva berwarna merah cerah. Panjang 3-5 cm. Umur larva 3-5 bulan.Pupa berada  pada lubang gerekan , Sayap depan ngengat berbintik hitam dengan dasar putih tembus pandang. Seekor betina dapat meletakkan telur 340-970 butir. Gejala awal daun kopi terlihat menguning pada batang yang terserang, adanya liang gerekan pada batang disertai dengan adanya kotoran yang berwarna merah kehitam-hitaman yang keluar dari liang gerekan (lubang aktif). Batang kopi patah pada bagian yang diserang, buah kopi tidak berkembang , layu dan mengering, pada permukaan lubang tang baru digerek terdapat campuran kotoran dengan serpihan jaringan kayu, keadaan layu mendadak pada batang yang terserang ",
+        "solusi": [
+          {
+            "_id": {
+              "$oid": "62d0d6b126fa6ad3a043d07e"
+            },
+            "deskripsi": "Pengurangan hama dengan menggunakan tawon parasitoid untuk memakan larva Xylosandrus (Tetrastichus)."
+          },
+          {
+            "_id": {
+              "$oid": "62d0d6bb26fa6ad3a043d083"
+            },
+            "deskripsi": "Memangkas dan memotong cabang yang diserang, serta selanjutnya membakarnya"
+          }
+        ]
+      },
+      "gejala": [
+        {
+          "_id": {
+            "$oid": "630a094ef0745eb36b1d3193"
+          },
+          "kode": "G1",
+          "deskripsi": "Buah berguguran pada buah kopi tua",
+          "cfPakar": 0.82
+        },
+        {
+          "_id": {
+            "$oid": "630a0996f0745eb36b1d31a3"
+          },
+          "kode": "G3",
+          "deskripsi": "Pada ranting pohon",
+          "cfPakar": 0.63
+        },
+        {
+          "_id": {
+            "$oid": "630a0a26f0745eb36b1d31c7"
+          },
+          "kode": "G7",
+          "deskripsi": "Keadaan mati",
+          "cfPakar": 0.7
+        }
+      ]
+    },
+    {
+      "_id": {
+        "$oid": "630a1018d1bbfefce7864d1a"
+      },
+      "hamaPenyakit": {
+        "_id": {
+          "$oid": "62d0d9cc26fa6ad3a043d141"
+        },
+        "kode": "H3",
+        "nama": "Penggerek Cabang Kopi",
+        "deskripsi": "Telur berukuran < 0.1 cm, berbentuk oval, diletakkan di dalam lubang gerekan ± 30-50 butir, Larva berwarna putih, terdiri atas 2 instar. Larva memakan cendawan ambrosia, Pupa mula-mula berwarna putih kemudian menjadi cokelat cerah, Imago betina berwarna hitam mengkilap, p=0,6-0,18 cm, ukuran jantan setengah dari panjang betina, berwarna coklat kemerahan dan tidak dapat terbang. Gejala serangan penggerek cabang kopi yaitu daun kopi menguning pada batang yang terserang, adanya liang gerekan pada cabang, adanya kotoran yang berwarna merah kehitam hitaman yang keluar dari liang gerekan, cabang kopi patah pada bagian yang diserang, pada permukaan lubang yang baru di gerek terdapat campuran kotoran dengan serpihan kayu, keadaan kayu mendadak pada ranting atau cabang yang terserang dan pada cabang daun menjadi kering ",
+        "solusi": [
+          {
+            "_id": {
+              "$oid": "62d0d6c626fa6ad3a043d088"
+            },
+            "deskripsi": "Memusnahkan ulat yang ditemukan dengan cara dibakar"
+          },
+          {
+            "_id": {
+              "$oid": "62d0d6cf26fa6ad3a043d08d"
+            },
+            "deskripsi": "Memotong cabang atau batang yang terserang dengan jarak 10\ncm dibawah lubang gerekan\n"
+          },
+          {
+            "_id": {
+              "$oid": "62d0d6e126fa6ad3a043d092"
+            },
+            "deskripsi": "Penggunaan Beauveria bassiana atau agen hayati lain."
+          },
+          {
+            "_id": {
+              "$oid": "62d0d74b26fa6ad3a043d0d3"
+            },
+            "deskripsi": "Memotong batang yang terserang"
+          }
+        ]
+      },
+      "gejala": [
+        {
+          "_id": {
+            "$oid": "630a094ef0745eb36b1d3193"
+          },
+          "kode": "G1",
+          "deskripsi": "Buah berguguran pada buah kopi tua",
+          "cfPakar": 0.82
+        },
+        {
+          "_id": {
+            "$oid": "630a09c7f0745eb36b1d31af"
+          },
+          "kode": "G4",
+          "deskripsi": "Keadaan masak",
+          "cfPakar": 0.5
+        },
+        {
+          "_id": {
+            "$oid": "630a0a3cf0745eb36b1d31cf"
+          },
+          "kode": "G8",
+          "deskripsi": "Keadaan gugur",
+          "cfPakar": 0.92
+        }
+      ]
+    },
+    {
+      "_id": {
+        "$oid": "630a1053d1bbfefce7864d29"
+      },
+      "hamaPenyakit": {
+        "_id": {
+          "$oid": "62d0da0426fa6ad3a043d14b"
+        },
+        "kode": "H4",
+        "nama": "Kutu Putih",
+        "deskripsi": "Telur berwarna kuning muda, panjang 0,3 mm, lebar 0,15 mm, diletakkan berkelompok dan dibungkus lilin, umur 3-4 hari. Panjang nimfa 0,55 mm diselimuti lapisan lilin. Instar pertama selama 6-10 hari, dan instar ke-2 umumnya 10-14 hari, setelah itu membentuk imago. Panjang tubuh imago 2-3,5 mm, lebar 1-2 mm. Hanya bagian punggung tertutup lapisan lilin. Warna tubuh kekuningan, berkembang biak secara partenogenesis (tanpa kawin). Gejala serangan pada kutu putih yaitu buah dan bunga kopi mengering dan gugur. Terdapat gumpalan putih seperti kapas pada buah kopi yang terserang, seringkali ditemukan semut yang hidup pada kutu tersebut, buah sering bewarna hitam seperti jelaga, terdapat embun madu di sekitar buah yang di serang, pada buah ditemui serangga putih berbentuk tempurung ",
+        "solusi": [
+          {
+            "_id": {
+              "$oid": "62d0d77e26fa6ad3a043d0d8"
+            },
+            "deskripsi": "Memakai jamur, lalat jala, kumbang kubah dan tawon parasitoid."
+          },
+          {
+            "_id": {
+              "$oid": "62d0d78826fa6ad3a043d0dd"
+            },
+            "deskripsi": "Secara kimia menggunakan poxindo 50 WP sebagai insectisida propoksur serta pengaturan naungan"
+          }
+        ]
+      },
+      "gejala": [
+        {
+          "_id": {
+            "$oid": "630a094ef0745eb36b1d3193"
+          },
+          "kode": "G1",
+          "deskripsi": "Buah berguguran pada buah kopi tua",
+          "cfPakar": 0.82
+        },
+        {
+          "_id": {
+            "$oid": "630a0a11f0745eb36b1d31bf"
+          },
+          "kode": "G6",
+          "deskripsi": "Munculnya campuran",
+          "cfPakar": 0.73
+        },
+        {
+          "_id": {
+            "$oid": "630a0a3cf0745eb36b1d31cf"
+          },
+          "kode": "G8",
+          "deskripsi": "Keadaan gugur",
+          "cfPakar": 0.92
+        }
+      ]
+    },
+    {
+      "_id": {
+        "$oid": "630a106dd1bbfefce7864d38"
+      },
+      "hamaPenyakit": {
+        "_id": {
+          "$oid": "62d0da2826fa6ad3a043d155"
+        },
+        "kode": "H5",
+        "nama": "Kutu Hijau",
+        "deskripsi": "Telur berbentuk oval kehijauan, diletakkan di bawah induk betina. Jumlah telur mencapai 500 butir. Nimfa berwarna hijau kekuningan, berbentuk oval dan berukuran 1,5 mm. Imago berwarna hijau, berbentuk bulat telur, pipih, Panjang ± 3 mm, menetap dibawah permukaan daun, tunas, dan buah sampai mati. Lama siklus hidup kutu ini ± 65 hari. Gejala kutu tempurung hijau pada tanaman kopi yaitu kutu mengeluarkan embun madu yang mengundang kehadiran semut. Selain semut, embun madu juga dapat mendukung perkembangan jamur jelaga (Capnodium sp.), sehingga menutupi daun/buah kopi. Hal ini dapat menghambat proses asimilasi. Terdapat gumpalan seperti tempurung yang berbaris, Pada buah di temui serangga hijau kecoklatan berbentuk tempurung ",
+        "solusi": [
+          {
+            "_id": {
+              "$oid": "62d0d79626fa6ad3a043d0e2"
+            },
+            "deskripsi": "Penggunaan laba-laba dan orcus janthinus sebagai predator pemakan serangga"
+          },
+          {
+            "_id": {
+              "$oid": "62d0d7a226fa6ad3a043d0e7"
+            },
+            "deskripsi": "Sekitar tajuk makanan dipelihara dari gulma. Disarankan tidak menggunakan pestisida kimia."
+          },
+          {
+            "_id": {
+              "$oid": "62d0d7ae26fa6ad3a043d0ec"
+            },
+            "deskripsi": "Disarankan tidak mematikan populasi semut karena semuat mengurangi hama pengerek kopi baik batang atau buah"
+          },
+          {
+            "_id": {
+              "$oid": "62d0d7b926fa6ad3a043d0f1"
+            },
+            "deskripsi": "Pemupukan dengan berimbang dengan karbaril / tepung sividol atau penyemprotan insektisida berupa Anthio 330n EC."
+          }
+        ]
+      },
+      "gejala": [
+        {
+          "_id": {
+            "$oid": "630a09f0f0745eb36b1d31b7"
+          },
+          "kode": "G5",
+          "deskripsi": "Arah bunga ke atas",
+          "cfPakar": 0.64
+        },
+        {
+          "_id": {
+            "$oid": "630a0a26f0745eb36b1d31c7"
+          },
+          "kode": "G7",
+          "deskripsi": "Keadaan mati",
+          "cfPakar": 0.7
+        }
+      ]
+    }
+  ],
+  "rule": [
+    {
+      "hamaPenyakit": "Penggerek Buah Kopi",
+      "data": [
+        {
+          "gejala": "Pada buah kopi tua terdapat lubang",
+          "cfPakar": 0.9,
+          "numOfNode": 1,
+          "variableOrder": 1,
+          "VUR": 0.25
+        },
+        {
+          "gejala": "Munculnya tanaman",
+          "cfPakar": 0.91,
+          "numOfNode": 1,
+          "variableOrder": 2,
+          "VUR": 0.5
+        },
+        {
+          "gejala": "Adanya puting",
+          "cfPakar": 0.83,
+          "numOfNode": 1,
+          "variableOrder": 3,
+          "VUR": 0.75
+        },
+        {
+          "gejala": "Buah berguguran pada buah kopi tua",
+          "cfPakar": 0.82,
+          "numOfNode": 4,
+          "variableOrder": 4,
+          "VUR": 4
+        }
+      ],
+      "VUR": [
+        0.25,
+        0.5,
+        0.75,
+        4
+      ],
+      "NUR": 1.38,
+      "RUR": 0.34,
+      "cfPakar": [
+        0.9,
+        0.91,
+        0.83,
+        0.82
+      ],
+      "CFR": [
+        0.31,
+        0.31,
+        0.29,
+        0.28
+      ],
+      "CFKombinasi": [
+        0.52,
+        0.66,
+        0.76
+      ],
+      "persenCFKombinasi": "76%"
+    },
+    {
+      "hamaPenyakit": "Penggerek Batang Kopi",
+      "data": [
+        {
+          "gejala": "Pada ranting pohon",
+          "cfPakar": 0.63,
+          "numOfNode": 1,
+          "variableOrder": 1,
+          "VUR": 0.5
+        },
+        {
+          "gejala": "Buah berguguran pada buah kopi tua",
+          "cfPakar": 0.82,
+          "numOfNode": 4,
+          "variableOrder": 2,
+          "VUR": 4
+        }
+      ],
+      "VUR": [
+        0.5,
+        4
+      ],
+      "NUR": 2.25,
+      "RUR": 1.13,
+      "cfPakar": [
+        0.63,
+        0.82
+      ],
+      "CFR": [
+        0.71,
+        0.92
+      ],
+      "CFKombinasi": [
+        0.98
+      ],
+      "persenCFKombinasi": "98%"
+    }
+  ],
+  "hasilIdentifikasiHamaPenyakit": {
+    "_id": "62d0d98826fa6ad3a043d137",
+    "kode": "H2",
+    "nama": "Penggerek Batang Kopi",
+    "deskripsi": "Berbentuk bulat, kuning kemerahan. Diletakkan berkelompok (340-970) butir di celah kulit kayu Larva berwarna merah cerah. Panjang 3-5 cm. Umur larva 3-5 bulan.Pupa berada  pada lubang gerekan , Sayap depan ngengat berbintik hitam dengan dasar putih tembus pandang. Seekor betina dapat meletakkan telur 340-970 butir. Gejala awal daun kopi terlihat menguning pada batang yang terserang, adanya liang gerekan pada batang disertai dengan adanya kotoran yang berwarna merah kehitam-hitaman yang keluar dari liang gerekan (lubang aktif). Batang kopi patah pada bagian yang diserang, buah kopi tidak berkembang , layu dan mengering, pada permukaan lubang tang baru digerek terdapat campuran kotoran dengan serpihan jaringan kayu, keadaan layu mendadak pada batang yang terserang ",
+    "solusi": [
+      {
+        "_id": {
+          "$oid": "62d0d6b126fa6ad3a043d07e"
+        },
+        "deskripsi": "Pengurangan hama dengan menggunakan tawon parasitoid untuk memakan larva Xylosandrus (Tetrastichus)."
+      },
+      {
+        "_id": {
+          "$oid": "62d0d6bb26fa6ad3a043d083"
+        },
+        "deskripsi": "Memangkas dan memotong cabang yang diserang, serta selanjutnya membakarnya"
+      }
+    ]
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "630c818f1c5260eb48d31eda"
+  },
+  "user": {
+    "$oid": "6276039a29d35200238f485f"
+  },
+  "tanggal": "August 29 2022, 04:06:23 PM",
+  "gejalaYangDipilih": [
+    {
+      "_id": {
+        "$oid": "630a097bf0745eb36b1d319b"
+      },
+      "kode": "G2",
+      "deskripsi": "Pada buah kopi tua terdapat lubang",
+      "cfPakar": 0.9
+    },
+    {
+      "_id": {
+        "$oid": "630a09c7f0745eb36b1d31af"
+      },
+      "kode": "G4",
+      "deskripsi": "Keadaan masak",
+      "cfPakar": 0.5
+    },
+    {
+      "_id": {
+        "$oid": "630a0a11f0745eb36b1d31bf"
+      },
+      "kode": "G6",
+      "deskripsi": "Munculnya campuran",
+      "cfPakar": 0.73
+    },
+    {
+      "_id": {
+        "$oid": "630a0a3cf0745eb36b1d31cf"
+      },
+      "kode": "G8",
+      "deskripsi": "Keadaan gugur",
+      "cfPakar": 0.92
+    },
+    {
+      "_id": {
+        "$oid": "630a0a75f0745eb36b1d31df"
+      },
+      "kode": "G10",
+      "deskripsi": "Adanya puting",
+      "cfPakar": 0.83
+    }
+  ],
+  "basisPengetahuan": [
+    {
+      "_id": {
+        "$oid": "630a0e25d1bbfefce7864ca5"
+      },
+      "hamaPenyakit": {
+        "_id": {
+          "$oid": "62d0d91526fa6ad3a043d12d"
+        },
+        "kode": "H1",
+        "nama": "Penggerek Buah Kopi",
+        "deskripsi": "Telur berbentuk bulat, berwarna putih, berjumlah sekitar 31-50 butir diletakkan dalam lubang gerek, kemudian membentuk larva , larva berwarna putih, dan melengkung, fase larva selama 15 hari. Masa pupa dan pre pupa terjadi selama 7 hari, Imago berwarna hitam cokelat/hitam mengkilap, panjang 1,2 - 1,7 mm dan lebar 0,6 – 0,7 mm. Betina berumur ± 157 hari, sedangkan jantan 20-87 hari. Gejala hama penggerek buah kopi yaitu serangan pada buah kopi muda menyebabkan buah tidak berkembang, lama kelamaan berwarna kuning kemerahan kemudian buah kopi gugur. Sedangkan serangan pada buah kopi tua menyebabkan biji kopi rusak, biji kopi berlubang sehingga menurunkan mutu kopi. Pada bagian lobang terdapat kotoran bewarna hitam, keadaan masak sebelum saatnya dan mengerut pada buah kopi ",
+        "solusi": [
+          {
+            "_id": {
+              "$oid": "62d0d68026fa6ad3a043d06a"
+            },
+            "deskripsi": "Saat 15 – 30 hari menjelang panen besar dilakukan pemetikan semua buah masak yang terserang bubuk. Hal ini dikenal sebagai pengendalian kultur teknis dengan memutus daur hidup."
+          },
+          {
+            "_id": {
+              "$oid": "62d0d68f26fa6ad3a043d06f"
+            },
+            "deskripsi": "Memungut buah yang jatuh dan selanjutnya merendam dalam air panas, dikenal dengan lelesan."
+          },
+          {
+            "_id": {
+              "$oid": "62d0d69b26fa6ad3a043d074"
+            },
+            "deskripsi": "Menghabiskan seluruh buah kopi pada akhir panen, selanjutnya hasil lelesan, racutan dan petik buah direndam air panas selama 5 menit."
+          },
+          {
+            "_id": {
+              "$oid": "62d0d6a726fa6ad3a043d079"
+            },
+            "deskripsi": "Menggunakan solusi secara biologi dengan jamur pathogen (Beauveria bassiana) serta parasitoid Cephalonomia stephanoderis. Untuk B.bassiana diberikan dosis 2, 5 kg biakan padat untuk tiap hektar dengan waktu 3x permusim panen."
+          }
+        ]
+      },
+      "gejala": [
+        {
+          "_id": {
+            "$oid": "630a094ef0745eb36b1d3193"
+          },
+          "kode": "G1",
+          "deskripsi": "Buah berguguran pada buah kopi tua",
+          "cfPakar": 0.82
+        },
+        {
+          "_id": {
+            "$oid": "630a097bf0745eb36b1d319b"
+          },
+          "kode": "G2",
+          "deskripsi": "Pada buah kopi tua terdapat lubang",
+          "cfPakar": 0.9
+        },
+        {
+          "_id": {
+            "$oid": "630a0a56f0745eb36b1d31d7"
+          },
+          "kode": "G9",
+          "deskripsi": "Munculnya tanaman",
+          "cfPakar": 0.91
+        },
+        {
+          "_id": {
+            "$oid": "630a0a75f0745eb36b1d31df"
+          },
+          "kode": "G10",
+          "deskripsi": "Adanya puting",
+          "cfPakar": 0.83
+        }
+      ]
+    },
+    {
+      "_id": {
+        "$oid": "630a0feed1bbfefce7864d0b"
+      },
+      "hamaPenyakit": {
+        "_id": {
+          "$oid": "62d0d98826fa6ad3a043d137"
+        },
+        "kode": "H2",
+        "nama": "Penggerek Batang Kopi",
+        "deskripsi": "Berbentuk bulat, kuning kemerahan. Diletakkan berkelompok (340-970) butir di celah kulit kayu Larva berwarna merah cerah. Panjang 3-5 cm. Umur larva 3-5 bulan.Pupa berada  pada lubang gerekan , Sayap depan ngengat berbintik hitam dengan dasar putih tembus pandang. Seekor betina dapat meletakkan telur 340-970 butir. Gejala awal daun kopi terlihat menguning pada batang yang terserang, adanya liang gerekan pada batang disertai dengan adanya kotoran yang berwarna merah kehitam-hitaman yang keluar dari liang gerekan (lubang aktif). Batang kopi patah pada bagian yang diserang, buah kopi tidak berkembang , layu dan mengering, pada permukaan lubang tang baru digerek terdapat campuran kotoran dengan serpihan jaringan kayu, keadaan layu mendadak pada batang yang terserang ",
+        "solusi": [
+          {
+            "_id": {
+              "$oid": "62d0d6b126fa6ad3a043d07e"
+            },
+            "deskripsi": "Pengurangan hama dengan menggunakan tawon parasitoid untuk memakan larva Xylosandrus (Tetrastichus)."
+          },
+          {
+            "_id": {
+              "$oid": "62d0d6bb26fa6ad3a043d083"
+            },
+            "deskripsi": "Memangkas dan memotong cabang yang diserang, serta selanjutnya membakarnya"
+          }
+        ]
+      },
+      "gejala": [
+        {
+          "_id": {
+            "$oid": "630a094ef0745eb36b1d3193"
+          },
+          "kode": "G1",
+          "deskripsi": "Buah berguguran pada buah kopi tua",
+          "cfPakar": 0.82
+        },
+        {
+          "_id": {
+            "$oid": "630a0996f0745eb36b1d31a3"
+          },
+          "kode": "G3",
+          "deskripsi": "Pada ranting pohon",
+          "cfPakar": 0.63
+        },
+        {
+          "_id": {
+            "$oid": "630a0a26f0745eb36b1d31c7"
+          },
+          "kode": "G7",
+          "deskripsi": "Keadaan mati",
+          "cfPakar": 0.7
+        }
+      ]
+    },
+    {
+      "_id": {
+        "$oid": "630a1018d1bbfefce7864d1a"
+      },
+      "hamaPenyakit": {
+        "_id": {
+          "$oid": "62d0d9cc26fa6ad3a043d141"
+        },
+        "kode": "H3",
+        "nama": "Penggerek Cabang Kopi",
+        "deskripsi": "Telur berukuran < 0.1 cm, berbentuk oval, diletakkan di dalam lubang gerekan ± 30-50 butir, Larva berwarna putih, terdiri atas 2 instar. Larva memakan cendawan ambrosia, Pupa mula-mula berwarna putih kemudian menjadi cokelat cerah, Imago betina berwarna hitam mengkilap, p=0,6-0,18 cm, ukuran jantan setengah dari panjang betina, berwarna coklat kemerahan dan tidak dapat terbang. Gejala serangan penggerek cabang kopi yaitu daun kopi menguning pada batang yang terserang, adanya liang gerekan pada cabang, adanya kotoran yang berwarna merah kehitam hitaman yang keluar dari liang gerekan, cabang kopi patah pada bagian yang diserang, pada permukaan lubang yang baru di gerek terdapat campuran kotoran dengan serpihan kayu, keadaan kayu mendadak pada ranting atau cabang yang terserang dan pada cabang daun menjadi kering ",
+        "solusi": [
+          {
+            "_id": {
+              "$oid": "62d0d6c626fa6ad3a043d088"
+            },
+            "deskripsi": "Memusnahkan ulat yang ditemukan dengan cara dibakar"
+          },
+          {
+            "_id": {
+              "$oid": "62d0d6cf26fa6ad3a043d08d"
+            },
+            "deskripsi": "Memotong cabang atau batang yang terserang dengan jarak 10\ncm dibawah lubang gerekan\n"
+          },
+          {
+            "_id": {
+              "$oid": "62d0d6e126fa6ad3a043d092"
+            },
+            "deskripsi": "Penggunaan Beauveria bassiana atau agen hayati lain."
+          },
+          {
+            "_id": {
+              "$oid": "62d0d74b26fa6ad3a043d0d3"
+            },
+            "deskripsi": "Memotong batang yang terserang"
+          }
+        ]
+      },
+      "gejala": [
+        {
+          "_id": {
+            "$oid": "630a094ef0745eb36b1d3193"
+          },
+          "kode": "G1",
+          "deskripsi": "Buah berguguran pada buah kopi tua",
+          "cfPakar": 0.82
+        },
+        {
+          "_id": {
+            "$oid": "630a09c7f0745eb36b1d31af"
+          },
+          "kode": "G4",
+          "deskripsi": "Keadaan masak",
+          "cfPakar": 0.5
+        },
+        {
+          "_id": {
+            "$oid": "630a0a3cf0745eb36b1d31cf"
+          },
+          "kode": "G8",
+          "deskripsi": "Keadaan gugur",
+          "cfPakar": 0.92
+        }
+      ]
+    },
+    {
+      "_id": {
+        "$oid": "630a1053d1bbfefce7864d29"
+      },
+      "hamaPenyakit": {
+        "_id": {
+          "$oid": "62d0da0426fa6ad3a043d14b"
+        },
+        "kode": "H4",
+        "nama": "Kutu Putih",
+        "deskripsi": "Telur berwarna kuning muda, panjang 0,3 mm, lebar 0,15 mm, diletakkan berkelompok dan dibungkus lilin, umur 3-4 hari. Panjang nimfa 0,55 mm diselimuti lapisan lilin. Instar pertama selama 6-10 hari, dan instar ke-2 umumnya 10-14 hari, setelah itu membentuk imago. Panjang tubuh imago 2-3,5 mm, lebar 1-2 mm. Hanya bagian punggung tertutup lapisan lilin. Warna tubuh kekuningan, berkembang biak secara partenogenesis (tanpa kawin). Gejala serangan pada kutu putih yaitu buah dan bunga kopi mengering dan gugur. Terdapat gumpalan putih seperti kapas pada buah kopi yang terserang, seringkali ditemukan semut yang hidup pada kutu tersebut, buah sering bewarna hitam seperti jelaga, terdapat embun madu di sekitar buah yang di serang, pada buah ditemui serangga putih berbentuk tempurung ",
+        "solusi": [
+          {
+            "_id": {
+              "$oid": "62d0d77e26fa6ad3a043d0d8"
+            },
+            "deskripsi": "Memakai jamur, lalat jala, kumbang kubah dan tawon parasitoid."
+          },
+          {
+            "_id": {
+              "$oid": "62d0d78826fa6ad3a043d0dd"
+            },
+            "deskripsi": "Secara kimia menggunakan poxindo 50 WP sebagai insectisida propoksur serta pengaturan naungan"
+          }
+        ]
+      },
+      "gejala": [
+        {
+          "_id": {
+            "$oid": "630a094ef0745eb36b1d3193"
+          },
+          "kode": "G1",
+          "deskripsi": "Buah berguguran pada buah kopi tua",
+          "cfPakar": 0.82
+        },
+        {
+          "_id": {
+            "$oid": "630a0a11f0745eb36b1d31bf"
+          },
+          "kode": "G6",
+          "deskripsi": "Munculnya campuran",
+          "cfPakar": 0.73
+        },
+        {
+          "_id": {
+            "$oid": "630a0a3cf0745eb36b1d31cf"
+          },
+          "kode": "G8",
+          "deskripsi": "Keadaan gugur",
+          "cfPakar": 0.92
+        }
+      ]
+    },
+    {
+      "_id": {
+        "$oid": "630a106dd1bbfefce7864d38"
+      },
+      "hamaPenyakit": {
+        "_id": {
+          "$oid": "62d0da2826fa6ad3a043d155"
+        },
+        "kode": "H5",
+        "nama": "Kutu Hijau",
+        "deskripsi": "Telur berbentuk oval kehijauan, diletakkan di bawah induk betina. Jumlah telur mencapai 500 butir. Nimfa berwarna hijau kekuningan, berbentuk oval dan berukuran 1,5 mm. Imago berwarna hijau, berbentuk bulat telur, pipih, Panjang ± 3 mm, menetap dibawah permukaan daun, tunas, dan buah sampai mati. Lama siklus hidup kutu ini ± 65 hari. Gejala kutu tempurung hijau pada tanaman kopi yaitu kutu mengeluarkan embun madu yang mengundang kehadiran semut. Selain semut, embun madu juga dapat mendukung perkembangan jamur jelaga (Capnodium sp.), sehingga menutupi daun/buah kopi. Hal ini dapat menghambat proses asimilasi. Terdapat gumpalan seperti tempurung yang berbaris, Pada buah di temui serangga hijau kecoklatan berbentuk tempurung ",
+        "solusi": [
+          {
+            "_id": {
+              "$oid": "62d0d79626fa6ad3a043d0e2"
+            },
+            "deskripsi": "Penggunaan laba-laba dan orcus janthinus sebagai predator pemakan serangga"
+          },
+          {
+            "_id": {
+              "$oid": "62d0d7a226fa6ad3a043d0e7"
+            },
+            "deskripsi": "Sekitar tajuk makanan dipelihara dari gulma. Disarankan tidak menggunakan pestisida kimia."
+          },
+          {
+            "_id": {
+              "$oid": "62d0d7ae26fa6ad3a043d0ec"
+            },
+            "deskripsi": "Disarankan tidak mematikan populasi semut karena semuat mengurangi hama pengerek kopi baik batang atau buah"
+          },
+          {
+            "_id": {
+              "$oid": "62d0d7b926fa6ad3a043d0f1"
+            },
+            "deskripsi": "Pemupukan dengan berimbang dengan karbaril / tepung sividol atau penyemprotan insektisida berupa Anthio 330n EC."
+          }
+        ]
+      },
+      "gejala": [
+        {
+          "_id": {
+            "$oid": "630a09f0f0745eb36b1d31b7"
+          },
+          "kode": "G5",
+          "deskripsi": "Arah bunga ke atas",
+          "cfPakar": 0.64
+        },
+        {
+          "_id": {
+            "$oid": "630a0a26f0745eb36b1d31c7"
+          },
+          "kode": "G7",
+          "deskripsi": "Keadaan mati",
+          "cfPakar": 0.7
+        }
+      ]
+    }
+  ],
+  "rule": [
+    {
+      "hamaPenyakit": "Penggerek Buah Kopi",
+      "data": [
+        {
+          "gejala": "Pada buah kopi tua terdapat lubang",
+          "cfPakar": 0.9,
+          "numOfNode": 1,
+          "variableOrder": 1,
+          "VUR": 0.5
+        },
+        {
+          "gejala": "Adanya puting",
+          "cfPakar": 0.83,
+          "numOfNode": 1,
+          "variableOrder": 2,
+          "VUR": 1
+        }
+      ],
+      "VUR": [
+        0.5,
+        1
+      ],
+      "NUR": 0.75,
+      "RUR": 0.38,
+      "cfPakar": [
+        0.9,
+        0.83
+      ],
+      "CFR": [
+        0.34,
+        0.31
+      ],
+      "CFKombinasi": [
+        0.54
+      ],
+      "persenCFKombinasi": "54%"
+    },
+    {
+      "hamaPenyakit": "Penggerek Cabang Kopi",
+      "data": [
+        {
+          "gejala": "Keadaan masak",
+          "cfPakar": 0.5,
+          "numOfNode": 1,
+          "variableOrder": 1,
+          "VUR": 0.5
+        },
+        {
+          "gejala": "Keadaan gugur",
+          "cfPakar": 0.92,
+          "numOfNode": 2,
+          "variableOrder": 2,
+          "VUR": 2
+        }
+      ],
+      "VUR": [
+        0.5,
+        2
+      ],
+      "NUR": 1.25,
+      "RUR": 0.63,
+      "cfPakar": [
+        0.5,
+        0.92
+      ],
+      "CFR": [
+        0.31,
+        0.58
+      ],
+      "CFKombinasi": [
+        0.71
+      ],
+      "persenCFKombinasi": "71%"
+    },
+    {
+      "hamaPenyakit": "Kutu Putih",
+      "data": [
+        {
+          "gejala": "Munculnya campuran",
+          "cfPakar": 0.73,
+          "numOfNode": 1,
+          "variableOrder": 1,
+          "VUR": 0.5
+        },
+        {
+          "gejala": "Keadaan gugur",
+          "cfPakar": 0.92,
+          "numOfNode": 2,
+          "variableOrder": 2,
+          "VUR": 2
+        }
+      ],
+      "VUR": [
+        0.5,
+        2
+      ],
+      "NUR": 1.25,
+      "RUR": 0.63,
+      "cfPakar": [
+        0.73,
+        0.92
+      ],
+      "CFR": [
+        0.46,
+        0.58
+      ],
+      "CFKombinasi": [
+        0.77
+      ],
+      "persenCFKombinasi": "77%"
+    }
+  ],
+  "hasilIdentifikasiHamaPenyakit": {
+    "_id": "62d0da0426fa6ad3a043d14b",
+    "kode": "H4",
+    "nama": "Kutu Putih",
+    "deskripsi": "Telur berwarna kuning muda, panjang 0,3 mm, lebar 0,15 mm, diletakkan berkelompok dan dibungkus lilin, umur 3-4 hari. Panjang nimfa 0,55 mm diselimuti lapisan lilin. Instar pertama selama 6-10 hari, dan instar ke-2 umumnya 10-14 hari, setelah itu membentuk imago. Panjang tubuh imago 2-3,5 mm, lebar 1-2 mm. Hanya bagian punggung tertutup lapisan lilin. Warna tubuh kekuningan, berkembang biak secara partenogenesis (tanpa kawin). Gejala serangan pada kutu putih yaitu buah dan bunga kopi mengering dan gugur. Terdapat gumpalan putih seperti kapas pada buah kopi yang terserang, seringkali ditemukan semut yang hidup pada kutu tersebut, buah sering bewarna hitam seperti jelaga, terdapat embun madu di sekitar buah yang di serang, pada buah ditemui serangga putih berbentuk tempurung ",
+    "solusi": [
+      {
+        "_id": {
+          "$oid": "62d0d77e26fa6ad3a043d0d8"
+        },
+        "deskripsi": "Memakai jamur, lalat jala, kumbang kubah dan tawon parasitoid."
+      },
+      {
+        "_id": {
+          "$oid": "62d0d78826fa6ad3a043d0dd"
+        },
+        "deskripsi": "Secara kimia menggunakan poxindo 50 WP sebagai insectisida propoksur serta pengaturan naungan"
+      }
+    ]
+  },
+  "__v": 0
+}]

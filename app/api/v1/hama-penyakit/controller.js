@@ -21,14 +21,9 @@ module.exports = {
       }
 
       const data = await HamaPenyakit.find(condition)
-        .select("_id kode nama foto deskripsi gejala solusi")
+        .select("_id kode nama foto deskripsi solusi")
         .limit(limit)
         .skip(limit * (page - 1))
-        .populate({
-          path: "gejala",
-          select: "_id kode deskripsi foto pertanyaan",
-          model: "Gejala",
-        })
         .populate({
           path: "solusi",
           select: "_id deskripsi",
@@ -52,12 +47,7 @@ module.exports = {
   getForSelect: async (req, res, next) => {
     try {
       const data = await HamaPenyakit.find()
-        .select("_id kode nama foto deskripsi gejala solusi")
-        .populate({
-          path: "gejala",
-          select: "_id kode deskripsi foto pertanyaan",
-          model: "Gejala",
-        })
+        .select("_id kode nama foto deskripsi solusi")
         .populate({
           path: "solusi",
           select: "_id deskripsi",
@@ -78,12 +68,7 @@ module.exports = {
       const { id: hamaPenyakitId } = req.params;
 
       const data = await HamaPenyakit.findOne({ _id: hamaPenyakitId })
-        .select("_id kode nama foto deskripsi gejala solusi")
-        .populate({
-          path: "gejala",
-          select: "_id kode deskripsi foto pertanyaan",
-          model: "Gejala",
-        })
+        .select("_id kode nama foto deskripsi solusi")
         .populate({
           path: "solusi",
           select: "_id deskripsi",
@@ -106,7 +91,7 @@ module.exports = {
   },
   create: async (req, res, next) => {
     try {
-      const { kode, nama, deskripsi, gejala, solusi } = req.body;
+      const { kode, nama, deskripsi, solusi } = req.body;
 
       const checkKode = await HamaPenyakit.findOne({ kode }).select("kode");
       if (checkKode)
@@ -127,7 +112,6 @@ module.exports = {
           kode,
           nama,
           deskripsi,
-          gejala: JSON.parse(gejala),
           solusi: JSON.parse(solusi),
         });
       } else {
@@ -136,7 +120,6 @@ module.exports = {
           nama,
           foto: req.file.filename,
           deskripsi,
-          gejala: JSON.parse(gejala),
           solusi: JSON.parse(solusi),
         });
       }
@@ -155,7 +138,7 @@ module.exports = {
   update: async (req, res, next) => {
     try {
       const { id: hamaPenyakitId } = req.params;
-      const { kode, nama, deskripsi, gejala, solusi } = req.body;
+      const { kode, nama, deskripsi, solusi } = req.body;
 
       const checkKode = await HamaPenyakit.findOne({
         _id: {
@@ -190,7 +173,6 @@ module.exports = {
         data.kode = kode;
         data.nama = nama;
         data.deskripsi = deskripsi;
-        data.gejala = JSON.parse(gejala);
         data.solusi = JSON.parse(solusi);
       } else {
         const currentImage = `${config.rootPath}/public/uploads/hama-penyakit/${data.foto}`;
@@ -203,7 +185,6 @@ module.exports = {
         data.nama = nama;
         data.foto = req.file.filename;
         data.deskripsi = deskripsi;
-        data.gejala = JSON.parse(gejala);
         data.solusi = JSON.parse(solusi);
       }
 

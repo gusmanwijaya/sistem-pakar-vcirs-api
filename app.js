@@ -9,10 +9,8 @@ const authRouter = require("./app/api/v1/auth/router");
 const hamaPenyakitRouter = require("./app/api/v1/hama-penyakit/router");
 const gejalaRouter = require("./app/api/v1/gejala/router");
 const basisPengetahuanRouter = require("./app/api/v1/basis-pengetahuan/router");
-const hasilIdentifikasiRouter = require("./app/api/v1/hasil-identifikasi/router");
 const identifikasiRouter = require("./app/api/v1/identifikasi/router");
 const solusiRouter = require("./app/api/v1/solusi/router");
-const pertanyaanRouter = require("./app/api/v1/pertanyaan/router");
 
 const notFoundMiddleware = require("./app/middleware/not-found");
 const handleErrorMiddleware = require("./app/middleware/handle-error");
@@ -34,10 +32,8 @@ app.use(`/${API_VERSION}/auth`, authRouter);
 app.use(`/${API_VERSION}/hama-penyakit`, hamaPenyakitRouter);
 app.use(`/${API_VERSION}/gejala`, gejalaRouter);
 app.use(`/${API_VERSION}/basis-pengetahuan`, basisPengetahuanRouter);
-app.use(`/${API_VERSION}/hasil-identifikasi`, hasilIdentifikasiRouter);
 app.use(`/${API_VERSION}/identifikasi`, identifikasiRouter);
 app.use(`/${API_VERSION}/solusi`, solusiRouter);
-app.use(`/${API_VERSION}/pertanyaan`, pertanyaanRouter);
 
 app.use(notFoundMiddleware);
 app.use(handleErrorMiddleware);

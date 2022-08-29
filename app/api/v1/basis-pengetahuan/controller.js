@@ -8,29 +8,22 @@ module.exports = {
       const { page = 1, limit = 10 } = req.query;
 
       const data = await BasisPengetahuan.find()
-        .select("_id hamaPenyakit gejala cfPakar urutan")
+        .select("_id hamaPenyakit gejala")
         .limit(limit)
         .skip(limit * (page - 1))
         .populate({
           path: "hamaPenyakit",
-          select: "_id kode nama gejala solusi foto",
+          select: "_id kode nama solusi foto",
           model: "HamaPenyakit",
-          populate: [
-            {
-              path: "gejala",
-              select: "_id kode deskripsi foto pertanyaan",
-              model: "Gejala",
-            },
-            {
-              path: "solusi",
-              select: "_id deskripsi",
-              model: "Solusi",
-            },
-          ],
+          populate: {
+            path: "solusi",
+            select: "_id deskripsi",
+            model: "Solusi",
+          },
         })
         .populate({
           path: "gejala",
-          select: "_id kode deskripsi foto pertanyaan",
+          select: "_id kode deskripsi foto cfPakar",
           model: "Gejala",
         });
 
@@ -53,27 +46,20 @@ module.exports = {
       const { id: basisPengetahuanId } = req.params;
 
       const data = await BasisPengetahuan.findOne({ _id: basisPengetahuanId })
-        .select("_id hamaPenyakit gejala cfPakar urutan")
+        .select("_id hamaPenyakit gejala")
         .populate({
           path: "hamaPenyakit",
-          select: "_id kode nama gejala solusi foto",
+          select: "_id kode nama solusi foto",
           model: "HamaPenyakit",
-          populate: [
-            {
-              path: "gejala",
-              select: "_id kode deskripsi foto pertanyaan",
-              model: "Gejala",
-            },
-            {
-              path: "solusi",
-              select: "_id deskripsi",
-              model: "Solusi",
-            },
-          ],
+          populate: {
+            path: "solusi",
+            select: "_id deskripsi",
+            model: "Solusi",
+          },
         })
         .populate({
           path: "gejala",
-          select: "_id kode deskripsi foto pertanyaan",
+          select: "_id kode deskripsi foto cfPakar",
           model: "Gejala",
         });
 
@@ -93,32 +79,12 @@ module.exports = {
   },
   create: async (req, res, next) => {
     try {
-      const { hamaPenyakit, gejala, cfPakar } = req.body;
+      const { hamaPenyakit, gejala } = req.body;
 
-      let data;
-
-      const checkUrutan = await BasisPengetahuan.find({ hamaPenyakit }).sort({
-        urutan: "asc",
+      const data = new BasisPengetahuan({
+        hamaPenyakit,
+        gejala: JSON.parse(gejala),
       });
-      if (
-        checkUrutan.length > 0 &&
-        checkUrutan[checkUrutan.length - 1].urutan > 0
-      ) {
-        data = new BasisPengetahuan({
-          hamaPenyakit,
-          gejala,
-          cfPakar,
-          urutan: checkUrutan[checkUrutan.length - 1].urutan + 1,
-        });
-      } else {
-        data = new BasisPengetahuan({
-          hamaPenyakit,
-          gejala,
-          cfPakar,
-          urutan: 1,
-        });
-      }
-
       await data.save();
 
       res.status(StatusCodes.CREATED).json({
@@ -133,7 +99,7 @@ module.exports = {
   update: async (req, res, next) => {
     try {
       const { id: basisPengetahuanId } = req.params;
-      const { hamaPenyakit, gejala, cfPakar } = req.body;
+      const { hamaPenyakit, gejala } = req.body;
 
       let data = await BasisPengetahuan.findOne({ _id: basisPengetahuanId });
 
@@ -143,8 +109,7 @@ module.exports = {
         );
 
       data.hamaPenyakit = hamaPenyakit;
-      data.gejala = gejala;
-      data.cfPakar = cfPakar;
+      data.gejala = JSON.parse(gejala);
       await data.save();
 
       res.status(StatusCodes.OK).json({

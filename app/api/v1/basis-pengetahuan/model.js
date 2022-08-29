@@ -6,17 +6,12 @@ const basisPengetahuanSchema = mongoose.Schema(
       type: mongoose.Schema.Types.ObjectId,
       ref: "HamaPenyakit",
     },
-    gejala: {
-      type: mongoose.Schema.Types.ObjectId,
-      ref: "Gejala",
-    },
-    cfPakar: {
-      type: Number,
-      default: 0,
-    },
-    urutan: {
-      type: Number,
-    },
+    gejala: [
+      {
+        type: mongoose.Schema.Types.ObjectId,
+        ref: "Gejala",
+      },
+    ],
   },
   { timestamps: true }
 );

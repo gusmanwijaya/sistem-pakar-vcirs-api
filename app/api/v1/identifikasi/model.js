@@ -8,94 +8,42 @@ const identifikasiSchema = mongoose.Schema({
   tanggal: {
     type: String,
   },
-  hamaPenyakit: {
-    type: mongoose.Schema.Types.ObjectId,
-    ref: "HamaPenyakit",
-  },
-  cfUser: [
+  gejalaYangDipilih: [
     {
-      type: Number,
+      type: Object,
     },
   ],
-  variable: [
+  basisPengetahuan: [
     {
-      _id: {
-        type: mongoose.Schema.Types.ObjectId,
-        ref: "Gejala",
-      },
-      kode: {
-        type: String,
-      },
-      deskripsi: {
-        type: String,
-      },
-      pertanyaan: {
-        type: String,
-      },
+      type: Object,
     },
   ],
-  totalVariable: {
-    type: Number,
-  },
-  variableOrder: [
+  rule: [
     {
-      gejala: {
-        type: String,
-      },
-      urutan: {
-        type: Number,
-      },
+      type: Object,
     },
   ],
-  numOfNode: [
-    {
-      gejala: {
-        type: String,
+  hasilIdentifikasiHamaPenyakit: {
+    _id: {
+      type: String,
+    },
+    kode: {
+      type: String,
+    },
+    nama: {
+      type: String,
+    },
+    foto: {
+      type: String,
+    },
+    deskripsi: {
+      type: String,
+    },
+    solusi: [
+      {
+        type: Object,
       },
-      numOfNode: {
-        type: Number,
-      },
-    },
-  ],
-  VUR: [
-    {
-      type: Number,
-    },
-  ],
-  sumVUR: {
-    type: Number,
-  },
-  NUR: {
-    type: Number,
-  },
-  RUR: {
-    type: Number,
-  },
-  cfPakar: [
-    {
-      gejala: {
-        type: String,
-      },
-      cfPakar: {
-        type: Number,
-      },
-    },
-  ],
-  CFR: [
-    {
-      type: Number,
-    },
-  ],
-  _tempCfCombine: [
-    {
-      type: Number,
-    },
-  ],
-  cfCombine: {
-    type: Number,
-  },
-  percentage: {
-    type: String,
+    ],
   },
 });
 

@@ -13,9 +13,8 @@ const gejalaSchema = mongoose.Schema(
     foto: {
       type: String,
     },
-    pertanyaan: {
-      type: String,
-      required: [true, "Pertanyaan tidak boleh kosong!"],
+    cfPakar: {
+      type: Number,
     },
   },
   { timestamps: true }

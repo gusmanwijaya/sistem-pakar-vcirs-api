@@ -1,0 +1,417 @@
+[{
+  "_id": {
+    "$oid": "62d0d68026fa6ad3a043d06a"
+  },
+  "deskripsi": "Saat 15 – 30 hari menjelang panen besar dilakukan pemetikan semua buah masak yang terserang bubuk. Hal ini dikenal sebagai pengendalian kultur teknis dengan memutus daur hidup.",
+  "createdAt": {
+    "$date": {
+      "$numberLong": "1657853568682"
+    }
+  },
+  "updatedAt": {
+    "$date": {
+      "$numberLong": "1657853568682"
+    }
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "62d0d68f26fa6ad3a043d06f"
+  },
+  "deskripsi": "Memungut buah yang jatuh dan selanjutnya merendam dalam air panas, dikenal dengan lelesan.",
+  "createdAt": {
+    "$date": {
+      "$numberLong": "1657853583895"
+    }
+  },
+  "updatedAt": {
+    "$date": {
+      "$numberLong": "1657853583895"
+    }
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "62d0d69b26fa6ad3a043d074"
+  },
+  "deskripsi": "Menghabiskan seluruh buah kopi pada akhir panen, selanjutnya hasil lelesan, racutan dan petik buah direndam air panas selama 5 menit.",
+  "createdAt": {
+    "$date": {
+      "$numberLong": "1657853595869"
+    }
+  },
+  "updatedAt": {
+    "$date": {
+      "$numberLong": "1657853595869"
+    }
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "62d0d6a726fa6ad3a043d079"
+  },
+  "deskripsi": "Menggunakan solusi secara biologi dengan jamur pathogen (Beauveria bassiana) serta parasitoid Cephalonomia stephanoderis. Untuk B.bassiana diberikan dosis 2, 5 kg biakan padat untuk tiap hektar dengan waktu 3x permusim panen.",
+  "createdAt": {
+    "$date": {
+      "$numberLong": "1657853607652"
+    }
+  },
+  "updatedAt": {
+    "$date": {
+      "$numberLong": "1657853607652"
+    }
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "62d0d6b126fa6ad3a043d07e"
+  },
+  "deskripsi": "Pengurangan hama dengan menggunakan tawon parasitoid untuk memakan larva Xylosandrus (Tetrastichus).",
+  "createdAt": {
+    "$date": {
+      "$numberLong": "1657853617959"
+    }
+  },
+  "updatedAt": {
+    "$date": {
+      "$numberLong": "1657853617959"
+    }
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "62d0d6bb26fa6ad3a043d083"
+  },
+  "deskripsi": "Memangkas dan memotong cabang yang diserang, serta selanjutnya membakarnya",
+  "createdAt": {
+    "$date": {
+      "$numberLong": "1657853627043"
+    }
+  },
+  "updatedAt": {
+    "$date": {
+      "$numberLong": "1657853627043"
+    }
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "62d0d6c626fa6ad3a043d088"
+  },
+  "deskripsi": "Memusnahkan ulat yang ditemukan dengan cara dibakar",
+  "createdAt": {
+    "$date": {
+      "$numberLong": "1657853638053"
+    }
+  },
+  "updatedAt": {
+    "$date": {
+      "$numberLong": "1657853638053"
+    }
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "62d0d6cf26fa6ad3a043d08d"
+  },
+  "deskripsi": "Memotong cabang atau batang yang terserang dengan jarak 10\ncm dibawah lubang gerekan\n",
+  "createdAt": {
+    "$date": {
+      "$numberLong": "1657853647531"
+    }
+  },
+  "updatedAt": {
+    "$date": {
+      "$numberLong": "1657853647531"
+    }
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "62d0d6e126fa6ad3a043d092"
+  },
+  "deskripsi": "Penggunaan Beauveria bassiana atau agen hayati lain.",
+  "createdAt": {
+    "$date": {
+      "$numberLong": "1657853665564"
+    }
+  },
+  "updatedAt": {
+    "$date": {
+      "$numberLong": "1657853665564"
+    }
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "62d0d74b26fa6ad3a043d0d3"
+  },
+  "deskripsi": "Memotong batang yang terserang",
+  "createdAt": {
+    "$date": {
+      "$numberLong": "1657853771837"
+    }
+  },
+  "updatedAt": {
+    "$date": {
+      "$numberLong": "1657853771837"
+    }
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "62d0d77e26fa6ad3a043d0d8"
+  },
+  "deskripsi": "Memakai jamur, lalat jala, kumbang kubah dan tawon parasitoid.",
+  "createdAt": {
+    "$date": {
+      "$numberLong": "1657853822328"
+    }
+  },
+  "updatedAt": {
+    "$date": {
+      "$numberLong": "1657853822328"
+    }
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "62d0d78826fa6ad3a043d0dd"
+  },
+  "deskripsi": "Secara kimia menggunakan poxindo 50 WP sebagai insectisida propoksur serta pengaturan naungan",
+  "createdAt": {
+    "$date": {
+      "$numberLong": "1657853832954"
+    }
+  },
+  "updatedAt": {
+    "$date": {
+      "$numberLong": "1657853832954"
+    }
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "62d0d79626fa6ad3a043d0e2"
+  },
+  "deskripsi": "Penggunaan laba-laba dan orcus janthinus sebagai predator pemakan serangga",
+  "createdAt": {
+    "$date": {
+      "$numberLong": "1657853846932"
+    }
+  },
+  "updatedAt": {
+    "$date": {
+      "$numberLong": "1657853846932"
+    }
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "62d0d7a226fa6ad3a043d0e7"
+  },
+  "deskripsi": "Sekitar tajuk makanan dipelihara dari gulma. Disarankan tidak menggunakan pestisida kimia.",
+  "createdAt": {
+    "$date": {
+      "$numberLong": "1657853858045"
+    }
+  },
+  "updatedAt": {
+    "$date": {
+      "$numberLong": "1657853858045"
+    }
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "62d0d7ae26fa6ad3a043d0ec"
+  },
+  "deskripsi": "Disarankan tidak mematikan populasi semut karena semuat mengurangi hama pengerek kopi baik batang atau buah",
+  "createdAt": {
+    "$date": {
+      "$numberLong": "1657853870383"
+    }
+  },
+  "updatedAt": {
+    "$date": {
+      "$numberLong": "1657853870383"
+    }
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "62d0d7b926fa6ad3a043d0f1"
+  },
+  "deskripsi": "Pemupukan dengan berimbang dengan karbaril / tepung sividol atau penyemprotan insektisida berupa Anthio 330n EC.",
+  "createdAt": {
+    "$date": {
+      "$numberLong": "1657853881053"
+    }
+  },
+  "updatedAt": {
+    "$date": {
+      "$numberLong": "1657853881053"
+    }
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "62d0d7c426fa6ad3a043d0f6"
+  },
+  "deskripsi": "Menanam tanaman yang tahan (S 795) serta memupuk agar bugar dan kuat (menggunakan fungisida Cupravit OB 21) serta pemangkasan.",
+  "createdAt": {
+    "$date": {
+      "$numberLong": "1657853892850"
+    }
+  },
+  "updatedAt": {
+    "$date": {
+      "$numberLong": "1657853892850"
+    }
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "62d0d7cf26fa6ad3a043d0fb"
+  },
+  "deskripsi": "Pemupukan berimbang, pemberian naungan yang cukup serta pemangkasan dan pengendalian gulma.",
+  "createdAt": {
+    "$date": {
+      "$numberLong": "1657853903729"
+    }
+  },
+  "updatedAt": {
+    "$date": {
+      "$numberLong": "1657853903729"
+    }
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "62d0d7da26fa6ad3a043d100"
+  },
+  "deskripsi": "Melakukan penyemprotan Delsene MX 200 0, 2%, Cupravit OB 21 \n0, 35%, Dithane M 45 80 WP 0, 2% serta Bavistin 50 WP 0, 2%.\n",
+  "createdAt": {
+    "$date": {
+      "$numberLong": "1657853914571"
+    }
+  },
+  "updatedAt": {
+    "$date": {
+      "$numberLong": "1657853914571"
+    }
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "62d0d7e926fa6ad3a043d105"
+  },
+  "deskripsi": "Penggunaan fumigan pra tanam (Vapam L dan Basamid G) sebagai fumigasi media. Pada bibit disiramkan kontak dan nematisida sistemik (Rhocap 10G, Rugby 10G,Curaterr 3G & Vydate 100 AS) dengan dosis\n250 ml/bibit dan konsentrasi 1,0%.\n",
+  "createdAt": {
+    "$date": {
+      "$numberLong": "1657853929190"
+    }
+  },
+  "updatedAt": {
+    "$date": {
+      "$numberLong": "1657853929190"
+    }
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "62d0d7f426fa6ad3a043d10a"
+  },
+  "deskripsi": "Menggunakan tanaman kopi yang tahan nematoda parasit. Dilakukan kombinasi yaitu pada batang bawah berupa kopi robusta klon BP 961, kopi ekselsa (Coffeae exelsa) serta klon Bgn 121.09. Selain itu dilakukan rotasi tanaman, membuat parit barrier serta membuka lubang tanam.",
+  "createdAt": {
+    "$date": {
+      "$numberLong": "1657853940029"
+    }
+  },
+  "updatedAt": {
+    "$date": {
+      "$numberLong": "1657853940029"
+    }
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "62d0d7fd26fa6ad3a043d10f"
+  },
+  "deskripsi": "Menggunakan musuh alami berupa jamur, nematida predator dan bakteri.",
+  "createdAt": {
+    "$date": {
+      "$numberLong": "1657853949112"
+    }
+  },
+  "updatedAt": {
+    "$date": {
+      "$numberLong": "1657853949112"
+    }
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "62d0d80626fa6ad3a043d114"
+  },
+  "deskripsi": "Penggunaan secara tiap tiga bulan oksamil (Vydate 100 AS 1, 0% 1 – 2.5 l / tanaman), etoprofos (Rhocap 10G ‐ 25 g / tanaman) serta a.l. karbofuran (Curaterr 3G–35 g / tanaman).",
+  "createdAt": {
+    "$date": {
+      "$numberLong": "1657853958875"
+    }
+  },
+  "updatedAt": {
+    "$date": {
+      "$numberLong": "1657853958875"
+    }
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "62d0d81126fa6ad3a043d119"
+  },
+  "deskripsi": "Pemotongan 8 cm dibawah pangkal bagian sakit pada batang atau cabang sakit dengan ukuran kecil (diameter < 1 cm). Selanjutnya potongan tersebut dibakar.",
+  "createdAt": {
+    "$date": {
+      "$numberLong": "1657853969676"
+    }
+  },
+  "updatedAt": {
+    "$date": {
+      "$numberLong": "1657853969676"
+    }
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "62d0d81d26fa6ad3a043d11e"
+  },
+  "deskripsi": "Pengolesan fungisida Copper Sandoz 0, 4% atau Calixin RM pada batang atau cabang yang sakit dengan ukuran cukup besar.",
+  "createdAt": {
+    "$date": {
+      "$numberLong": "1657853981271"
+    }
+  },
+  "updatedAt": {
+    "$date": {
+      "$numberLong": "1657853981271"
+    }
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "62d0d82526fa6ad3a043d123"
+  },
+  "deskripsi": "Membongkar akar tanaman yang teserang serta membakarnya, sedangkan bekas lokasi tersebut ditanami lagi pada 2, 5 tahun berikutnya.",
+  "createdAt": {
+    "$date": {
+      "$numberLong": "1657853989813"
+    }
+  },
+  "updatedAt": {
+    "$date": {
+      "$numberLong": "1657853989813"
+    }
+  },
+  "__v": 0
+}]

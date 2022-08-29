@@ -1,0 +1,181 @@
+[{
+  "_id": {
+    "$oid": "630a094ef0745eb36b1d3193"
+  },
+  "kode": "G1",
+  "deskripsi": "Buah berguguran pada buah kopi tua",
+  "cfPakar": 0.82,
+  "createdAt": {
+    "$date": {
+      "$numberLong": "1661602126968"
+    }
+  },
+  "updatedAt": {
+    "$date": {
+      "$numberLong": "1661602126968"
+    }
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "630a097bf0745eb36b1d319b"
+  },
+  "kode": "G2",
+  "deskripsi": "Pada buah kopi tua terdapat lubang",
+  "cfPakar": 0.9,
+  "createdAt": {
+    "$date": {
+      "$numberLong": "1661602171186"
+    }
+  },
+  "updatedAt": {
+    "$date": {
+      "$numberLong": "1661602171186"
+    }
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "630a0996f0745eb36b1d31a3"
+  },
+  "kode": "G3",
+  "deskripsi": "Pada ranting pohon",
+  "cfPakar": 0.63,
+  "createdAt": {
+    "$date": {
+      "$numberLong": "1661602198692"
+    }
+  },
+  "updatedAt": {
+    "$date": {
+      "$numberLong": "1661602198692"
+    }
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "630a09c7f0745eb36b1d31af"
+  },
+  "kode": "G4",
+  "deskripsi": "Keadaan masak",
+  "cfPakar": 0.5,
+  "createdAt": {
+    "$date": {
+      "$numberLong": "1661602247092"
+    }
+  },
+  "updatedAt": {
+    "$date": {
+      "$numberLong": "1661602247092"
+    }
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "630a09f0f0745eb36b1d31b7"
+  },
+  "kode": "G5",
+  "deskripsi": "Arah bunga ke atas",
+  "cfPakar": 0.64,
+  "createdAt": {
+    "$date": {
+      "$numberLong": "1661602288538"
+    }
+  },
+  "updatedAt": {
+    "$date": {
+      "$numberLong": "1661602288538"
+    }
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "630a0a11f0745eb36b1d31bf"
+  },
+  "kode": "G6",
+  "deskripsi": "Munculnya campuran",
+  "cfPakar": 0.73,
+  "createdAt": {
+    "$date": {
+      "$numberLong": "1661602321189"
+    }
+  },
+  "updatedAt": {
+    "$date": {
+      "$numberLong": "1661602321189"
+    }
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "630a0a26f0745eb36b1d31c7"
+  },
+  "kode": "G7",
+  "deskripsi": "Keadaan mati",
+  "cfPakar": 0.7,
+  "createdAt": {
+    "$date": {
+      "$numberLong": "1661602342939"
+    }
+  },
+  "updatedAt": {
+    "$date": {
+      "$numberLong": "1661602342939"
+    }
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "630a0a3cf0745eb36b1d31cf"
+  },
+  "kode": "G8",
+  "deskripsi": "Keadaan gugur",
+  "cfPakar": 0.92,
+  "createdAt": {
+    "$date": {
+      "$numberLong": "1661602364442"
+    }
+  },
+  "updatedAt": {
+    "$date": {
+      "$numberLong": "1661602364442"
+    }
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "630a0a56f0745eb36b1d31d7"
+  },
+  "kode": "G9",
+  "deskripsi": "Munculnya tanaman",
+  "cfPakar": 0.91,
+  "createdAt": {
+    "$date": {
+      "$numberLong": "1661602390595"
+    }
+  },
+  "updatedAt": {
+    "$date": {
+      "$numberLong": "1661602390595"
+    }
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "630a0a75f0745eb36b1d31df"
+  },
+  "kode": "G10",
+  "deskripsi": "Adanya puting",
+  "cfPakar": 0.83,
+  "createdAt": {
+    "$date": {
+      "$numberLong": "1661602421664"
+    }
+  },
+  "updatedAt": {
+    "$date": {
+      "$numberLong": "1661602421664"
+    }
+  },
+  "__v": 0
+}]

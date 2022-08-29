@@ -1,0 +1,290 @@
+[
+  {
+    "_id": {
+      "$oid": "62d0d91526fa6ad3a043d12d"
+    },
+    "kode": "H1",
+    "nama": "Penggerek Buah Kopi",
+    "deskripsi": "Telur berbentuk bulat, berwarna putih, berjumlah sekitar 31-50 butir diletakkan dalam lubang gerek, kemudian membentuk larva , larva berwarna putih, dan melengkung, fase larva selama 15 hari. Masa pupa dan pre pupa terjadi selama 7 hari, Imago berwarna hitam cokelat/hitam mengkilap, panjang 1,2 - 1,7 mm dan lebar 0,6 – 0,7 mm. Betina berumur ± 157 hari, sedangkan jantan 20-87 hari. Gejala hama penggerek buah kopi yaitu serangan pada buah kopi muda menyebabkan buah tidak berkembang, lama kelamaan berwarna kuning kemerahan kemudian buah kopi gugur. Sedangkan serangan pada buah kopi tua menyebabkan biji kopi rusak, biji kopi berlubang sehingga menurunkan mutu kopi. Pada bagian lobang terdapat kotoran bewarna hitam, keadaan masak sebelum saatnya dan mengerut pada buah kopi ",
+    "solusi": [
+      {
+        "$oid": "62d0d68026fa6ad3a043d06a"
+      },
+      {
+        "$oid": "62d0d68f26fa6ad3a043d06f"
+      },
+      {
+        "$oid": "62d0d69b26fa6ad3a043d074"
+      },
+      {
+        "$oid": "62d0d6a726fa6ad3a043d079"
+      }
+    ],
+    "createdAt": {
+      "$date": {
+        "$numberLong": "1657854229570"
+      }
+    },
+    "updatedAt": {
+      "$date": {
+        "$numberLong": "1657854229570"
+      }
+    },
+    "__v": 0
+  },
+  {
+    "_id": {
+      "$oid": "62d0d98826fa6ad3a043d137"
+    },
+    "kode": "H2",
+    "nama": "Penggerek Batang Kopi",
+    "deskripsi": "Berbentuk bulat, kuning kemerahan. Diletakkan berkelompok (340-970) butir di celah kulit kayu Larva berwarna merah cerah. Panjang 3-5 cm. Umur larva 3-5 bulan.Pupa berada  pada lubang gerekan , Sayap depan ngengat berbintik hitam dengan dasar putih tembus pandang. Seekor betina dapat meletakkan telur 340-970 butir. Gejala awal daun kopi terlihat menguning pada batang yang terserang, adanya liang gerekan pada batang disertai dengan adanya kotoran yang berwarna merah kehitam-hitaman yang keluar dari liang gerekan (lubang aktif). Batang kopi patah pada bagian yang diserang, buah kopi tidak berkembang , layu dan mengering, pada permukaan lubang tang baru digerek terdapat campuran kotoran dengan serpihan jaringan kayu, keadaan layu mendadak pada batang yang terserang ",
+    "solusi": [
+      {
+        "$oid": "62d0d6b126fa6ad3a043d07e"
+      },
+      {
+        "$oid": "62d0d6bb26fa6ad3a043d083"
+      }
+    ],
+    "createdAt": {
+      "$date": {
+        "$numberLong": "1657854344822"
+      }
+    },
+    "updatedAt": {
+      "$date": {
+        "$numberLong": "1657854344822"
+      }
+    },
+    "__v": 0
+  },
+  {
+    "_id": {
+      "$oid": "62d0d9cc26fa6ad3a043d141"
+    },
+    "kode": "H3",
+    "nama": "Penggerek Cabang Kopi",
+    "deskripsi": "Telur berukuran < 0.1 cm, berbentuk oval, diletakkan di dalam lubang gerekan ± 30-50 butir, Larva berwarna putih, terdiri atas 2 instar. Larva memakan cendawan ambrosia, Pupa mula-mula berwarna putih kemudian menjadi cokelat cerah, Imago betina berwarna hitam mengkilap, p=0,6-0,18 cm, ukuran jantan setengah dari panjang betina, berwarna coklat kemerahan dan tidak dapat terbang. Gejala serangan penggerek cabang kopi yaitu daun kopi menguning pada batang yang terserang, adanya liang gerekan pada cabang, adanya kotoran yang berwarna merah kehitam hitaman yang keluar dari liang gerekan, cabang kopi patah pada bagian yang diserang, pada permukaan lubang yang baru di gerek terdapat campuran kotoran dengan serpihan kayu, keadaan kayu mendadak pada ranting atau cabang yang terserang dan pada cabang daun menjadi kering ",
+    "solusi": [
+      {
+        "$oid": "62d0d6c626fa6ad3a043d088"
+      },
+      {
+        "$oid": "62d0d6cf26fa6ad3a043d08d"
+      },
+      {
+        "$oid": "62d0d6e126fa6ad3a043d092"
+      },
+      {
+        "$oid": "62d0d74b26fa6ad3a043d0d3"
+      }
+    ],
+    "createdAt": {
+      "$date": {
+        "$numberLong": "1657854412382"
+      }
+    },
+    "updatedAt": {
+      "$date": {
+        "$numberLong": "1657854412382"
+      }
+    },
+    "__v": 0
+  },
+  {
+    "_id": {
+      "$oid": "62d0da0426fa6ad3a043d14b"
+    },
+    "kode": "H4",
+    "nama": "Kutu Putih",
+    "deskripsi": "Telur berwarna kuning muda, panjang 0,3 mm, lebar 0,15 mm, diletakkan berkelompok dan dibungkus lilin, umur 3-4 hari. Panjang nimfa 0,55 mm diselimuti lapisan lilin. Instar pertama selama 6-10 hari, dan instar ke-2 umumnya 10-14 hari, setelah itu membentuk imago. Panjang tubuh imago 2-3,5 mm, lebar 1-2 mm. Hanya bagian punggung tertutup lapisan lilin. Warna tubuh kekuningan, berkembang biak secara partenogenesis (tanpa kawin). Gejala serangan pada kutu putih yaitu buah dan bunga kopi mengering dan gugur. Terdapat gumpalan putih seperti kapas pada buah kopi yang terserang, seringkali ditemukan semut yang hidup pada kutu tersebut, buah sering bewarna hitam seperti jelaga, terdapat embun madu di sekitar buah yang di serang, pada buah ditemui serangga putih berbentuk tempurung ",
+    "solusi": [
+      {
+        "$oid": "62d0d77e26fa6ad3a043d0d8"
+      },
+      {
+        "$oid": "62d0d78826fa6ad3a043d0dd"
+      }
+    ],
+    "createdAt": {
+      "$date": {
+        "$numberLong": "1657854468919"
+      }
+    },
+    "updatedAt": {
+      "$date": {
+        "$numberLong": "1657854468919"
+      }
+    },
+    "__v": 0
+  },
+  {
+    "_id": {
+      "$oid": "62d0da2826fa6ad3a043d155"
+    },
+    "kode": "H5",
+    "nama": "Kutu Hijau",
+    "deskripsi": "Telur berbentuk oval kehijauan, diletakkan di bawah induk betina. Jumlah telur mencapai 500 butir. Nimfa berwarna hijau kekuningan, berbentuk oval dan berukuran 1,5 mm. Imago berwarna hijau, berbentuk bulat telur, pipih, Panjang ± 3 mm, menetap dibawah permukaan daun, tunas, dan buah sampai mati. Lama siklus hidup kutu ini ± 65 hari. Gejala kutu tempurung hijau pada tanaman kopi yaitu kutu mengeluarkan embun madu yang mengundang kehadiran semut. Selain semut, embun madu juga dapat mendukung perkembangan jamur jelaga (Capnodium sp.), sehingga menutupi daun/buah kopi. Hal ini dapat menghambat proses asimilasi. Terdapat gumpalan seperti tempurung yang berbaris, Pada buah di temui serangga hijau kecoklatan berbentuk tempurung ",
+    "solusi": [
+      {
+        "$oid": "62d0d79626fa6ad3a043d0e2"
+      },
+      {
+        "$oid": "62d0d7a226fa6ad3a043d0e7"
+      },
+      {
+        "$oid": "62d0d7ae26fa6ad3a043d0ec"
+      },
+      {
+        "$oid": "62d0d7b926fa6ad3a043d0f1"
+      }
+    ],
+    "createdAt": {
+      "$date": {
+        "$numberLong": "1657854504525"
+      }
+    },
+    "updatedAt": {
+      "$date": {
+        "$numberLong": "1657854541068"
+      }
+    },
+    "__v": 1
+  },
+  {
+    "_id": {
+      "$oid": "62d0daf526fa6ad3a043d16b"
+    },
+    "kode": "P1",
+    "nama": "Karat Daun Kopi",
+    "deskripsi": "Disebabkan oleh jamur Hemileia vastatrix, menurunkan produksi sebesar 20-70 % (Puslitkoka, 1998). Bercak berwarna kuning muda pada permukaan bawah daun kemudian berubah menjadi kuning tua dan terbentuk tepung. Daun yang terserang gugur sebelum waktunya. Serangan berat dapat menyebabkan pohon menjadi gundul, cabang/ranting mati dan akhirnya tanaman mati. Permukaan daun kasar seperti ada butiran butiran karat ",
+    "solusi": [
+      {
+        "$oid": "62d0d7c426fa6ad3a043d0f6"
+      }
+    ],
+    "createdAt": {
+      "$date": {
+        "$numberLong": "1657854709637"
+      }
+    },
+    "updatedAt": {
+      "$date": {
+        "$numberLong": "1657854709637"
+      }
+    },
+    "__v": 0
+  },
+  {
+    "_id": {
+      "$oid": "62d0db5326fa6ad3a043d175"
+    },
+    "kode": "P2",
+    "nama": "Bercak Daun Kopi",
+    "deskripsi": "Penyakit bercak daun kopi disebabkan oleh Cercospora coffeicola, yang disebut juga brown eye spot, terdapat di semua daerah penanaman kopi di seluruh dunia. Penyakit bercak daun tidak hanya menyerang bagian daun tetapi juga menyerang bagian buah. Kerusakan pada buah dapat menimbulkan kerusakan yang besar dibandingkan serangan pada daun. Penyakit pada daun biasanya menyerang pada pembibitan. \r\nGejala serangan pada daun terdapat bercak-bercak bulat, cokelat kemerahan, atau cokelat tua, berbatas jelas, dan konsentris. Pada bercak yang tua terdapat pusat berwarna putih kelabu, sering tampak seperti tepung hitam yang merupakan konidium jamur. Bercak C. coffeicola tampak paling jelas kalau dilihat dari sebelah atas daun, umumnya garis tangah bercak kurang dari 5 mm dan bercincin-cincin. Dalam cuaca lembap dapat terjadi bercak-bercak yang lebih besar. Serangan yang berat dapat menyebabkan rontoknya daun. Gejala pada buah terjadi di sisi yang banyak mendapat sinar matahari. Bercak pada buah menyebabkan kulit buah mengering dan keras sehingga buah sukar dikupas \r\n",
+    "solusi": [
+      {
+        "$oid": "62d0d7cf26fa6ad3a043d0fb"
+      },
+      {
+        "$oid": "62d0d7da26fa6ad3a043d100"
+      }
+    ],
+    "createdAt": {
+      "$date": {
+        "$numberLong": "1657854803953"
+      }
+    },
+    "updatedAt": {
+      "$date": {
+        "$numberLong": "1657854803953"
+      }
+    },
+    "__v": 0
+  },
+  {
+    "_id": {
+      "$oid": "62d0db9726fa6ad3a043d17f"
+    },
+    "kode": "P3",
+    "nama": "Nematoda",
+    "deskripsi": "Disebabkan oleh nematoda Pratylenchus coffeae, Nematoda menyebar melalui aliran air atau tanah yang terbawa pada alat-alat pertanian dan pekerja kebun. Akar tanaman kopi yang terserang oleh nematoda berubah warna menjadi kuning hingga cokelat dan kebanyakan akar lateralnya busuk, sehingga dapat merusak system perakaran kopi. Penyakit ini menjadi masalah pada daerah dengan drainase kurang baik. Daun terkulai (terbalik ke bawah) merupakan gejala khas serangan nematoda yang dapat diidentifikasi dari tajuk tanaman kopi. Akibat serangan nematoda, tanaman menjadi kerdil, pertumbuhan terhambat, daun tua berwarna kuning yang secara perlahan rontok dan akhirnya mati kemerahan kemudian gugur.",
+    "solusi": [
+      {
+        "$oid": "62d0d7e926fa6ad3a043d105"
+      },
+      {
+        "$oid": "62d0d7f426fa6ad3a043d10a"
+      },
+      {
+        "$oid": "62d0d7fd26fa6ad3a043d10f"
+      },
+      {
+        "$oid": "62d0d80626fa6ad3a043d114"
+      }
+    ],
+    "createdAt": {
+      "$date": {
+        "$numberLong": "1657854871379"
+      }
+    },
+    "updatedAt": {
+      "$date": {
+        "$numberLong": "1657854871379"
+      }
+    },
+    "__v": 0
+  },
+  {
+    "_id": {
+      "$oid": "62d0dbd226fa6ad3a043d189"
+    },
+    "kode": "P4",
+    "nama": "Jamur Akar",
+    "deskripsi": "Penyakit jamur akar yang sering menyerang tanaman kopi adalah jamur akar putih, akar cokelat, dan akar hitam. Gejala serangan jamur akar baik jamur akar putih, cokelat, dan hitam, biasanya sama yaitu daun-daun tanaman sakit menguning, layu, dan rontok. Akar yang terserang jamur akar putih (JAP), tampak miselium jamur berwarna putih pada permukaan akar kemudian berubah warna menjadi kuning gading, dan gejala ini baru terlihat apabila daerah perakaran dibuka. Akar yang diserang jamur akar cokelat pada umumnya adalah akar tunggang, biasanya tertutup oleh kerak yang terdiri atas butir-butir tanah, melekat sangat kuat sehingga tidak dapat lepas meskipun dicuci dan disikat. Gejala serangan jamur akar hitam adalah pohon mati secara mendadak, pada pangkal batang dan akar-akar terdapat banyak benang jamur berwarna hitam, yang sering bersatu dan membentuk lapisan berwarna hitam ",
+    "solusi": [
+      {
+        "$oid": "62d0d81126fa6ad3a043d119"
+      },
+      {
+        "$oid": "62d0d81d26fa6ad3a043d11e"
+      }
+    ],
+    "createdAt": {
+      "$date": {
+        "$numberLong": "1657854930375"
+      }
+    },
+    "updatedAt": {
+      "$date": {
+        "$numberLong": "1657888262009"
+      }
+    },
+    "__v": 1
+  },
+  {
+    "_id": {
+      "$oid": "62d0dcc326fa6ad3a043d199"
+    },
+    "kode": "P5",
+    "nama": "Jamur Upas",
+    "deskripsi": "Jamur upas (pink disease) disebabkan oleh Upasia salmonicolor atau dikenal juga dengan nama Corticium salmonicolor, yang tersebar luas di daerah tropika di seluruh dunia. Penyakit ini menyerang batang, cabang, ranting, dan buah kopi. Gejala khas serangan jamur upas adalah cabang atau ranting yang terserang layu mendadak. Serangan dapat terjadi pada cabang yang di bawah, tengah, maupun di ujung pohon, bahkan dapat terjadi pada batang . Tampak miselium jamur bewarna putih pada permukaan batang yang kemudian muncul badan buah jamur bewarna putih, pohon tanaman mati secara perlahan, terbentuk tepung bewarna jingga pada sisi bawah daun ",
+    "solusi": [
+      {
+        "$oid": "62d0d82526fa6ad3a043d123"
+      }
+    ],
+    "createdAt": {
+      "$date": {
+        "$numberLong": "1657855171335"
+      }
+    },
+    "updatedAt": {
+      "$date": {
+        "$numberLong": "1657888320185"
+      }
+    },
+    "__v": 1
+  }
+]

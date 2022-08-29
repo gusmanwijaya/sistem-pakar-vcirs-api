@@ -9,7 +9,7 @@ module.exports = {
     try {
       const { page = 1, limit = 10 } = req.query;
       const data = await Gejala.find()
-        .select("_id kode deskripsi foto pertanyaan")
+        .select("_id kode deskripsi foto cfPakar")
         .limit(limit)
         .skip(limit * (page - 1));
 
@@ -30,7 +30,7 @@ module.exports = {
   getForSelect: async (req, res, next) => {
     try {
       const data = await Gejala.find().select(
-        "_id kode deskripsi foto pertanyaan"
+        "_id kode deskripsi foto cfPakar"
       );
 
       res.status(StatusCodes.OK).json({
@@ -47,7 +47,7 @@ module.exports = {
       const { id: gejalaId } = req.params;
 
       const data = await Gejala.findOne({ _id: gejalaId }).select(
-        "_id kode deskripsi foto pertanyaan"
+        "_id kode deskripsi foto cfPakar"
       );
 
       if (!data)
@@ -66,7 +66,7 @@ module.exports = {
   },
   create: async (req, res, next) => {
     try {
-      const { kode, deskripsi, pertanyaan } = req.body;
+      const { kode, deskripsi, cfPakar } = req.body;
 
       const checkKode = await Gejala.findOne({ kode }).select("kode");
       if (checkKode)
@@ -83,13 +83,13 @@ module.exports = {
       let data;
 
       if (!req.file) {
-        data = new Gejala({ kode, deskripsi, pertanyaan });
+        data = new Gejala({ kode, deskripsi, cfPakar });
       } else {
         data = new Gejala({
           kode,
           deskripsi,
           foto: req.file.filename,
-          pertanyaan,
+          cfPakar,
         });
       }
 
@@ -107,7 +107,7 @@ module.exports = {
   update: async (req, res, next) => {
     try {
       const { id: gejalaId } = req.params;
-      const { kode, deskripsi, pertanyaan } = req.body;
+      const { kode, deskripsi, cfPakar } = req.body;
 
       const checkKode = await Gejala.findOne({
         _id: {
@@ -139,7 +139,7 @@ module.exports = {
       if (!req.file) {
         data.kode = kode;
         data.deskripsi = deskripsi;
-        data.pertanyaan = pertanyaan;
+        data.cfPakar = cfPakar;
       } else {
         const currentImage = `${config.rootPath}/public/uploads/gejala/${data.foto}`;
 
@@ -150,7 +150,7 @@ module.exports = {
         data.kode = kode;
         data.deskripsi = deskripsi;
         data.foto = req.file.filename;
-        data.pertanyaan = pertanyaan;
+        data.cfPakar = cfPakar;
       }
 
       await data.save();

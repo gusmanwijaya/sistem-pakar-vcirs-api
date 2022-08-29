@@ -9,15 +9,6 @@ const Pengguna = require("../auth/model");
 module.exports = {
   getAll: async (req, res, next) => {
     try {
-      const { user } = req.query;
-
-      let condition = {};
-      if (user) {
-        condition = {
-          user,
-        };
-      }
-
       const basisPengetahuan = await BasisPengetahuan.countDocuments();
       const gejala = await Gejala.countDocuments();
       const hamaPenyakit = await HamaPenyakit.countDocuments();
