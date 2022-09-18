@@ -266,15 +266,40 @@ module.exports = {
           ),
       };
 
-      const hasilIdentifikasiHamaPenyakit = await HamaPenyakit.findOne({
-        nama: data?.rule[data?.rule?.length - 1]?.hamaPenyakit,
-      })
-        .select("_id kode nama foto deskripsi solusi")
-        .populate({
-          path: "solusi",
-          select: "_id deskripsi",
-          model: "Solusi",
-        });
+      let hasilIdentifikasiHamaPenyakit;
+      if (
+        data?.rule[data?.rule?.length - 1]?.CFKombinasi[
+          data?.rule[data?.rule?.length - 1]?.CFKombinasi?.length - 1
+        ] ===
+        data?.rule[data?.rule?.length - 2]?.CFKombinasi[
+          data?.rule[data?.rule?.length - 2]?.CFKombinasi?.length - 1
+        ]
+      ) {
+        hasilIdentifikasiHamaPenyakit = await HamaPenyakit.find({
+          nama: {
+            $in: [
+              data?.rule[data?.rule?.length - 1]?.hamaPenyakit,
+              data?.rule[data?.rule?.length - 2]?.hamaPenyakit,
+            ],
+          },
+        })
+          .select("_id kode nama foto deskripsi solusi")
+          .populate({
+            path: "solusi",
+            select: "_id deskripsi",
+            model: "Solusi",
+          });
+      } else {
+        hasilIdentifikasiHamaPenyakit = await HamaPenyakit.find({
+          nama: data?.rule[data?.rule?.length - 1]?.hamaPenyakit,
+        })
+          .select("_id kode nama foto deskripsi solusi")
+          .populate({
+            path: "solusi",
+            select: "_id deskripsi",
+            model: "Solusi",
+          });
+      }
 
       data = {
         ...data,
@@ -310,19 +335,19 @@ module.exports = {
           })
         ),
         rule: data?.rule,
-        hasilIdentifikasiHamaPenyakit: {
-          _id: data?.hasilIdentifikasiHamaPenyakit?._id,
-          kode: data?.hasilIdentifikasiHamaPenyakit?.kode,
-          nama: data?.hasilIdentifikasiHamaPenyakit?.nama,
-          foto: data?.hasilIdentifikasiHamaPenyakit?.foto,
-          deskripsi: data?.hasilIdentifikasiHamaPenyakit?.deskripsi,
-          solusi: data?.hasilIdentifikasiHamaPenyakit?.solusi?.map(
-            (valueSolusi) => ({
+        hasilIdentifikasiHamaPenyakit: hasilIdentifikasiHamaPenyakit?.map(
+          (valueHasilIdentifikasi) => ({
+            _id: valueHasilIdentifikasi?._id,
+            kode: valueHasilIdentifikasi?.kode,
+            nama: valueHasilIdentifikasi?.nama,
+            foto: valueHasilIdentifikasi?.foto,
+            deskripsi: valueHasilIdentifikasi?.deskripsi,
+            solusi: valueHasilIdentifikasi?.solusi?.map((valueSolusi) => ({
               _id: valueSolusi?._id,
               deskripsi: valueSolusi?.deskripsi,
-            })
-          ),
-        },
+            })),
+          })
+        ),
       });
 
       res.status(StatusCodes.CREATED).json({

@@ -23,28 +23,11 @@ const identifikasiSchema = mongoose.Schema({
       type: Object,
     },
   ],
-  hasilIdentifikasiHamaPenyakit: {
-    _id: {
-      type: String,
+  hasilIdentifikasiHamaPenyakit: [
+    {
+      type: Object,
     },
-    kode: {
-      type: String,
-    },
-    nama: {
-      type: String,
-    },
-    foto: {
-      type: String,
-    },
-    deskripsi: {
-      type: String,
-    },
-    solusi: [
-      {
-        type: Object,
-      },
-    ],
-  },
+  ],
 });
 
 module.exports = mongoose.model("Identifikasi", identifikasiSchema);

@@ -1,629 +1,1045 @@
-[
-  {
-    "_id": {
-      "$oid": "62cd7a5c3fbbce9447ceabd9"
-    },
-    "kode": "G1",
-    "deskripsi": "Buah berguguran pada buah kopi muda",
-    "cfPakar": 0.5,
-    "createdAt": {
-      "$date": {
-        "$numberLong": "1657633372417"
-      }
-    },
-    "updatedAt": {
-      "$date": {
-        "$numberLong": "1657633484612"
-      }
-    },
-    "__v": 0
+[{
+  "_id": {
+    "$oid": "63196146980504e8cc0ff466"
   },
-  {
-    "_id": {
-      "$oid": "62cd7a743fbbce9447ceabdf"
-    },
-    "kode": "G2",
-    "deskripsi": "Pada kopi tua terdapat cacat berupa berlubang-lubang",
-    "cfPakar": 1,
-    "createdAt": {
-      "$date": {
-        "$numberLong": "1657633396491"
-      }
-    },
-    "updatedAt": {
-      "$date": {
-        "$numberLong": "1657633493825"
-      }
-    },
-    "__v": 0
+  "kode": "G1",
+  "deskripsi": "Pada buah kopi muda buah tidak berkembang",
+  "cfPakar": 0.99,
+  "createdAt": {
+    "$date": {
+      "$numberLong": "1662607686131"
+    }
   },
-  {
-    "_id": {
-      "$oid": "62d0cf4a26fa6ad3a043cede"
-    },
-    "kode": "G3",
-    "deskripsi": "Pada ranting pohon kopi terdapat lubang",
-    "cfPakar": 1,
-    "createdAt": {
-      "$date": {
-        "$numberLong": "1657851722966"
-      }
-    },
-    "updatedAt": {
-      "$date": {
-        "$numberLong": "1657851722966"
-      }
-    },
-    "__v": 0
+  "updatedAt": {
+    "$date": {
+      "$numberLong": "1662616202467"
+    }
   },
-  {
-    "_id": {
-      "$oid": "62d0cf6726fa6ad3a043cee4"
-    },
-    "kode": "G4",
-    "deskripsi": "Tidak terdapat buah pada ranting atau cabang",
-    "cfPakar": 1,
-    "createdAt": {
-      "$date": {
-        "$numberLong": "1657851751291"
-      }
-    },
-    "updatedAt": {
-      "$date": {
-        "$numberLong": "1657851751291"
-      }
-    },
-    "__v": 0
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "63196159980504e8cc0ff46e"
   },
-  {
-    "_id": {
-      "$oid": "62d0cf7e26fa6ad3a043ceea"
-    },
-    "kode": "G5",
-    "deskripsi": "Arah belokan keatas untuk bagian batang atau cabang yang rusak",
-    "cfPakar": 1,
-    "createdAt": {
-      "$date": {
-        "$numberLong": "1657851774637"
-      }
-    },
-    "updatedAt": {
-      "$date": {
-        "$numberLong": "1657851774637"
-      }
-    },
-    "__v": 0
+  "kode": "G2",
+  "deskripsi": "Buah bewarna kuning kemerahan",
+  "cfPakar": 0.99,
+  "createdAt": {
+    "$date": {
+      "$numberLong": "1662607705334"
+    }
   },
-  {
-    "_id": {
-      "$oid": "62d0cfd126fa6ad3a043cef0"
-    },
-    "kode": "G6",
-    "deskripsi": "Munculnya campuran kotoran dengan serpihan jaringan di dalam  cabang atau batang yang rusak",
-    "cfPakar": 1,
-    "createdAt": {
-      "$date": {
-        "$numberLong": "1657851857554"
-      }
-    },
-    "updatedAt": {
-      "$date": {
-        "$numberLong": "1657851857554"
-      }
-    },
-    "__v": 0
+  "updatedAt": {
+    "$date": {
+      "$numberLong": "1662616212464"
+    }
   },
-  {
-    "_id": {
-      "$oid": "62d0cfea26fa6ad3a043cef6"
-    },
-    "kode": "G7",
-    "deskripsi": "Keadaan mati, layu dan kering diatas lubang kerekan",
-    "cfPakar": 1,
-    "createdAt": {
-      "$date": {
-        "$numberLong": "1657851882610"
-      }
-    },
-    "updatedAt": {
-      "$date": {
-        "$numberLong": "1657851882610"
-      }
-    },
-    "__v": 0
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "63196167980504e8cc0ff476"
   },
-  {
-    "_id": {
-      "$oid": "62d0d00426fa6ad3a043cefc"
-    },
-    "kode": "G8",
-    "deskripsi": "Keadaan gugur dan mengering pada tunas bunga",
-    "cfPakar": 0.2,
-    "createdAt": {
-      "$date": {
-        "$numberLong": "1657851908131"
-      }
-    },
-    "updatedAt": {
-      "$date": {
-        "$numberLong": "1657851908131"
-      }
-    },
-    "__v": 0
+  "kode": "G3",
+  "deskripsi": "Keadaan masak sebelum saatnya dan mengerut pada buah kopi",
+  "cfPakar": 0.5,
+  "createdAt": {
+    "$date": {
+      "$numberLong": "1662607719364"
+    }
   },
-  {
-    "_id": {
-      "$oid": "62d0d01a26fa6ad3a043cf02"
-    },
-    "kode": "G9",
-    "deskripsi": "Keadaan masak sebelum  saatnya dan mengerut pada buah kopi",
-    "cfPakar": 0.5,
-    "createdAt": {
-      "$date": {
-        "$numberLong": "1657851930894"
-      }
-    },
-    "updatedAt": {
-      "$date": {
-        "$numberLong": "1657851930894"
-      }
-    },
-    "__v": 0
+  "updatedAt": {
+    "$date": {
+      "$numberLong": "1662616234267"
+    }
   },
-  {
-    "_id": {
-      "$oid": "62d0d03026fa6ad3a043cf08"
-    },
-    "kode": "G10",
-    "deskripsi": "Melemahnya tanaman",
-    "cfPakar": 0.1,
-    "createdAt": {
-      "$date": {
-        "$numberLong": "1657851952295"
-      }
-    },
-    "updatedAt": {
-      "$date": {
-        "$numberLong": "1657851952295"
-      }
-    },
-    "__v": 0
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "63196174980504e8cc0ff47e"
   },
-  {
-    "_id": {
-      "$oid": "62d0d06426fa6ad3a043cf0e"
-    },
-    "kode": "G11",
-    "deskripsi": "Keterhambatan pertumbuhan tanaman",
-    "cfPakar": 0.1,
-    "createdAt": {
-      "$date": {
-        "$numberLong": "1657852004436"
-      }
-    },
-    "updatedAt": {
-      "$date": {
-        "$numberLong": "1657852004436"
-      }
-    },
-    "__v": 0
+  "kode": "G4",
+  "deskripsi": "Keadaan layu mendadak pada batang yang terserang",
+  "cfPakar": 0.3,
+  "createdAt": {
+    "$date": {
+      "$numberLong": "1662607732384"
+    }
   },
-  {
-    "_id": {
-      "$oid": "62d0d0a226fa6ad3a043cf14"
-    },
-    "kode": "G12",
-    "deskripsi": "Buah kopi dan daun tertutupi cendawan jelaga",
-    "cfPakar": 0.5,
-    "createdAt": {
-      "$date": {
-        "$numberLong": "1657852066672"
-      }
-    },
-    "updatedAt": {
-      "$date": {
-        "$numberLong": "1657852066672"
-      }
-    },
-    "__v": 0
+  "updatedAt": {
+    "$date": {
+      "$numberLong": "1662616259631"
+    }
   },
-  {
-    "_id": {
-      "$oid": "62d0d0cc26fa6ad3a043cf1a"
-    },
-    "kode": "G13",
-    "deskripsi": "Terdapat bercak berwarna kuning pada sisi bawah daun",
-    "cfPakar": 1,
-    "createdAt": {
-      "$date": {
-        "$numberLong": "1657852108122"
-      }
-    },
-    "updatedAt": {
-      "$date": {
-        "$numberLong": "1657852108122"
-      }
-    },
-    "__v": 0
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "63196192980504e8cc0ff486"
   },
-  {
-    "_id": {
-      "$oid": "62d0d0e326fa6ad3a043cf20"
-    },
-    "kode": "G14",
-    "deskripsi": "Terbentuk tepung berwarna jingga pada sisi bawah daun",
-    "cfPakar": 1,
-    "createdAt": {
-      "$date": {
-        "$numberLong": "1657852131189"
-      }
-    },
-    "updatedAt": {
-      "$date": {
-        "$numberLong": "1657852131189"
-      }
-    },
-    "__v": 0
+  "kode": "G5",
+  "deskripsi": "Daun kopi menguning pada batang yang terserang",
+  "cfPakar": 0.5,
+  "createdAt": {
+    "$date": {
+      "$numberLong": "1662607762050"
+    }
   },
-  {
-    "_id": {
-      "$oid": "62d0d0ff26fa6ad3a043cf28"
-    },
-    "kode": "G15",
-    "deskripsi": "Terdapat warna coklat tua sampai kering dan hitam pada sisi bawah daun",
-    "cfPakar": 1,
-    "createdAt": {
-      "$date": {
-        "$numberLong": "1657852159821"
-      }
-    },
-    "updatedAt": {
-      "$date": {
-        "$numberLong": "1657852159821"
-      }
-    },
-    "__v": 0
+  "updatedAt": {
+    "$date": {
+      "$numberLong": "1662616308197"
+    }
   },
-  {
-    "_id": {
-      "$oid": "62d0d11b26fa6ad3a043cf2e"
-    },
-    "kode": "G16",
-    "deskripsi": "Keadaan daun awalnya berwarna kuning selanjutnya dikelilingi  bercak halo dengan warna kuning",
-    "cfPakar": 1,
-    "createdAt": {
-      "$date": {
-        "$numberLong": "1657852187190"
-      }
-    },
-    "updatedAt": {
-      "$date": {
-        "$numberLong": "1657852187190"
-      }
-    },
-    "__v": 0
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "631961a2980504e8cc0ff48e"
   },
-  {
-    "_id": {
-      "$oid": "62d0d13326fa6ad3a043cf34"
-    },
-    "kode": "G17",
-    "deskripsi": "Pada sisi yang lebih banyak menerima cahaya, buah mempunyai warna bercak coklat",
-    "cfPakar": 0.2,
-    "createdAt": {
-      "$date": {
-        "$numberLong": "1657852211456"
-      }
-    },
-    "updatedAt": {
-      "$date": {
-        "$numberLong": "1657852211456"
-      }
-    },
-    "__v": 0
+  "kode": "G6",
+  "deskripsi": "Daun yang terserang gugur sebelum waktunya",
+  "cfPakar": 0.5,
+  "createdAt": {
+    "$date": {
+      "$numberLong": "1662607778426"
+    }
   },
-  {
-    "_id": {
-      "$oid": "62d0d14926fa6ad3a043cf3a"
-    },
-    "kode": "G18",
-    "deskripsi": "Keadaan busuk sampai ke biji pada buah kopi",
-    "cfPakar": 0.3,
-    "createdAt": {
-      "$date": {
-        "$numberLong": "1657852233227"
-      }
-    },
-    "updatedAt": {
-      "$date": {
-        "$numberLong": "1657852233227"
-      }
-    },
-    "__v": 0
+  "updatedAt": {
+    "$date": {
+      "$numberLong": "1662616329523"
+    }
   },
-  {
-    "_id": {
-      "$oid": "62d0d1c526fa6ad3a043cf40"
-    },
-    "kode": "G19",
-    "deskripsi": "Keadaan kerdil pada tanaman yang terserang",
-    "cfPakar": 1,
-    "createdAt": {
-      "$date": {
-        "$numberLong": "1657852357998"
-      }
-    },
-    "updatedAt": {
-      "$date": {
-        "$numberLong": "1657852357998"
-      }
-    },
-    "__v": 0
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "631961af980504e8cc0ff496"
   },
-  {
-    "_id": {
-      "$oid": "62d0d1d926fa6ad3a043cf46"
-    },
-    "kode": "G20",
-    "deskripsi": "Keadaan daun berguguran dan menguning",
-    "cfPakar": 0.5,
-    "createdAt": {
-      "$date": {
-        "$numberLong": "1657852377660"
-      }
-    },
-    "updatedAt": {
-      "$date": {
-        "$numberLong": "1657852377660"
-      }
-    },
-    "__v": 0
+  "kode": "G7",
+  "deskripsi": "Kutu mengeluarkan embun madu",
+  "cfPakar": 0.5,
+  "createdAt": {
+    "$date": {
+      "$numberLong": "1662607791918"
+    }
   },
-  {
-    "_id": {
-      "$oid": "62d0d1ed26fa6ad3a043cf4c"
-    },
-    "kode": "G21",
-    "deskripsi": "Jumlah bunga yang sedikit",
-    "cfPakar": 0.3,
-    "createdAt": {
-      "$date": {
-        "$numberLong": "1657852397817"
-      }
-    },
-    "updatedAt": {
-      "$date": {
-        "$numberLong": "1657852397817"
-      }
-    },
-    "__v": 0
+  "updatedAt": {
+    "$date": {
+      "$numberLong": "1662616457419"
+    }
   },
-  {
-    "_id": {
-      "$oid": "62d0d22a26fa6ad3a043cf54"
-    },
-    "kode": "G22",
-    "deskripsi": "Prematur pada bunga kopi",
-    "cfPakar": 0.3,
-    "createdAt": {
-      "$date": {
-        "$numberLong": "1657852458333"
-      }
-    },
-    "updatedAt": {
-      "$date": {
-        "$numberLong": "1657852458333"
-      }
-    },
-    "__v": 0
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "631961c7980504e8cc0ff49e"
   },
-  {
-    "_id": {
-      "$oid": "62d0d24126fa6ad3a043cf5a"
-    },
-    "kode": "G23",
-    "deskripsi": "Bunga kosong dengan jumlah banyak",
-    "cfPakar": 0.5,
-    "createdAt": {
-      "$date": {
-        "$numberLong": "1657852481179"
-      }
-    },
-    "updatedAt": {
-      "$date": {
-        "$numberLong": "1657852481179"
-      }
-    },
-    "__v": 0
+  "kode": "G8",
+  "deskripsi": "Adanya liang gerekan pada batang ",
+  "cfPakar": 0.99,
+  "createdAt": {
+    "$date": {
+      "$numberLong": "1662607815232"
+    }
   },
-  {
-    "_id": {
-      "$oid": "62d0d25f26fa6ad3a043cf60"
-    },
-    "kode": "G24",
-    "deskripsi": "Keadaan berwarna hitam atau coklat serta membusuk pada bagian akar-akar tersebut",
-    "cfPakar": 1,
-    "createdAt": {
-      "$date": {
-        "$numberLong": "1657852511219"
-      }
-    },
-    "updatedAt": {
-      "$date": {
-        "$numberLong": "1657852511219"
-      }
-    },
-    "__v": 0
+  "updatedAt": {
+    "$date": {
+      "$numberLong": "1662616499385"
+    }
   },
-  {
-    "_id": {
-      "$oid": "62d0d27c26fa6ad3a043cf66"
-    },
-    "kode": "G25",
-    "deskripsi": "Keadaan layu mendadak pada ranting atau cabang yang terserang",
-    "cfPakar": 0.3,
-    "createdAt": {
-      "$date": {
-        "$numberLong": "1657852540470"
-      }
-    },
-    "updatedAt": {
-      "$date": {
-        "$numberLong": "1657852540470"
-      }
-    },
-    "__v": 0
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "631961d6980504e8cc0ff4a6"
   },
-  {
-    "_id": {
-      "$oid": "62d0d29426fa6ad3a043cf6c"
-    },
-    "kode": "G26",
-    "deskripsi": "Pada celah-celah atau lentisel terbentuk gambaran hifa dengan warna putih",
-    "cfPakar": 1,
-    "createdAt": {
-      "$date": {
-        "$numberLong": "1657852564481"
-      }
-    },
-    "updatedAt": {
-      "$date": {
-        "$numberLong": "1657852564481"
-      }
-    },
-    "__v": 0
+  "kode": "G9",
+  "deskripsi": "Buah kopi gugur",
+  "cfPakar": 0.5,
+  "createdAt": {
+    "$date": {
+      "$numberLong": "1662607830203"
+    }
   },
-  {
-    "_id": {
-      "$oid": "62d0d30026fa6ad3a043cf72"
-    },
-    "kode": "G27",
-    "deskripsi": "Warna merah jambu pada lapisan kerak",
-    "cfPakar": 1,
-    "createdAt": {
-      "$date": {
-        "$numberLong": "1657852672154"
-      }
-    },
-    "updatedAt": {
-      "$date": {
-        "$numberLong": "1657852672154"
-      }
-    },
-    "__v": 0
+  "updatedAt": {
+    "$date": {
+      "$numberLong": "1662616524135"
+    }
   },
-  {
-    "_id": {
-      "$oid": "62d0d31926fa6ad3a043cf78"
-    },
-    "kode": "G28",
-    "deskripsi": "Warna oranye kemerahan pada bintil kecil",
-    "cfPakar": 0.5,
-    "createdAt": {
-      "$date": {
-        "$numberLong": "1657852697025"
-      }
-    },
-    "updatedAt": {
-      "$date": {
-        "$numberLong": "1657852697025"
-      }
-    },
-    "__v": 0
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "631961e3980504e8cc0ff4ae"
   },
-  {
-    "_id": {
-      "$oid": "62d0d33226fa6ad3a043cf7e"
-    },
-    "kode": "G29",
-    "deskripsi": "Keadaan menggatung, kusam, layu serta daun dengan warna hijau kekuningan",
-    "cfPakar": 0.3,
-    "createdAt": {
-      "$date": {
-        "$numberLong": "1657852722733"
-      }
-    },
-    "updatedAt": {
-      "$date": {
-        "$numberLong": "1657852722733"
-      }
-    },
-    "__v": 0
+  "kode": "G10",
+  "deskripsi": "Batang kopi patah pada bagian yang diserang",
+  "cfPakar": 0.99,
+  "createdAt": {
+    "$date": {
+      "$numberLong": "1662607843815"
+    }
   },
-  {
-    "_id": {
-      "$oid": "62d0d34526fa6ad3a043cf84"
-    },
-    "kode": "G30",
-    "deskripsi": "Pada cabang daun menjadi kering",
-    "cfPakar": 0.5,
-    "createdAt": {
-      "$date": {
-        "$numberLong": "1657852741740"
-      }
-    },
-    "updatedAt": {
-      "$date": {
-        "$numberLong": "1657852741740"
-      }
-    },
-    "__v": 0
+  "updatedAt": {
+    "$date": {
+      "$numberLong": "1662616540912"
+    }
   },
-  {
-    "_id": {
-      "$oid": "62d0d36826fa6ad3a043cf8a"
-    },
-    "kode": "G31",
-    "deskripsi": "Keadaan lunak, kering dan membusuk pada akar bagian kayu",
-    "cfPakar": 1,
-    "createdAt": {
-      "$date": {
-        "$numberLong": "1657852776708"
-      }
-    },
-    "updatedAt": {
-      "$date": {
-        "$numberLong": "1657852776708"
-      }
-    },
-    "__v": 0
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "631961f0980504e8cc0ff4b6"
   },
-  {
-    "_id": {
-      "$oid": "62d0d39226fa6ad3a043cf92"
-    },
-    "kode": "G32",
-    "deskripsi": "Bintik hitam pada bagian permukaan akar bagian kayu dan pangkal batang",
-    "cfPakar": 1,
-    "createdAt": {
-      "$date": {
-        "$numberLong": "1657852818072"
-      }
-    },
-    "updatedAt": {
-      "$date": {
-        "$numberLong": "1657852818072"
-      }
-    },
-    "__v": 0
+  "kode": "G11",
+  "deskripsi": "Pada buah kopi tua biji kopi rusak",
+  "cfPakar": 0.99,
+  "createdAt": {
+    "$date": {
+      "$numberLong": "1662607856081"
+    }
   },
-  {
-    "_id": {
-      "$oid": "62d0d3aa26fa6ad3a043cf98"
-    },
-    "kode": "G33",
-    "deskripsi": "Sepanjang permukaan akar mempunyai benang jamur dengan warna putih seperti bulu",
-    "cfPakar": 1,
-    "createdAt": {
-      "$date": {
-        "$numberLong": "1657852842915"
-      }
-    },
-    "updatedAt": {
-      "$date": {
-        "$numberLong": "1657852842915"
-      }
-    },
-    "__v": 0
-  }
-]
+  "updatedAt": {
+    "$date": {
+      "$numberLong": "1662616562691"
+    }
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "631961fe980504e8cc0ff4be"
+  },
+  "kode": "G12",
+  "deskripsi": "Pada bagian lobang terdapat kotoran bewarna hitam",
+  "cfPakar": 0.99,
+  "createdAt": {
+    "$date": {
+      "$numberLong": "1662607870018"
+    }
+  },
+  "updatedAt": {
+    "$date": {
+      "$numberLong": "1662616579582"
+    }
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "6319620a980504e8cc0ff4c6"
+  },
+  "kode": "G13",
+  "deskripsi": "Bercak berwarna kuning muda pada permukaan bawah daun kemudian berubah menjadi kuning tua dan terbentuk tepung",
+  "cfPakar": 0.99,
+  "createdAt": {
+    "$date": {
+      "$numberLong": "1662607882909"
+    }
+  },
+  "updatedAt": {
+    "$date": {
+      "$numberLong": "1662616603698"
+    }
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "63196218980504e8cc0ff4ce"
+  },
+  "kode": "G14",
+  "deskripsi": "Buah sering bewarna hitam seperti jelaga",
+  "cfPakar": 0.5,
+  "createdAt": {
+    "$date": {
+      "$numberLong": "1662607896192"
+    }
+  },
+  "updatedAt": {
+    "$date": {
+      "$numberLong": "1662616630252"
+    }
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "63196224980504e8cc0ff4d6"
+  },
+  "kode": "G15",
+  "deskripsi": "Cabang kopi patah pada bagian yang diserang",
+  "cfPakar": 0.99,
+  "createdAt": {
+    "$date": {
+      "$numberLong": "1662607908905"
+    }
+  },
+  "updatedAt": {
+    "$date": {
+      "$numberLong": "1662616652639"
+    }
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "63196231980504e8cc0ff4de"
+  },
+  "kode": "G16",
+  "deskripsi": "Rontoknya daun kopi",
+  "cfPakar": 0.5,
+  "createdAt": {
+    "$date": {
+      "$numberLong": "1662607921425"
+    }
+  },
+  "updatedAt": {
+    "$date": {
+      "$numberLong": "1662616712577"
+    }
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "6319623e980504e8cc0ff4e6"
+  },
+  "kode": "G17",
+  "deskripsi": "Akar berubah warna menjadi kuning hingga cokelat dan kebanyakan akar lateralnya busuk",
+  "cfPakar": 0.99,
+  "createdAt": {
+    "$date": {
+      "$numberLong": "1662607934991"
+    }
+  },
+  "updatedAt": {
+    "$date": {
+      "$numberLong": "1662616728891"
+    }
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "6319624c980504e8cc0ff4ee"
+  },
+  "kode": "G18",
+  "deskripsi": "Daun terkulai (terbalik ke bawah)",
+  "cfPakar": 0.99,
+  "createdAt": {
+    "$date": {
+      "$numberLong": "1662607948342"
+    }
+  },
+  "updatedAt": {
+    "$date": {
+      "$numberLong": "1662616740111"
+    }
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "63196259980504e8cc0ff4f6"
+  },
+  "kode": "G19",
+  "deskripsi": "Tanaman mati",
+  "cfPakar": 0.2,
+  "createdAt": {
+    "$date": {
+      "$numberLong": "1662607961561"
+    }
+  },
+  "updatedAt": {
+    "$date": {
+      "$numberLong": "1662616762739"
+    }
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "63196267980504e8cc0ff4fe"
+  },
+  "kode": "G20",
+  "deskripsi": "Biji kopi berlubang",
+  "cfPakar": 0.99,
+  "createdAt": {
+    "$date": {
+      "$numberLong": "1662607975340"
+    }
+  },
+  "updatedAt": {
+    "$date": {
+      "$numberLong": "1662616783202"
+    }
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "63196274980504e8cc0ff506"
+  },
+  "kode": "G21",
+  "deskripsi": "Buah tidak berkembang,layu dan mengering",
+  "cfPakar": 0.5,
+  "createdAt": {
+    "$date": {
+      "$numberLong": "1662607988916"
+    }
+  },
+  "updatedAt": {
+    "$date": {
+      "$numberLong": "1662616867622"
+    }
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "63196284980504e8cc0ff50e"
+  },
+  "kode": "G22",
+  "deskripsi": "Adanya liang gerekan pada cabang",
+  "cfPakar": 0.99,
+  "createdAt": {
+    "$date": {
+      "$numberLong": "1662608004264"
+    }
+  },
+  "updatedAt": {
+    "$date": {
+      "$numberLong": "1662616834242"
+    }
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "63196291980504e8cc0ff516"
+  },
+  "kode": "G23",
+  "deskripsi": "Menyebabkan pohon menjadi gundul",
+  "cfPakar": 0.5,
+  "createdAt": {
+    "$date": {
+      "$numberLong": "1662608017635"
+    }
+  },
+  "updatedAt": {
+    "$date": {
+      "$numberLong": "1662616892735"
+    }
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "631962a0980504e8cc0ff51e"
+  },
+  "kode": "G24",
+  "deskripsi": "Cabang/ranting kopi mati",
+  "cfPakar": 0.5,
+  "createdAt": {
+    "$date": {
+      "$numberLong": "1662608032589"
+    }
+  },
+  "updatedAt": {
+    "$date": {
+      "$numberLong": "1662616903969"
+    }
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "631962b3980504e8cc0ff526"
+  },
+  "kode": "G25",
+  "deskripsi": "Tanaman menjadi kerdil",
+  "cfPakar": 0.99,
+  "createdAt": {
+    "$date": {
+      "$numberLong": "1662608051502"
+    }
+  },
+  "updatedAt": {
+    "$date": {
+      "$numberLong": "1662616919381"
+    }
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "631962c0980504e8cc0ff52e"
+  },
+  "kode": "G26",
+  "deskripsi": "Tampak miselium jamur berwarna putih pada permukaan akar kemudian berubah warna menjadi kuning gading",
+  "cfPakar": 0.99,
+  "createdAt": {
+    "$date": {
+      "$numberLong": "1662608064351"
+    }
+  },
+  "updatedAt": {
+    "$date": {
+      "$numberLong": "1662616936194"
+    }
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "631962cd980504e8cc0ff536"
+  },
+  "kode": "G27",
+  "deskripsi": "Daun-daun tanaman sakit menguning, layu, dan rontok",
+  "cfPakar": 0.5,
+  "createdAt": {
+    "$date": {
+      "$numberLong": "1662608077461"
+    }
+  },
+  "updatedAt": {
+    "$date": {
+      "$numberLong": "1662616952419"
+    }
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "631962db980504e8cc0ff53e"
+  },
+  "kode": "G28",
+  "deskripsi": "Adanya kotoran yang berwarna merah kehitam-hitaman yang keluar dari liang gerekan",
+  "cfPakar": 0.99,
+  "createdAt": {
+    "$date": {
+      "$numberLong": "1662608091190"
+    }
+  },
+  "updatedAt": {
+    "$date": {
+      "$numberLong": "1662616984652"
+    }
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "631962ea980504e8cc0ff546"
+  },
+  "kode": "G29",
+  "deskripsi": "Pada buah di temui serangga putih berentuk tempurung",
+  "cfPakar": 0.99,
+  "createdAt": {
+    "$date": {
+      "$numberLong": "1662608106517"
+    }
+  },
+  "updatedAt": {
+    "$date": {
+      "$numberLong": "1662617005454"
+    }
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "631962fa980504e8cc0ff54e"
+  },
+  "kode": "G30",
+  "deskripsi": "Pada permukaan lubang yang baru digerek terdapat campuran kotoran dengan serpihan jaringan kayu",
+  "cfPakar": 0.99,
+  "createdAt": {
+    "$date": {
+      "$numberLong": "1662608122616"
+    }
+  },
+  "updatedAt": {
+    "$date": {
+      "$numberLong": "1662617024347"
+    }
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "63196309980504e8cc0ff556"
+  },
+  "kode": "G31",
+  "deskripsi": "Terdapat gumpalan seperti tempurung yang berbaris",
+  "cfPakar": 0.99,
+  "createdAt": {
+    "$date": {
+      "$numberLong": "1662608137051"
+    }
+  },
+  "updatedAt": {
+    "$date": {
+      "$numberLong": "1662617060610"
+    }
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "63196317980504e8cc0ff55e"
+  },
+  "kode": "G32",
+  "deskripsi": "Keadaan layu mendadak pada ranting atau cabang yang terserang",
+  "cfPakar": 0.3,
+  "createdAt": {
+    "$date": {
+      "$numberLong": "1662608151368"
+    }
+  },
+  "updatedAt": {
+    "$date": {
+      "$numberLong": "1662617131311"
+    }
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "63196325980504e8cc0ff566"
+  },
+  "kode": "G33",
+  "deskripsi": "Bercak yang tua terdapat pusat berwarna putih kelabu, sering tampak seperti tepung hitam yang merupakan konidium jamur",
+  "cfPakar": 0.99,
+  "createdAt": {
+    "$date": {
+      "$numberLong": "1662608165084"
+    }
+  },
+  "updatedAt": {
+    "$date": {
+      "$numberLong": "1662617194537"
+    }
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "6319633c980504e8cc0ff56e"
+  },
+  "kode": "G34",
+  "deskripsi": "Daun terdapat bercak-bercak bulat, cokelat kemerahan, atau cokelat tua, berbatas jelas, dan konsentris",
+  "cfPakar": 0.99,
+  "createdAt": {
+    "$date": {
+      "$numberLong": "1662608188471"
+    }
+  },
+  "updatedAt": {
+    "$date": {
+      "$numberLong": "1662617211569"
+    }
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "6319634c980504e8cc0ff576"
+  },
+  "kode": "G35",
+  "deskripsi": "Akar yang diserang jamur akar pada umumnya adalah akar tunggang",
+  "cfPakar": 0.5,
+  "createdAt": {
+    "$date": {
+      "$numberLong": "1662608204504"
+    }
+  },
+  "updatedAt": {
+    "$date": {
+      "$numberLong": "1662617228468"
+    }
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "63196359980504e8cc0ff57e"
+  },
+  "kode": "G36",
+  "deskripsi": "Biasanya tertutup oleh kerak yang terdiri atas butir-butir tanah",
+  "cfPakar": 0.99,
+  "createdAt": {
+    "$date": {
+      "$numberLong": "1662608217917"
+    }
+  },
+  "updatedAt": {
+    "$date": {
+      "$numberLong": "1662617244538"
+    }
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "63196367980504e8cc0ff586"
+  },
+  "kode": "G37",
+  "deskripsi": "Tampak miselium jamur bewarna putih pada permukaan batang yang kemudian muncul badan buah jamur bewarna putih",
+  "cfPakar": 0.99,
+  "createdAt": {
+    "$date": {
+      "$numberLong": "1662608231503"
+    }
+  },
+  "updatedAt": {
+    "$date": {
+      "$numberLong": "1662617262593"
+    }
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "63196374980504e8cc0ff58e"
+  },
+  "kode": "G38",
+  "deskripsi": "Pertumbuhan terhambat",
+  "cfPakar": 0.5,
+  "createdAt": {
+    "$date": {
+      "$numberLong": "1662608244493"
+    }
+  },
+  "updatedAt": {
+    "$date": {
+      "$numberLong": "1662617283314"
+    }
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "63196382980504e8cc0ff596"
+  },
+  "kode": "G39",
+  "deskripsi": "Daun tua berwarna kuning yang secara perlahan rontok dan akhirnya mati kemerahan kemudian gugur",
+  "cfPakar": 0.5,
+  "createdAt": {
+    "$date": {
+      "$numberLong": "1662608258422"
+    }
+  },
+  "updatedAt": {
+    "$date": {
+      "$numberLong": "1662617309679"
+    }
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "6319638f980504e8cc0ff59e"
+  },
+  "kode": "G40",
+  "deskripsi": "Pada cabang daun menjadi kering",
+  "cfPakar": 0.5,
+  "createdAt": {
+    "$date": {
+      "$numberLong": "1662608271668"
+    }
+  },
+  "updatedAt": {
+    "$date": {
+      "$numberLong": "1662617337241"
+    }
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "6319639e980504e8cc0ff5a6"
+  },
+  "kode": "G41",
+  "deskripsi": "Permukaan daun kasar seperti ada butiran butiran karat",
+  "cfPakar": 0.99,
+  "createdAt": {
+    "$date": {
+      "$numberLong": "1662608286502"
+    }
+  },
+  "updatedAt": {
+    "$date": {
+      "$numberLong": "1662617360814"
+    }
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "631963ce980504e8cc0ff5ae"
+  },
+  "kode": "G42",
+  "deskripsi": "Pada pangkal batang dan akar-akar terdapat banyak benang jamur berwarna hitam, yang sering bersatu dan membentuk lapisan berwarna hitam",
+  "cfPakar": 0.99,
+  "createdAt": {
+    "$date": {
+      "$numberLong": "1662608334017"
+    }
+  },
+  "updatedAt": {
+    "$date": {
+      "$numberLong": "1662617383423"
+    }
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "631963da980504e8cc0ff5b6"
+  },
+  "kode": "G43",
+  "deskripsi": "Pohon tanaman mati secara perlahan",
+  "cfPakar": 0.5,
+  "createdAt": {
+    "$date": {
+      "$numberLong": "1662608346673"
+    }
+  },
+  "updatedAt": {
+    "$date": {
+      "$numberLong": "1662617424950"
+    }
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "631963eb980504e8cc0ff5be"
+  },
+  "kode": "G44",
+  "deskripsi": "Buah busuk kering mengeriput",
+  "cfPakar": 0.99,
+  "createdAt": {
+    "$date": {
+      "$numberLong": "1662608363362"
+    }
+  },
+  "updatedAt": {
+    "$date": {
+      "$numberLong": "1662617462089"
+    }
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "631963f7980504e8cc0ff5c6"
+  },
+  "kode": "G45",
+  "deskripsi": "Terbentuk tepung bewarna jingga pada sisi bawah daun",
+  "cfPakar": 0.99,
+  "createdAt": {
+    "$date": {
+      "$numberLong": "1662608375484"
+    }
+  },
+  "updatedAt": {
+    "$date": {
+      "$numberLong": "1662617565387"
+    }
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "63196402980504e8cc0ff5ce"
+  },
+  "kode": "G46",
+  "deskripsi": "Terdapat bercak berwarna hitam yang meluas hingga seluruh buah berwarna hitam",
+  "cfPakar": 0.5,
+  "createdAt": {
+    "$date": {
+      "$numberLong": "1662608386981"
+    }
+  },
+  "updatedAt": {
+    "$date": {
+      "$numberLong": "1662617579090"
+    }
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "63196412980504e8cc0ff5d6"
+  },
+  "kode": "G47",
+  "deskripsi": "Terdapat embun madu disekitar buah yang diserang",
+  "cfPakar": 0.5,
+  "createdAt": {
+    "$date": {
+      "$numberLong": "1662608402026"
+    }
+  },
+  "updatedAt": {
+    "$date": {
+      "$numberLong": "1662617607738"
+    }
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "6319641f980504e8cc0ff5de"
+  },
+  "kode": "G48",
+  "deskripsi": "Cabang atau ranting yang terserang layu mendadak",
+  "cfPakar": 0.5,
+  "createdAt": {
+    "$date": {
+      "$numberLong": "1662608415569"
+    }
+  },
+  "updatedAt": {
+    "$date": {
+      "$numberLong": "1662618271297"
+    }
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "6319642c980504e8cc0ff5e6"
+  },
+  "kode": "G49",
+  "deskripsi": "Buah dan bunga kopi mengering dan gugur",
+  "cfPakar": 0.2,
+  "createdAt": {
+    "$date": {
+      "$numberLong": "1662608428175"
+    }
+  },
+  "updatedAt": {
+    "$date": {
+      "$numberLong": "1662618224632"
+    }
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "63196438980504e8cc0ff5ee"
+  },
+  "kode": "G50",
+  "deskripsi": "Melekat sangat kuat sehingga tidak dapat lepas meskipun dicuci dan disikat",
+  "cfPakar": 0.99,
+  "createdAt": {
+    "$date": {
+      "$numberLong": "1662608440542"
+    }
+  },
+  "updatedAt": {
+    "$date": {
+      "$numberLong": "1662618291040"
+    }
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "63196460980504e8cc0ff5f6"
+  },
+  "kode": "G51",
+  "deskripsi": "Seringkali ditemukan semut yang hidup pada kutu tersebut",
+  "cfPakar": 0.5,
+  "createdAt": {
+    "$date": {
+      "$numberLong": "1662608480361"
+    }
+  },
+  "updatedAt": {
+    "$date": {
+      "$numberLong": "1662618316680"
+    }
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "6319646d980504e8cc0ff5fe"
+  },
+  "kode": "G52",
+  "deskripsi": "Serangga dapat bewarna merah,hijau atau transparan yang bergerak dan menjatuhkan diri ketika di sentuh",
+  "cfPakar": 0.99,
+  "createdAt": {
+    "$date": {
+      "$numberLong": "1662608493319"
+    }
+  },
+  "updatedAt": {
+    "$date": {
+      "$numberLong": "1662618330271"
+    }
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "63196479980504e8cc0ff606"
+  },
+  "kode": "G53",
+  "deskripsi": "Terdapat spora berwarna putih yang merupakan spora jamur",
+  "cfPakar": 0.99,
+  "createdAt": {
+    "$date": {
+      "$numberLong": "1662608505741"
+    }
+  },
+  "updatedAt": {
+    "$date": {
+      "$numberLong": "1662618346701"
+    }
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "63196486980504e8cc0ff60e"
+  },
+  "kode": "G54",
+  "deskripsi": "Pada buah di temui serangga hijau kecoklatan berbentuk tempurung",
+  "cfPakar": 0.99,
+  "createdAt": {
+    "$date": {
+      "$numberLong": "1662608518618"
+    }
+  },
+  "updatedAt": {
+    "$date": {
+      "$numberLong": "1662618379172"
+    }
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "63196492980504e8cc0ff616"
+  },
+  "kode": "G55",
+  "deskripsi": "Akar tanaman kopi tidak berkembang,bengkak dan mudah patah",
+  "cfPakar": 0.99,
+  "createdAt": {
+    "$date": {
+      "$numberLong": "1662608530802"
+    }
+  },
+  "updatedAt": {
+    "$date": {
+      "$numberLong": "1662618420101"
+    }
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "6319649f980504e8cc0ff61e"
+  },
+  "kode": "G56",
+  "deskripsi": "Terdapat gumpalan putih seperti kapas pada buah kopi yang terserang",
+  "cfPakar": 0.5,
+  "createdAt": {
+    "$date": {
+      "$numberLong": "1662608543597"
+    }
+  },
+  "updatedAt": {
+    "$date": {
+      "$numberLong": "1662618458374"
+    }
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "631964b0980504e8cc0ff626"
+  },
+  "kode": "G57",
+  "deskripsi": "Bercak pada buah menyebabkan kulit buah mengering dan keras",
+  "cfPakar": 0.99,
+  "createdAt": {
+    "$date": {
+      "$numberLong": "1662608560602"
+    }
+  },
+  "updatedAt": {
+    "$date": {
+      "$numberLong": "1662618483131"
+    }
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "631964bd980504e8cc0ff62e"
+  },
+  "kode": "G58",
+  "deskripsi": "Pada buah/daun kopi tertutupi embun jelaga",
+  "cfPakar": 0.5,
+  "createdAt": {
+    "$date": {
+      "$numberLong": "1662608573223"
+    }
+  },
+  "updatedAt": {
+    "$date": {
+      "$numberLong": "1662618510482"
+    }
+  },
+  "__v": 0
+}]
