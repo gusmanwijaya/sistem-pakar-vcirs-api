@@ -28,19 +28,19 @@ const UserSchema = mongoose.Schema(
   { timestamps: true }
 );
 
-UserSchema.path("username").validate(
-  async function (value) {
-    try {
-      const count = await this.model("User").countDocuments({
-        username: value,
-      });
-      return !count;
-    } catch (error) {
-      throw error;
-    }
-  },
-  (attr) => `Username : ${attr.value} sudah terdaftar!`
-);
+// UserSchema.path("username").validate(
+//   async function (value) {
+//     try {
+//       const count = await this.model("User").countDocuments({
+//         username: value,
+//       });
+//       return !count;
+//     } catch (error) {
+//       throw error;
+//     }
+//   },
+//   (attr) => `Username : ${attr.value} sudah terdaftar!`
+// );
 
 UserSchema.pre("save", async function () {
   if (!this.isModified("password")) return;

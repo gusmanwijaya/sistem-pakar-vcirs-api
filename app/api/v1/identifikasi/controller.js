@@ -9,13 +9,25 @@ const moment = require("moment");
 module.exports = {
   getGejala: async (req, res, next) => {
     try {
-      const data = await Gejala.find().select(
-        "_id kode deskripsi foto cfPakar"
-      );
+      // const data = await Gejala.find().select(
+      //   "_id kode deskripsi foto cfPakar"
+      // );
+
+      const { page = 1, limit = 10 } = req.query;
+
+      const data = await Gejala.find()
+        .select("_id kode deskripsi foto cfPakar")
+        .limit(limit)
+        .skip(limit * (page - 1));
+
+      const count = await Gejala.countDocuments();
 
       res.status(StatusCodes.OK).json({
         statusCode: StatusCodes.OK,
         message: "Berhasil mendapatkan data gejala",
+        current_page: parseInt(page),
+        total_page: Math.ceil(count / limit),
+        total_data: count,
         data,
       });
     } catch (error) {

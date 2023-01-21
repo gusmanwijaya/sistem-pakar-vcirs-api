@@ -20,6 +20,9 @@ module.exports = {
           "Password tidak boleh kurang dari 6 karakter!"
         );
 
+      const user = await User.findOne({ username });
+      if (user) throw new CustomError.Forbidden("Username sudah terdaftar");
+
       const data = new User({ name, username, password, role });
       await data.save();
       delete data._doc.password;
